@@ -4,23 +4,29 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>SquirrelVault Tracker — Support</title>
-  <meta name="description" content="Support, Privacy Policy, and Terms for SquirrelVault Tracker iOS app.">
+  <meta name="description" content="Support, FAQs, Privacy, and Terms for SquirrelVault Tracker iOS app. No purchases yet. Export inventory as PNG.">
+  <link rel="icon" type="image/png" href="./squirrelvault-icon.png">
+  <link rel="apple-touch-icon" href="./squirrelvault-icon.png">
+  <meta property="og:title" content="SquirrelVault Tracker — Support">
+  <meta property="og:description" content="Help, FAQs and policies for SquirrelVault Tracker.">
+  <meta property="og:image" content="https://squirrel-app.github.io/SquirrelVault-Tracker-Support/squirrelvault-icon.png">
   <style>
     :root { --border:#eaeaea; --muted:#666; }
     * { box-sizing: border-box; }
-    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; margin: 0; color: #0a0a0a; }
+    body { font-family: system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif; margin:0; color:#0a0a0a; }
     .container { max-width: 920px; margin: 0 auto; padding: 24px; }
-    header { display: flex; align-items: center; gap: 14px; margin: 10px 0 24px; }
-    header img { width: 48px; height: 48px; border-radius: 12px; }
-    h1 { font-size: 28px; margin: 0; }
+    header { display:flex; align-items:center; gap:14px; margin:10px 0 24px; }
+    header img { width:48px; height:48px; border-radius:12px; }
+    h1 { font-size:28px; margin:0; }
     .subtitle { color: var(--muted); }
-    .card { border: 1px solid var(--border); border-radius: 16px; padding: 20px; margin: 16px 0; }
-    a { color: #0a7aff; text-decoration: none; }
-    details summary { cursor: pointer; font-weight: 600; }
-    .btn { display: inline-block; padding: 10px 14px; border-radius: 12px; border: 1px solid var(--border); }
-    footer { margin: 36px 0 8px; font-size: 14px; color: var(--muted); }
-    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
-    code { background: #f6f6f6; padding: 2px 6px; border-radius: 6px; }
+    .card { border:1px solid var(--border); border-radius:16px; padding:20px; margin:16px 0; }
+    a { color:#0a7aff; text-decoration:none; }
+    details summary { cursor:pointer; font-weight:600; }
+    .btn { display:inline-block; padding:10px 14px; border-radius:12px; border:1px solid var(--border); }
+    footer { margin:36px 0 8px; font-size:14px; color:var(--muted); }
+    .grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(260px,1fr)); gap:16px; }
+    ul { margin:8px 0 0 18px; }
+    code { background:#f6f6f6; padding:2px 6px; border-radius:6px; }
   </style>
 </head>
 <body>
@@ -32,6 +38,19 @@
         <div class="subtitle">We’re here to help.</div>
       </div>
     </header>
+
+    <!-- About -->
+    <div class="card">
+      <h2>About the app</h2>
+      <p>SquirrelVault Tracker is a fast, simple inventory & expiry tracker for your items.</p>
+      <ul>
+        <li>Quick item management with notes and photos</li>
+        <li>Swipe left to delete items</li>
+        <li>Export full product list as <b>PNG</b></li>
+        <li>Smart reminders via notifications</li>
+        <li>Offline storage; <i>cloud sync coming soon</i></li>
+      </ul>
+    </div>
 
     <div class="grid">
       <div class="card">
@@ -48,9 +67,42 @@
 
     <div class="card">
       <h2>FAQ</h2>
-      <details><summary>How to restore purchases?</summary><p>Open the app → Profile → Manage Subscription / Restore Purchases.</p></details>
-      <details><summary>Data export</summary><p>Profile → Export. You’ll receive a .zip file with your data.</p></details>
-      <details><summary>Contact support from the app</summary><p>Profile → Contact Support. It opens an email draft with optional diagnostics attached.</p></details>
+
+      <details open>
+        <summary>Is the app free? Are there purchases?</summary>
+        <p>There are <b>no in-app purchases</b> at the moment. Some advanced features may become paid later — we’ll announce it in the app and update this page.</p>
+      </details>
+
+      <details>
+        <summary>How to export my inventory as <b>PNG</b>?</summary>
+        <p>Open the app → <b>Profile</b> → <b>Export</b> → choose <b>Inventory (PNG)</b> → Share or Save. You’ll get a single PNG with your product list for easy sharing or printing.</p>
+      </details>
+
+      <details>
+        <summary>How to delete an item?</summary>
+        <p>In any list, <b>swipe left</b> on the item → tap <b>Delete</b>. You can also use <b>Edit</b> to modify name, quantity or notes.</p>
+      </details>
+
+      <details>
+        <summary>How to enable notifications?</summary>
+        <p>In the app: <b>Profile → Notifications</b> — enable reminders and set the time.</p>
+        <p>In iOS settings (if needed): <b>Settings → Notifications → SquirrelVault Tracker</b> — allow notifications.</p>
+      </details>
+
+      <details>
+        <summary>Where are my data stored? Is there cloud sync?</summary>
+        <p>Your data are stored <b>locally on your device</b>. Cloud sync is not available yet — we’re working on it and will update this page when it’s ready.</p>
+      </details>
+
+      <details>
+        <summary>How to clear all local data?</summary>
+        <p><b>Profile → Clear All Storage</b>. This permanently removes local data from the device.</p>
+      </details>
+
+      <details>
+        <summary>How to contact support from the app?</summary>
+        <p><b>Profile → Contact Support</b>. This opens an email draft to our support address; you can attach screenshots or a short video.</p>
+      </details>
     </div>
 
     <footer>
