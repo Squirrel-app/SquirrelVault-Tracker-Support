@@ -5,194 +5,143 @@
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <title>SquirrelVault Tracker — Privacy Policy & Disclaimer</title>
 <meta name="description" content="Privacy Policy & Disclaimer for SquirrelVault Tracker (EU, Canada, USA)." />
+
 <style>
   :root {
-    --bg: #ffffff; --fg: #0f172a; --muted:#475569; --card:#f8fafc; --border:#e2e8f0; --link:#2563eb;
+    --bg: #FFF7EF;
+    --fg: #2B2B2B;
+    --muted: #6B6B6B;
+    --card: #FFFFFF;
+    --border: #F2E6DA;
+    --accent: #FFA74A;
+    --accent-strong: #FF8C1F;
+    --link: var(--accent);
+    --shadow: 0 6px 24px rgba(255,140,31,.15);
+    --radius: 18px;
   }
+
   @media (prefers-color-scheme: dark) {
-    :root { --bg:#0b1020; --fg:#e6e8ee; --muted:#9aa3b2; --card:#121a33; --border:#233253; --link:#7aa2ff; }
+    :root {
+      --bg: #19130E;
+      --fg: #EFE9E3;
+      --muted: #B7ADA6;
+      --card: #231A13;
+      --border: #3B2C20;
+      --accent: #FF9E3A;
+      --accent-strong: #FFB25E;
+      --link: var(--accent);
+      --shadow: 0 8px 28px rgba(255,158,58,.18);
+    }
   }
+
   * { box-sizing: border-box; }
   body {
-    margin: 0; font: 16px/1.65 system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial, sans-serif;
-    background: var(--bg); color: var(--fg);
+    margin: 0;
+    font: 16px/1.65 system-ui, -apple-system, Segoe UI, Inter, Roboto, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--fg);
   }
-  .wrap { max-width: 940px; margin: 0 auto; padding: 40px 20px 80px; }
-  header { margin-bottom: 28px; }
-  h1 { font-size: 2rem; margin: 0 0 8px; }
-  .sub { color: var(--muted); font-size: .95rem; }
+
+  .wrap {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 40px 20px 80px;
+  }
+
+  header { margin-bottom: 24px; }
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 10px;
+  }
+  .logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, var(--accent), var(--accent-strong));
+    box-shadow: var(--shadow);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 800;
+    font-size: 18px;
+    letter-spacing: .5px;
+  }
+  h1 { font-size: 1.9rem; margin: 0; }
+  .sub { color: var(--muted); font-size: .95rem; margin-top: 6px; }
+
   .card {
-    background: var(--card); border: 1px solid var(--border);
-    border-radius: 14px; padding: 22px; margin: 18px 0;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 22px;
+    margin: 18px 0;
   }
+
   h2 { font-size: 1.25rem; margin: 26px 0 10px; }
   h3 { font-size: 1.05rem; margin: 22px 0 10px; }
   a { color: var(--link); text-decoration: none; }
   a:hover { text-decoration: underline; }
-  code, .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: .95em; }
-  ul { padding-left: 20px; }
   table { width: 100%; border-collapse: collapse; margin: 10px 0 6px; }
   th, td { border: 1px solid var(--border); padding: 10px; text-align: left; vertical-align: top; }
   th { background: rgba(127,127,127,.08); }
-  .toc a { display: inline-block; margin: 4px 12px 4px 0; }
-  footer { margin-top: 36px; color: var(--muted); font-size: .9rem; }
-  .badge { display:inline-block; padding:2px 8px; border:1px solid var(--border); border-radius:999px; font-size:.8rem; color:var(--muted) }
 </style>
 </head>
 <body>
 <main class="wrap">
   <header>
-    <h1>SquirrelVault Tracker — Privacy Policy &amp; Disclaimer</h1>
-    <div class="sub">
-      Effective Date: <time datetime="2025-08-15">15 August 2025</time> •
-      Regions: EU (GDPR), Canada (PIPEDA), USA (CalOPPA/CCPA)
+    <div class="brand">
+      <div class="logo">SV</div>
+      <div>
+        <h1>SquirrelVault Tracker — Privacy Policy & Disclaimer</h1>
+        <div class="sub">
+          Effective Date: <time datetime="2025-08-15">15 August 2025</time> •
+          Regions: EU (GDPR), Canada (PIPEDA), USA (CalOPPA/CCPA)
+        </div>
+      </div>
     </div>
-    <div class="card">
-      <strong>Developer (Controller):</strong> <span class="mono">[Your Name]</span>, individual developer (Portugal).<br/>
-      <strong>Contact:</strong> <a href="mailto:squirrelvault.tracker@gmail.com">squirrelvault.tracker@gmail.com</a>
-    </div>
-    <nav class="toc">
-      <a href="#1">1. Data We Collect</a>
-      <a href="#2">2. Legal Basis</a>
-      <a href="#3">3. Your Rights</a>
-      <a href="#4">4. Managing Data</a>
-      <a href="#5">5. Sharing & Transfers</a>
-      <a href="#6">6. Security</a>
-      <a href="#7">7. Disclaimer & Liability</a>
-      <a href="#8">8. Governing Law</a>
-      <a href="#9">9. Changes</a>
-      <a href="#10">10. Contact</a>
-    </nav>
   </header>
 
-  <section id="intro" class="card">
-    <p>
-      This Privacy Policy &amp; Disclaimer explains how SquirrelVault Tracker (“the App”) handles your information.
-      By using the App, you agree to this document. If you do not agree, please do not use the App.
-    </p>
+  <section class="card">
+    <p>This Privacy Policy & Disclaimer explains how SquirrelVault Tracker (“the App”) handles your information. By using the App, you agree to this document. If you do not agree, please do not use the App.</p>
   </section>
 
   <section id="1">
-    <h2>1) Data We Collect &amp; Purpose</h2>
-    <h3>1.1 Authentication (Required to Use the App)</h3>
+    <h2>1) Data We Collect & Purpose</h2>
+    <h3>1.1 Authentication</h3>
     <ul>
-      <li>Sign‑in via <strong>Google</strong>, <strong>Apple</strong>, or <strong>Facebook</strong>.</li>
-      <li>We obtain your <em>user identifier (UID)</em>, <em>email address</em>, and (if available) <em>display name</em>.</li>
-      <li><em>Purpose:</em> account access, basic security, and providing the App functionality.</li>
+      <li>Sign-in via Google, Apple, or Facebook.</li>
+      <li>We obtain your user identifier (UID), email address, and (if available) display name.</li>
+      <li>Purpose: account access, security, and providing the App functionality.</li>
     </ul>
-
-    <h3>1.2 Local Content (On Your Device Only)</h3>
+    <h3>1.2 Local Content</h3>
     <ul>
-      <li>Your lists, checklist items, titles, notes, completion marks and similar content are stored <strong>locally on your device</strong> (e.g., Core Data).</li>
-      <li>We do <strong>not</strong> have access to this content unless you choose to share it (e.g., via email export).</li>
+      <li>Your checklists, items, titles, and notes are stored locally on your device.</li>
+      <li>We do not have access to this content unless you share it.</li>
     </ul>
-
-    <h3>1.3 Support Emails (Optional)</h3>
+    <h3>1.3 Support Emails</h3>
     <ul>
-      <li>If you email us, you choose what to include (subject, text, attachments). Your email provider processes the message.</li>
+      <li>If you email us, you choose what to include. Your email provider processes the message.</li>
     </ul>
-
-    <h3>1.4 Purchases &amp; Subscriptions</h3>
-    <p><span class="badge">Not applicable</span> The App currently has <strong>no</strong> in‑app purchases or subscriptions.</p>
-  </section>
-
-  <section id="2">
-    <h2>2) Legal Basis &amp; Scope (EU, Canada, USA)</h2>
-    <ul>
-      <li><strong>EU (GDPR):</strong> performance of a contract (using the App) and your consent for optional features.</li>
-      <li><strong>Canada (PIPEDA):</strong> limited to the purposes described; consent applies to optional features (e.g., support email).</li>
-      <li><strong>USA (CalOPPA/CCPA):</strong> we do not sell personal information. We collect only what’s necessary for authentication and operation.</li>
-    </ul>
-  </section>
-
-  <section id="3">
-    <h2>3) Your Rights</h2>
-    <p>You may have rights to access, correct, delete, or port certain data under applicable laws in your region.</p>
-    <ul>
-      <li>Manage your <strong>authentication profile</strong> via Google/Apple/Facebook.</li>
-      <li>Delete your <strong>local content</strong> in‑app or by uninstalling the App.</li>
-      <li>Contact us at <a href="mailto:squirrelvault.tracker@gmail.com">squirrelvault.tracker@gmail.com</a> for requests related to this Policy.</li>
-    </ul>
-  </section>
-
-  <section id="4">
-    <h2>4) Managing Data in the App</h2>
-    <ul>
-      <li><strong>Delete Account:</strong> available in the Profile screen. This removes your authentication record (subject to provider requirements, e.g., re‑auth).</li>
-      <li><strong>Clear Local Storage:</strong> available in Settings/Profile; or remove the App to erase local data.</li>
-      <li><strong>Export/Share:</strong> exports are generated on your device; you control where they go.</li>
-    </ul>
-  </section>
-
-  <section id="5">
-    <h2>5) Sharing &amp; International Transfers</h2>
-    <ul>
-      <li>We <strong>do not sell</strong> your personal data.</li>
-      <li>Third‑party providers: authentication by Google, Apple, or Facebook; your email provider if you contact support.</li>
-      <li>Some providers may process data outside your country (e.g., EU &lt;—&gt; US). They use lawful transfer mechanisms (e.g., SCCs or equivalent).</li>
-    </ul>
-  </section>
-
-  <section id="6">
-    <h2>6) Security</h2>
-    <p>
-      We apply reasonable technical and organizational measures (e.g., TLS, OS‑level protections, data minimization). No method is 100% secure.
-      You are responsible for device security (passcode, OS updates, backups).
-    </p>
+    <h3>1.4 Purchases & Subscriptions</h3>
+    <p>Not applicable. The App has no in-app purchases or subscriptions.</p>
   </section>
 
   <section id="7" class="card">
-    <h2>7) Disclaimer &amp; Limitation of Liability</h2>
-    <p><strong>AS IS / AS AVAILABLE.</strong> The App is provided “as is” and “as available,” without warranties of any kind, express or implied,
-      including, without limitation, warranties of merchantability, fitness for a particular purpose, accuracy, reliability, or non‑infringement.</p>
-    <p><strong>Use at Your Own Risk.</strong> To the maximum extent permitted by applicable law, we are not liable for any kind of damages or losses
-      (direct, indirect, incidental, special, consequential, punitive, exemplary), including but not limited to personal injury, health issues, data loss,
-      lost profits, loss of goodwill, device damage, service interruption, or other intangible losses, arising out of or related to your use of or inability to use the App.</p>
-    <p><strong>No Professional Advice.</strong> The App does not provide medical, legal, financial, or other professional advice. Always seek a qualified professional.</p>
-    <p><strong>Third‑Party Services.</strong> We are not responsible for Google/Apple/Facebook sign‑in services or your email provider. Their policies apply to their services.</p>
-    <p><strong>Maximum Extent.</strong> Where some jurisdictions do not allow exclusions/limitations, our liability shall be limited to the maximum extent permitted by law.</p>
-  </section>
-
-  <section id="8">
-    <h2>8) Governing Law &amp; Dispute Resolution</h2>
-    <p>
-      This document is governed by the laws of Portugal (EU). Where local mandatory laws provide stronger protections, those prevail.
-      You agree to resolve disputes before the competent courts of Portugal, to the extent permitted by law.
-    </p>
-  </section>
-
-  <section id="9">
-    <h2>9) Changes to This Policy</h2>
-    <p>
-      We may update this Policy from time to time (e.g., if we add cloud sync or analytics). We will update the Effective Date above and may display an in‑app notice.
-      Your continued use after changes means you accept the updated version.
-    </p>
+    <h2>7) Disclaimer & Limitation of Liability</h2>
+    <p>The App is provided “AS IS” and “AS AVAILABLE,” without warranties of any kind. Use at your own risk. We are not liable for any damages, including but not limited to personal injury, health issues, data loss, or financial loss, to the maximum extent permitted by law.</p>
+    <p>The App does not provide professional advice. We are not responsible for third-party services such as Google, Apple, or Facebook sign-in, or your email provider.</p>
   </section>
 
   <section id="10" class="card">
     <h2>10) Contact</h2>
-    <p>
-      Email: <a href="mailto:squirrelvault.tracker@gmail.com">squirrelvault.tracker@gmail.com</a><br/>
-      Developer: <span class="mono">[Your Name], individual developer</span>
-    </p>
+    <p>Email: <a href="mailto:squirrelvault.tracker@gmail.com">squirrelvault.tracker@gmail.com</a></p>
   </section>
 
-  <section class="card" aria-label="Summary">
-    <h2>Summary</h2>
-    <table>
-      <thead><tr><th>Topic</th><th>Key Points</th></tr></thead>
-      <tbody>
-        <tr><td>Authentication</td><td>Google/Apple/Facebook UID, email, display name only.</td></tr>
-        <tr><td>Content</td><td>Stored locally on your device; we don’t see it.</td></tr>
-        <tr><td>Purchases</td><td>Not applicable (no IAP/subscriptions).</td></tr>
-        <tr><td>Sharing</td><td>No sale of personal data; 3rd parties limited to sign‑in and your email provider.</td></tr>
-        <tr><td>Liability</td><td>App “AS IS”; no warranties; strong limitation of liability to the maximum extent allowed.</td></tr>
-        <tr><td>Law</td><td>Portugal/EU governing law; local mandatory laws prevail where applicable.</td></tr>
-      </tbody>
-    </table>
-  </section>
-
-  <footer>
+  <footer style="margin-top:36px;color:var(--muted);font-size:.9rem;">
     © <span id="y"></span> SquirrelVault Tracker • This page is for users in the EU, Canada, and the USA.
   </footer>
 </main>
