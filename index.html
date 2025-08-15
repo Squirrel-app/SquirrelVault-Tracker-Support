@@ -1,149 +1,184 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>SquirrelVault Tracker — Support</title>
-  <meta name="description" content="Official support for SquirrelVault Tracker: About, Quick Start, FAQs, Privacy Policy and Terms. Google sign-in required. Export inventory as PDF. Privacy by default.">
-  <link rel="icon" type="image/png" href="./squirrelvault-icon.png">
-  <link rel="apple-touch-icon" href="./squirrelvault-icon.png">
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>SquirrelVault Tracker — Support</title>
+<meta name="description" content="Official Support for SquirrelVault Tracker: About, Quick Start, FAQs, Contact, Privacy, and EULA." />
+<link rel="icon" type="image/png" href="./squirrelvault-icon.png" />
+<link rel="apple-touch-icon" href="./squirrelvault-icon.png" />
 
-  <!-- Social preview -->
-  <meta property="og:title" content="SquirrelVault Tracker — Support">
-  <meta property="og:description" content="Track pantry products and medicine & vitamins with smart reminders. Export as PDF. Privacy by default.">
-  <meta property="og:image" content="https://squirrel-app.github.io/SquirrelVault-Tracker-Support/squirrelvault-icon.png">
-  <meta property="og:type" content="website">
-  <meta name="twitter:card" content="summary_large_image">
+<!-- Social preview -->
+<meta property="og:title" content="SquirrelVault Tracker — Support" />
+<meta property="og:description" content="Fast inventory & expiry tracker. Help, FAQs, Privacy, and EULA." />
+<meta property="og:image" content="https://squirrel-app.github.io/SquirrelVault-Tracker-Support/squirrelvault-icon.png" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
 
-  <style>
-    :root { --border:#eaeaea; --muted:#666; --bg:#ffffff; }
-    * { box-sizing: border-box; }
-    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; margin:0; color:#0a0a0a; background:var(--bg); }
-    .container { max-width: 920px; margin: 0 auto; padding: 24px; }
-    header { display:flex; align-items:center; gap:14px; margin:10px 0 24px; }
-    header img { width:48px; height:48px; border-radius:12px; }
-    h1 { font-size:28px; margin:0; }
-    .subtitle { color: var(--muted); }
-    .card { border:1px solid var(--border); border-radius:16px; padding:20px; margin:16px 0; }
-    a { color:#0a7aff; text-decoration:none; }
-    details summary { cursor:pointer; font-weight:600; }
-    .btn { display:inline-block; padding:10px 14px; border-radius:12px; border:1px solid var(--border); }
-    footer { margin:36px 0 8px; font-size:14px; color:var(--muted); }
-    .grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(260px,1fr)); gap:16px; }
-    ul { margin:8px 0 0 18px; }
-    .lead { font-size:16px; color:#222; }
-  </style>
+<style>
+  :root {
+    --bg: #FFF7EF;
+    --fg: #2B2B2B;
+    --muted: #6B6B6B;
+    --card: #FFFFFF;
+    --border: #F2E6DA;
+    --accent: #FFA74A;
+    --accent-strong: #FF8C1F;
+    --link: var(--accent);
+    --shadow: 0 6px 24px rgba(255,140,31,.15);
+    --radius: 18px;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #19130E;
+      --fg: #EFE9E3;
+      --muted: #B7ADA6;
+      --card: #231A13;
+      --border: #3B2C20;
+      --accent: #FF9E3A;
+      --accent-strong: #FFB25E;
+      --link: var(--accent);
+      --shadow: 0 8px 28px rgba(255,158,58,.18);
+    }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; font: 16px/1.65 system-ui,-apple-system,Segoe UI,Inter,Roboto,Arial,sans-serif; background: var(--bg); color: var(--fg); }
+  .wrap { max-width: 960px; margin: 0 auto; padding: 40px 20px 80px; }
+  header { margin-bottom: 24px; }
+  .brand { display: flex; align-items: center; gap: 12px; margin-bottom: 10px; }
+  .logo {
+    width: 40px; height: 40px; border-radius: 12px;
+    background: linear-gradient(135deg, var(--accent), var(--accent-strong));
+    box-shadow: var(--shadow);
+    display: flex; align-items: center; justify-content: center;
+    color: white; font-weight: 800; font-size: 18px; letter-spacing: .5px;
+    overflow: hidden;
+  }
+  .logo img { width: 100%; height: 100%; border-radius: 12px; }
+  h1 { font-size: 1.9rem; margin: 0; }
+  .sub { color: var(--muted); font-size: .95rem; margin-top: 6px; }
+  nav.toc a { display: inline-block; margin: 4px 12px 4px 0; color: var(--link); text-decoration: none; }
+  nav.toc a:hover { text-decoration: underline; }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 22px;
+    margin: 18px 0;
+  }
+  h2 { font-size: 1.25rem; margin: 26px 0 10px; }
+  h3 { font-size: 1.05rem; margin: 22px 0 10px; }
+  a { color: var(--link); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  ul { padding-left: 20px; }
+  details summary { cursor: pointer; font-weight: 700; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; }
+  .btn { display:inline-block; padding:10px 14px; border-radius:12px; border:1px solid var(--border); text-decoration:none; }
+  footer { margin-top: 36px; color: var(--muted); font-size: .9rem; display:flex; gap:12px; flex-wrap:wrap; align-items:center; }
+  .pill { border:1px solid var(--border); border-radius:999px; padding:6px 10px; }
+</style>
 </head>
 <body>
-  <div class="container">
-    <header>
-      <img src="./squirrelvault-icon.png" alt="SquirrelVault Tracker">
+<main class="wrap">
+  <header>
+    <div class="brand">
+      <div class="logo"><img src="squirrelvault-icon.png" alt="SquirrelVault Tracker logo"></div>
       <div>
         <h1>SquirrelVault Tracker — Support</h1>
-        <div class="subtitle">We’re here to help.</div>
-      </div>
-    </header>
-
-    <!-- About the app -->
-    <div class="card">
-      <h2>About the app</h2>
-      <p class="lead">
-        <b>SquirrelVault Tracker</b> is a fast, minimal inventory & expiry tracker for home and work.
-        It helps you stay on top of <b>pantry products</b> and especially <b>medicine & vitamins</b> — the items whose expiry dates people most often miss.
-      </p>
-      <ul>
-        <li><b>Smart reminders</b> before items expire</li>
-        <li><b>Fast capture</b> with notes, photos, and <b>barcode scan</b></li>
-        <li><b>Export full list as PDF</b> for printing or sharing</li>
-        <li><b>Privacy by default</b> — items and notes are stored locally on your device</li>
-      </ul>
-      <p class="lead"><b>Google sign-in is required</b> for secure access and upcoming features (cloud storage, shared vaults). The app is free; there are no in-app purchases at the moment.</p>
-    </div>
-
-    <!-- Quick Start -->
-    <div class="card">
-      <h2>Quick Start</h2>
-      <ul>
-        <li><b>Sign in with Google:</b> required at first launch for secure access.</li>
-        <li><b>Add your first item:</b> Home → “+” → name, quantity, expiry date (or use <b>Scan barcode</b>).</li>
-        <li><b>Delete:</b> swipe left on an item → <b>Delete</b>.</li>
-        <li><b>Export inventory (PDF):</b> Profile → <b>Share (PDF)</b> → Save or Share.</li>
-        <li><b>Enable notifications:</b> Profile → <b>Notifications</b>. If needed, iOS Settings → Notifications → <b>SquirrelVault Tracker</b> → Allow.</li>
-        <li><b>Clear all local data:</b> Profile → <b>Clear All Storage</b> (permanent).</li>
-      </ul>
-    </div>
-
-    <div class="grid">
-      <div class="card">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:squirrelvault.tracker@gmail.com">squirrelvault.tracker@gmail.com</a></p>
-        <p>Please include your device model, iOS version, app version, and (if possible) a short screen recording.</p>
-      </div>
-
-      <div class="card">
-        <h2>Policies</h2>
-        <p><a class="btn" href="./privacy.html">Privacy Policy</a> &nbsp; <a class="btn" href="./terms.html">Terms / EULA</a></p>
+        <div class="sub">We’re here to help. Updated <time datetime="2025-08-15">15 August 2025</time></div>
       </div>
     </div>
+    <nav class="toc">
+      <a href="#about">About</a>
+      <a href="#quickstart">Quick Start</a>
+      <a href="#faqs">FAQs</a>
+      <a href="#contact">Contact</a>
+      <a href="#policies">Policies</a>
+    </nav>
+  </header>
 
-    <!-- FAQs -->
-    <div class="card">
-      <h2>FAQs</h2>
+  <section id="about" class="card">
+    <h2>About</h2>
+    <p>
+      <strong>SquirrelVault Tracker</strong> is a fast, minimal inventory & expiry tracker. It helps you stay on top of
+      <strong>pantry products</strong> and especially <strong>medicine & vitamins</strong> — the items whose expiry dates are easy to miss.
+    </p>
+    <ul>
+      <li><strong>Smart reminders</strong> before items expire</li>
+      <li><strong>Fast capture</strong> with notes, photos, and barcode scan</li>
+      <li><strong>Export</strong> your list as a single PDF</li>
+      <li><strong>Privacy by default</strong> — items & notes are stored locally on your device</li>
+    </ul>
+    <p><strong>Google sign‑in is required</strong> for authentication and upcoming features (cloud storage, shared vaults).</p>
+  </section>
 
-      <details open>
-        <summary>Is the app free? Are there in-app purchases?</summary>
-        <p>The app is free right now. There are <b>no in-app purchases</b> at the moment. If pricing changes, we’ll announce it in the app and update this page.</p>
-      </details>
+  <section id="quickstart" class="card">
+    <h2>Quick Start</h2>
+    <ul>
+      <li><strong>Sign in:</strong> use Google at first launch.</li>
+      <li><strong>Add item:</strong> Home → “+” → name, quantity, expiry (or <em>Scan barcode</em>).</li>
+      <li><strong>Delete:</strong> swipe left on an item → <em>Delete</em>.</li>
+      <li><strong>Export (PDF):</strong> Profile → <em>Share (PDF)</em> → Save or Share.</li>
+      <li><strong>Notifications:</strong> Profile → <em>Notifications</em> (enable in iOS Settings if needed).</li>
+      <li><strong>Clear all local data:</strong> Profile → <em>Clear All Storage</em> (permanent).</li>
+    </ul>
+  </section>
 
-      <details>
-        <summary>Do I need an account? Why Google sign-in?</summary>
-        <p>Yes. <b>Google sign-in is required</b> for authentication, secure access, and upcoming features like cloud storage and shared vaults. We only receive your basic Google profile (email, display name, avatar if any, and a technical account ID) for sign-in and security.</p>
-      </details>
+  <section id="faqs" class="card">
+    <h2>FAQs</h2>
 
-      <details>
-        <summary>Do you collect personal data or send my inventory to servers?</summary>
-        <p>We don’t read your email or access your contacts. Your inventory and notes are currently <b>not sent to our servers</b> and stay on your device. See the <a href="./privacy.html">Privacy Policy</a> for details.</p>
-      </details>
+    <details open>
+      <summary>Is the app free? Any in‑app purchases?</summary>
+      <p>The app is free right now. There are <strong>no in‑app purchases</strong> at the moment. If this changes, we’ll update this page and the app.</p>
+    </details>
 
-      <details>
-        <summary>How do I add items quickly?</summary>
-        <p>Tap <b>+</b> on Home to add an item in seconds. Use <b>Scan barcode</b> to speed up input.</p>
-      </details>
+    <details>
+      <summary>Do I need an account? Why Google sign‑in?</summary>
+      <p>Yes. <strong>Google sign‑in is required</strong> for secure access and future features (cloud sync, shared vaults).
+         We receive only basic profile info from the provider (email, display name, avatar if any, and a technical account ID) for authentication.</p>
+    </details>
 
-      <details>
-        <summary>How do I delete an item?</summary>
-        <p>Swipe <b>left</b> on the item and tap <b>Delete</b>.</p>
-      </details>
+    <details>
+      <summary>Is my inventory uploaded to servers?</summary>
+      <p>Your items and notes are <strong>stored locally on your device</strong>. They are not uploaded to our servers. See the <a href="./privacy.html">Privacy Policy</a> for details.</p>
+    </details>
 
-      <details>
-        <summary>How do I export my list?</summary>
-        <p>Open the app → <b>Profile</b> → <b>Share (PDF)</b> → Save or Share. You’ll get a single <b>PDF</b> with your full list.</p>
-      </details>
+    <details>
+      <summary>Will I lose data if I delete the app or switch phones?</summary>
+      <p>Until cloud sync is available, data live locally. Deleting the app or moving to a new device without restoring an iOS backup will not transfer your data.</p>
+    </details>
 
-      <details>
-        <summary>Where are my data stored? Is there cloud sync?</summary>
-        <p>Your inventory is stored <b>locally on your device</b>. Cloud sync is not available yet — we’ll update this page when it’s ready.</p>
-      </details>
+    <details>
+      <summary>How do I request account deletion?</summary>
+      <p>Email <a href="mailto:squirrelvault.tracker@gmail.com">squirrelvault.tracker@gmail.com</a> from the address used to sign in and request account deletion. After confirmation, all authentication data we store will be erased.
+         Local items on your device remain under your control; delete them in the app or uninstall the app.</p>
+    </details>
+  </section>
 
-      <details>
-        <summary>Will I lose my data if I delete the app or switch phones?</summary>
-        <p>Until cloud sync arrives, data live locally. If you delete the app or move to a new device without restoring an iOS backup, your data won’t transfer.</p>
-      </details>
+  <section id="contact" class="card">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:squirrelvault.tracker@gmail.com">squirrelvault.tracker@gmail.com</a></p>
+    <p>Please include your device model, iOS version, app version, and (if possible) a short screen recording.</p>
+  </section>
 
-      <details>
-        <summary>What kinds of items is this best for?</summary>
-        <p>Pantry <b>products</b>, <b>medicine & vitamins</b>, cosmetics, and household supplies.</p>
-      </details>
+  <section id="policies" class="card">
+    <h2>Policies</h2>
+    <p>
+      <a class="btn" href="./privacy.html">Privacy Policy</a>
+      &nbsp;&nbsp;
+      <a class="btn" href="./eula.html">End User License Agreement (EULA)</a>
+    </p>
+  </section>
 
-      <details>
-        <summary>How do I contact support?</summary>
-        <p>Email: <a href="mailto:squirrelvault.tracker@gmail.com">squirrelvault.tracker@gmail.com</a>. Please include your device model, iOS version, app version, and a short screen recording if possible.</p>
-      </details>
-    </div>
-
-    <footer>
-      © 2025 SquirrelVault Tracker™. All rights reserved.
-    </footer>
-  </div>
+  <footer>
+    <span class="pill">© <span id="y"></span> SquirrelVault Tracker</span>
+    <span class="pill">Support • EU/Canada/USA</span>
+    <span class="pill"><a href="#contact">Contact</a></span>
+  </footer>
+</main>
+<script>
+  document.getElementById('y').textContent = new Date().getFullYear();
+</script>
 </body>
 </html>
