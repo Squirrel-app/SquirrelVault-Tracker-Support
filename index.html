@@ -4,13 +4,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>SquirrelVault Tracker — Support</title>
-  <meta name="description" content="Support, FAQs, Privacy, and Terms for SquirrelVault Tracker iOS app. No purchases yet. Export inventory as PNG.">
+  <meta name="description" content="Official support for SquirrelVault Tracker: About, Quick Start, FAQs, Privacy Policy and Terms. No purchases yet. Export inventory as PNG.">
   <link rel="icon" type="image/png" href="./squirrelvault-icon.png">
   <link rel="apple-touch-icon" href="./squirrelvault-icon.png">
 
   <!-- Social preview -->
   <meta property="og:title" content="SquirrelVault Tracker — Support">
-  <meta property="og:description" content="Help, FAQs, and policies for SquirrelVault Tracker.">
+  <meta property="og:description" content="Track your inventory and expiries with smart reminders. PNG export. Privacy by default.">
   <meta property="og:image" content="https://squirrel-app.github.io/SquirrelVault-Tracker-Support/squirrelvault-icon.png">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary_large_image">
@@ -31,7 +31,7 @@
     footer { margin:36px 0 8px; font-size:14px; color:var(--muted); }
     .grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(260px,1fr)); gap:16px; }
     ul { margin:8px 0 0 18px; }
-    code { background:#f6f6f6; padding:2px 6px; border-radius:6px; }
+    .lead { font-size:16px; color:#222; }
   </style>
 </head>
 <body>
@@ -44,16 +44,32 @@
       </div>
     </header>
 
-    <!-- About -->
+    <!-- About the app -->
     <div class="card">
       <h2>About the app</h2>
-      <p>SquirrelVault Tracker is a fast, simple inventory & expiry tracker for your items.</p>
+      <p class="lead">
+        <b>SquirrelVault Tracker</b> is a fast, minimal inventory & expiry tracker for home and work.
+        It helps you keep items organized, avoid waste, and stay on top of what expires soon.
+      </p>
       <ul>
-        <li>Quick item management with notes and photos</li>
-        <li>Swipe left to delete items</li>
-        <li>Export full product list as <b>PNG</b></li>
-        <li>Smart reminders via notifications</li>
-        <li>Offline storage; <i>cloud sync coming soon</i></li>
+        <li><b>Smart reminders</b> before items expire</li>
+        <li><b>Fast capture</b> with notes and photos</li>
+        <li><b>Barcode scan</b> to speed up adding items</li>
+        <li><b>Export full product list as PNG</b> for printing or sharing</li>
+        <li><b>Privacy by default</b> — data are stored locally on your device</li>
+      </ul>
+      <p class="lead"><i>Cloud sync via iCloud — coming soon.</i></p>
+    </div>
+
+    <!-- Quick Start -->
+    <div class="card">
+      <h2>Quick Start</h2>
+      <ul>
+        <li><b>Add your first item:</b> Home → “+” → name, quantity, expiry date (or use <b>Scan barcode</b>).</li>
+        <li><b>Delete:</b> swipe left on an item → <b>Delete</b>.</li>
+        <li><b>Export inventory (PNG):</b> Profile → <b>Export</b> → <b>Inventory (PNG)</b> → Share or Save.</li>
+        <li><b>Enable notifications:</b> Profile → <b>Notifications</b>. If needed, in iOS: Settings → Notifications → SquirrelVault Tracker → Allow.</li>
+        <li><b>Clear all local data:</b> Profile → <b>Clear All Storage</b> (permanent).</li>
       </ul>
     </div>
 
@@ -61,7 +77,7 @@
       <div class="card">
         <h2>Contact</h2>
         <p>Email: <a href="mailto:squirrelvault.tracker@gmail.com">squirrelvault.tracker@gmail.com</a></p>
-        <p>Please include device model, iOS version, app version, and (if possible) a short screen recording.</p>
+        <p>Please include your device model, iOS version, app version, and (if possible) a short screen recording.</p>
       </div>
 
       <div class="card">
@@ -71,41 +87,36 @@
     </div>
 
     <div class="card">
-      <h2>FAQ</h2>
+      <h2>FAQs</h2>
 
       <details open>
         <summary>Is the app free? Are there purchases?</summary>
-        <p>There are <b>no in-app purchases</b> at the moment. We’ll announce changes in the app and update this page.</p>
+        <p>There are <b>no in-app purchases</b> at the moment. If pricing changes in the future, we’ll announce it in the app and update this page.</p>
       </details>
 
       <details>
-        <summary>How to export my inventory as <b>PNG</b>?</summary>
-        <p>Open the app → <b>Profile</b> → <b>Export</b> → choose <b>Inventory (PNG)</b> → Share or Save. You’ll get a single PNG with your product list for easy sharing or printing.</p>
+        <summary>How do I export my inventory as <b>PNG</b>?</summary>
+        <p>Open the app → <b>Profile</b> → <b>Export</b> → choose <b>Inventory (PNG)</b> → Share or Save. You’ll get a single PNG with your product list.</p>
       </details>
 
       <details>
-        <summary>How to delete an item?</summary>
-        <p>In any list, <b>swipe left</b> on the item → tap <b>Delete</b>. You can also use <b>Edit</b> to modify name, quantity or notes.</p>
+        <summary>How do I delete an item?</summary>
+        <p>In any list, <b>swipe left</b> on the item → tap <b>Delete</b>.</p>
       </details>
 
       <details>
-        <summary>How to enable notifications?</summary>
-        <p>In the app: <b>Profile → Notifications</b> — enable reminders and set the time.</p>
-        <p>In iOS settings (if needed): <b>Settings → Notifications → SquirrelVault Tracker</b> — allow notifications.</p>
+        <summary>How do notifications work?</summary>
+        <p>In the app: <b>Profile → Notifications</b> — turn on reminders and set the time.<br>
+           In iOS: <b>Settings → Notifications → SquirrelVault Tracker</b> — allow notifications.</p>
       </details>
 
       <details>
-        <summary>Where are my data stored? Cloud sync?</summary>
+        <summary>Where are my data stored? Is there cloud sync?</summary>
         <p>Your data are stored <b>locally on your device</b>. Cloud sync is not available yet — we’re working on it and will update this page when it’s ready.</p>
       </details>
 
       <details>
-        <summary>How to clear all local data?</summary>
-        <p><b>Profile → Clear All Storage</b>. This permanently removes local data from the device.</p>
-      </details>
-
-      <details>
-        <summary>How to contact support from the app?</summary>
+        <summary>How do I contact support from the app?</summary>
         <p><b>Profile → Contact Support</b>. This opens an email draft to our support address; you can attach screenshots or a short video.</p>
       </details>
     </div>
