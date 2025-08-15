@@ -10,8 +10,6 @@ This repository contains the public **Support page**, **Privacy Policy**, and **
 - **Privacy Policy** — https://squirrel-app.github.io/SquirrelVault-Tracker-Support/privacy.html
 - **Terms of Use / EULA** — https://squirrel-app.github.io/SquirrelVault-Tracker-Support/terms.html
 
-> If your org or repo name differ, replace `squirrel-app` and `SquirrelVault-Tracker-Support` above.
-
 ## Contact
 
 📧 Email: **squirrelvault.tracker@gmail.com**
