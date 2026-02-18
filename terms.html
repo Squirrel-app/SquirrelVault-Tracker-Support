@@ -61,7 +61,7 @@
   .card {
     background: var(--card);
     border: 1px solid var(--border);
-    border-radius: var(--radius);
+    border-radius: 18px;
     box-shadow: var(--shadow);
     padding: 22px;
     margin: 18px 0;
@@ -71,10 +71,6 @@
   a { color: var(--link); text-decoration: none; }
   a:hover { text-decoration: underline; }
   ul { padding-left: 20px; }
-  details summary { cursor: pointer; font-weight: 700; }
-  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; }
-  .btn { display:inline-block; padding:10px 14px; border-radius:12px; border:1px solid var(--border); text-decoration:none; background: var(--card); }
-  .btn:hover { background: rgba(0,0,0,.03); }
   footer { margin-top: 36px; color: var(--muted); font-size: .9rem; display:flex; gap:12px; flex-wrap:wrap; align-items:center; }
   .pill { border:1px solid var(--border); border-radius:999px; padding:6px 10px; }
   :target { outline: 2px solid var(--accent); outline-offset: 6px; border-radius: 14px; }
@@ -88,13 +84,17 @@
       <div class="logo"><img src="squirrelvault-icon.png" alt="SquirrelVault Tracker logo"></div>
       <div>
         <h1>Terms of Use / EULA</h1>
-        <div class="sub">Updated <time datetime="2025-08-16">16 Aug 2025</time></div>
+        <div class="sub">Updated <time datetime="2026-02-18">18 Feb 2026</time></div>
       </div>
     </div>
     <nav class="toc">
       <a href="./index.html">← Back to Support</a>
       <a href="#license">License</a>
+      <a href="#accounts">Accounts</a>
       <a href="#use">Acceptable Use</a>
+      <a href="#pro">Subscriptions & Pro</a>
+      <a href="#ai">AI Features</a>
+      <a href="#cloud">Cloud Data</a>
       <a href="#ownership">Ownership</a>
       <a href="#warranty">Disclaimers</a>
       <a href="#liability">Limitation of Liability</a>
@@ -110,12 +110,12 @@
 
   <section id="license" class="card">
     <h2>License</h2>
-    <p>We grant you a limited, non‑exclusive, non‑transferable, revocable license to use the App on Apple‑branded devices that you own or control, as permitted by the App Store Terms and Usage Rules.</p>
+    <p>We grant you a limited, non-exclusive, non-transferable, revocable license to use the App on Apple-branded devices that you own or control, as permitted by the App Store Terms and Usage Rules.</p>
   </section>
 
   <section id="accounts" class="card">
-    <h2>Accounts & Access</h2>
-    <p>Sign‑in is required to access the App (Google, Apple, or Facebook). You are responsible for maintaining the security of your device and account. You must be legally permitted to use the App in your location.</p>
+    <h2>Accounts &amp; Access</h2>
+    <p>Sign-in may be required to access some or all features of the App (e.g., Google, Apple, or Facebook). You are responsible for maintaining the security of your device and account. You must be legally permitted to use the App in your location.</p>
   </section>
 
   <section id="use" class="card">
@@ -127,31 +127,58 @@
     </ul>
   </section>
 
-  <section id="ownership" class="card">
-    <h2>Ownership & Content</h2>
-    <p>The App and its contents are owned by us or our licensors and are protected by intellectual property laws. You retain ownership of your data you create in the App.</p>
+  <section id="pro" class="card">
+    <h2>Subscriptions &amp; Pro</h2>
+    <p>The App may offer optional paid subscriptions (for example, “Pro”) that unlock additional features or higher limits. Available plans, pricing, and benefits are shown in the App at the time of purchase.</p>
+
+    <h3>Billing &amp; renewal</h3>
+    <ul>
+      <li>Subscriptions are billed through your Apple ID account via the App Store.</li>
+      <li>Subscriptions automatically renew unless you cancel at least 24 hours before the end of the current period.</li>
+      <li>Your Apple ID account will be charged for renewal within 24 hours prior to the end of the current period.</li>
+      <li>You can manage or cancel your subscription in your App Store account settings after purchase.</li>
+    </ul>
+
+    <h3>Refunds</h3>
+    <p>Payments and refunds are handled by Apple under App Store policies. We do not process payments directly.</p>
+
+    <h3>Limits &amp; changes</h3>
+    <p>We may apply reasonable usage limits to protect the service (for example, monthly limits for AI scans). Limits may differ by plan and may change over time. Any material changes will be communicated in the App or on the Support page.</p>
   </section>
 
-  <section id="payments" class="card">
-    <h2>Payments</h2>
-    <p>The App is currently free with no in‑app purchases. If this changes, new terms may apply and will be presented before purchase.</p>
+  <section id="ai" class="card">
+    <h2>AI Features</h2>
+    <p>The App may include AI-powered features (for example, AI scan/autofill). AI output may be inaccurate or incomplete, and you are responsible for verifying information before relying on it.</p>
+    <p>You agree not to use AI features for unlawful purposes or to attempt to abuse, scrape, or overload the service.</p>
+  </section>
+
+  <section id="cloud" class="card">
+    <h2>Cloud Data</h2>
+    <p>When you are signed in, the App may store certain app data in the cloud to operate account-based features, such as inventory items you create, item notes, and categories/groups. The App does not upload your photos unless explicitly stated in the App.</p>
+    <p>We may restrict access to cloud features if required for security, maintenance, or to prevent abuse.</p>
+  </section>
+
+  <section id="ownership" class="card">
+    <h2>Ownership &amp; Content</h2>
+    <p>The App and its contents are owned by us or our licensors and are protected by intellectual property laws. You retain ownership of the data you create in the App.</p>
   </section>
 
   <section id="warranty" class="card">
     <h2>Disclaimers</h2>
-    <p>The App is provided “as is” without warranties of any kind. We do not warrant that the App will be uninterrupted, error‑free, or that defects will be corrected.</p>
+    <p>The App is provided “as is” without warranties of any kind. We do not warrant that the App will be uninterrupted, error-free, or that defects will be corrected.</p>
   </section>
 
   <section id="liability" class="card">
     <h2>Limitation of Liability</h2>
     <p>To the maximum extent permitted by law, we will not be liable for any indirect, incidental, special, consequential, exemplary, or punitive damages, or for any loss of use, data, or profits, arising out of or in connection with the App.</p>
-<p>Where liability cannot be excluded, our aggregate liability under these Terms will be limited to the greater of (a) the amount you paid (if any) to purchase the App, or (b) the fees you paid to us for in‑app purchases or subscriptions during the twelve (12) months preceding the event giving rise to the claim. If the App is free and you made no such payments, this cap is zero (0), except for any mandatory refunds required by applicable law.</p>
-<p>Your sole and exclusive remedy for any issue with the App is to stop using the App and, where applicable, request a refund from the point of purchase in accordance with the store’s policies.</p>
+    <p>Where liability cannot be excluded, our aggregate liability under these Terms will be limited to the greater of (a) the amount you paid (if any) to purchase the App, or (b) the fees you paid to us for in-app purchases or subscriptions during the twelve (12) months preceding the event giving rise to the claim. If you made no such payments, this cap is zero (0), except for any mandatory refunds required by applicable law.</p>
+    <p>Your sole and exclusive remedy for any issue with the App is to stop using the App and, where applicable, request a refund from the point of purchase in accordance with the store’s policies.</p>
   </section>
 
   <section id="termination" class="card">
     <h2>Termination</h2>
-    <p>You may stop using the App at any time. We may suspend or terminate access if you violate these Terms. You can delete your account in the App (Profile → Delete Account). Local data stored on your device can be cleared in the App or removed by uninstalling. We do not keep server backups of your inventory.</p>
+    <p>You may stop using the App at any time. We may suspend or terminate access if you violate these Terms.</p>
+    <p>You can delete your account in the App (if available). If you delete your account, we will remove or anonymize associated cloud data to the extent required and technically feasible. Local data stored on your device can be cleared in the App (if available) or removed by uninstalling the App.</p>
   </section>
 
   <section id="general" class="card">
