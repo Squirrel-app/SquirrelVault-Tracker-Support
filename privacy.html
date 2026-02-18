@@ -8,7 +8,7 @@
 <link rel="icon" type="image/png" href="./squirrelvault-icon.png" />
 <link rel="apple-touch-icon" href="./squirrelvault-icon.png" />
 <meta property="og:title" content="Privacy Policy — SquirrelVault Tracker" />
-<meta property="og:description" content="How we handle your data: account info, local storage, no selling of data." />
+<meta property="og:description" content="How we handle your data: account info, cloud storage for items/notes, AI scan OCR processing, no ads, no data sales." />
 <meta property="og:image" content="https://squirrel-app.github.io/SquirrelVault-Tracker-Support/squirrelvault-icon.png" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary_large_image" />
@@ -88,7 +88,7 @@
       <div class="logo"><img src="squirrelvault-icon.png" alt="SquirrelVault Tracker logo"></div>
       <div>
         <h1>Privacy Policy</h1>
-        <div class="sub">Updated <time datetime="2025-08-16">16 Aug 2025</time></div>
+        <div class="sub">Updated <time datetime="2026-02-18">18 Feb 2026</time></div>
       </div>
     </div>
     <nav class="toc">
@@ -96,6 +96,7 @@
       <a href="#summary">Summary</a>
       <a href="#data">Data We Collect</a>
       <a href="#use">How We Use Data</a>
+      <a href="#sharing">Sharing</a>
       <a href="#rights">Your Rights</a>
       <a href="#contact">Contact</a>
     </nav>
@@ -104,18 +105,31 @@
   <section id="summary" class="card">
     <h2>Summary</h2>
     <ul>
-      <li>We only collect the minimum account info from your sign‑in provider (Google, Apple, or Facebook): email, display name, avatar (if any), and a technical account ID.</li>
-      <li>Your inventory and notes are stored <strong>locally on your device</strong>. We do not upload them to our servers.</li>
-      <li>No ads and no data sales. We do not share personal data with third‑party marketers.</li>
+      <li>We collect the minimum account info from your sign-in provider (Google, Apple, or Facebook): email, display name, avatar (if any), and a technical account ID.</li>
+      <li>Your inventory data (items) and notes, as well as categories/groups, may be stored in the cloud (Firebase Firestore) to support account-based features.</li>
+      <li>If you use AI Scan, we process recognized text (OCR) to generate autofill suggestions. The app does not upload your photos as part of AI scan.</li>
+      <li>No ads and no data sales. We do not share personal data with third-party marketers.</li>
     </ul>
   </section>
 
   <section id="data" class="card">
     <h2>Data We Collect</h2>
+
     <h3>Account information</h3>
     <p>When you sign in with Google, Apple, or Facebook, we receive your email, display name, avatar URL (if available), and a technical account ID. This is used only to authenticate you and secure access to the app.</p>
+
+    <h3>App data (cloud)</h3>
+    <p>When you are signed in, we store app data in the cloud (Firebase Firestore), such as items you create, item notes, categories/groups, and related metadata (e.g., creation and update timestamps). This helps operate account-based features.</p>
+
     <h3>App data (local)</h3>
-    <p>Your items, notes, photos, and reminder settings are kept on your device. Until cloud sync is released, they are not transmitted to us.</p>
+    <p>Some app data is also stored locally on your device for performance and offline use. If you sign out, uninstall the app, or use in-app clear options, local data may be removed depending on the action.</p>
+
+    <h3>AI scan data</h3>
+    <p>If you use the AI scan feature, we process recognized text (OCR) from the product photo to generate autofill suggestions. The app does not upload your photos as part of AI scan.</p>
+
+    <h3>Device and technical information</h3>
+    <p>We may store basic technical metadata linked to your account (e.g., device family/model and iOS version) to help with security, debugging, and reliable operation of the app.</p>
+
     <h3>Crash logs</h3>
     <p>If enabled on your device, Apple may provide anonymous crash reports to help us fix bugs. These reports are handled by Apple and may be shared with us; they do not include your inventory content.</p>
   </section>
@@ -124,7 +138,9 @@
     <h2>How We Use Data</h2>
     <ul>
       <li>Authenticate your account and keep sessions secure.</li>
+      <li>Store and display your inventory and notes associated with your account.</li>
       <li>Send notifications you opt in to (e.g., expiry reminders).</li>
+      <li>Process AI scan requests to generate item autofill suggestions (when you choose to use this feature).</li>
       <li>Improve the app’s reliability and performance.</li>
     </ul>
     <p>We do not sell your data. We do not read your email or contacts.</p>
@@ -132,18 +148,20 @@
 
   <section id="sharing" class="card">
     <h2>Sharing</h2>
-    <p>We do not share personal data with third‑party advertisers or data brokers. Service providers only process data on our behalf as needed to operate the App.</p>
-<ul>
-  <li>Google — authentication (Google Sign‑In).</li>
-  <li>Apple — Sign in with Apple; anonymous crash reports (if you opted in on your device).</li>
-  <li>Meta (Facebook) — authentication (Facebook Login).</li>
-</ul>
-<p>We may disclose information if required by law or legal process, or to protect our rights, safety, or property. We may use anonymized, aggregated data for analytics and product improvement that does not identify you.</p>
-</section>
+    <p>We do not share personal data with third-party advertisers or data brokers. Service providers only process data on our behalf as needed to operate the App.</p>
+    <ul>
+      <li>Google Firebase — authentication (Firebase Auth), cloud database storage (Firestore), and backend processing (Cloud Functions) required to operate account and cloud features.</li>
+      <li>OpenAI — processes OCR text to generate item autofill suggestions when you use the AI scan feature.</li>
+      <li>Apple — Sign in with Apple; anonymous crash reports (if you opted in on your device).</li>
+      <li>Meta (Facebook) — authentication (Facebook Login).</li>
+    </ul>
+    <p>We may disclose information if required by law or legal process, or to protect our rights, safety, or property. We may use anonymized, aggregated data for analytics and product improvement that does not identify you.</p>
+  </section>
 
   <section id="retention" class="card">
     <h2>Retention</h2>
-    <p>Account info is kept while your account is active. Local app data (stored in iOS using Core Data) stays on your device until you delete it, use in‑app clear options, or uninstall the App. We do not maintain server backups of your inventory.</p>
+    <p>Account information and cloud-stored app data (such as items, notes, and categories/groups) are kept while your account is active. You can request deletion of your account and associated cloud data using the in-app delete account option (if available) or by contacting us.</p>
+    <p>Local app data stored on your device remains until you delete it, use in-app clear options, sign out, or uninstall the App.</p>
   </section>
 
   <section id="rights" class="card">
@@ -161,7 +179,6 @@
     <p>We may update this policy as the app evolves. Material changes will be highlighted on this page.</p>
   </section>
 
-
   <section id="legal" class="card">
     <h2>Controller</h2>
     <p>The App is developed and operated by an independent developer based in Portugal. Contact: <a href="mailto:squirrelvault.tracker@gmail.com">squirrelvault.tracker@gmail.com</a>.</p>
@@ -178,9 +195,8 @@
     <p>This support site is hosted on GitHub Pages. We do not use cookies or trackers here. If we add analytics in the future, we will update this Policy.</p>
   </section>
 
-
   <section id="liability-note" class="card">
-    <h2>Disclaimer & Liability</h2>
+    <h2>Disclaimer &amp; Liability</h2>
     <p>This Privacy Policy is provided for transparency. It does not create warranties. The App is provided "as is". Liability is limited as described in the Terms of Use. Your sole remedy in case of issues is to stop using the App and, if applicable, request a refund through the store of purchase in line with its policies.</p>
   </section>
 
