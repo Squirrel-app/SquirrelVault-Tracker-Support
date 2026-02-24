@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Conditions d'utilisation / CLUF — SquirrelVault Tracker</title>
+<meta name="description" content="Conditions d'utilisation / Contrat de licence utilisateur final pour SquirrelVault Tracker." />
+<link rel="icon" type="image/png" href="./squirrelvault-icon.png" />
+<link rel="apple-touch-icon" href="./squirrelvault-icon.png" />
+<meta property="og:title" content="Conditions / CLUF — SquirrelVault Tracker" />
+<meta property="og:description" content="Votre licence d'utilisation de SquirrelVault Tracker et les conditions applicables." />
+<meta property="og:image" content="https://squirrel-app.github.io/SquirrelVault-Tracker-Support/squirrelvault-icon.png" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<style>
+
+  :root {
+    --bg: #FFF7EF;
+    --fg: #2B2B2B;
+    --muted: #6B6B6B;
+    --card: #FFFFFF;
+    --border: #F2E6DA;
+    --accent: #FFA74A;
+    --accent-strong: #FF8C1F;
+    --link: var(--accent);
+    --shadow: 0 6px 24px rgba(255,140,31,.15);
+    --radius: 18px;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #19130E;
+      --fg: #EFE9E3;
+      --muted: #B7ADA6;
+      --card: #231A13;
+      --border: #3B2C20;
+      --accent: #FF9E3A;
+      --accent-strong: #FFB25E;
+      --link: var(--accent);
+      --shadow: 0 8px 28px rgba(255,158,58,.18);
+    }
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; font: 16px/1.65 system-ui,-apple-system,Segoe UI,Inter,Roboto,Arial,sans-serif; background: var(--bg); color: var(--fg); }
+  .wrap { max-width: 960px; margin: 0 auto; padding: 40px 20px 80px; }
+  header { margin-bottom: 24px; }
+  .brand { display: flex; align-items: center; gap: 12px; margin-bottom: 10px; }
+  .logo {
+    width: 40px; height: 40px; border-radius: 12px;
+    background: linear-gradient(135deg, var(--accent), var(--accent-strong));
+    box-shadow: var(--shadow);
+    display: flex; align-items: center; justify-content: center;
+    color: white; font-weight: 800; font-size: 18px; letter-spacing: .5px;
+    overflow: hidden;
+  }
+  .logo img { width: 100%; height: 100%; border-radius: 12px; }
+  h1 { font-size: 1.9rem; margin: 0; }
+  .sub { color: var(--muted); font-size: .95rem; margin-top: 6px; }
+  nav.toc a { display: inline-block; margin: 4px 12px 4px 0; color: var(--link); text-decoration: none; padding:6px 10px; border:1px solid var(--border); border-radius:999px; }
+  nav.toc a:hover { text-decoration: none; background: rgba(0,0,0,.03); }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    box-shadow: var(--shadow);
+    padding: 22px;
+    margin: 18px 0;
+  }
+  h2 { font-size: 1.25rem; margin: 26px 0 10px; }
+  h3 { font-size: 1.05rem; margin: 22px 0 10px; }
+  a { color: var(--link); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  ul { padding-left: 20px; }
+  footer { margin-top: 36px; color: var(--muted); font-size: .9rem; display:flex; gap:12px; flex-wrap:wrap; align-items:center; }
+  .pill { border:1px solid var(--border); border-radius:999px; padding:6px 10px; }
+  :target { outline: 2px solid var(--accent); outline-offset: 6px; border-radius: 14px; }
+
+</style>
+</head>
+<body>
+<main class="wrap">
+  <header>
+    <div class="brand">
+      <div class="logo"><img src="squirrelvault-icon.png" alt="SquirrelVault Tracker logo"></div>
+      <div>
+        <h1>Conditions d'utilisation / CLUF</h1>
+        <div class="sub">Mise &agrave; jour le <time datetime="2026-02-23">23 f&eacute;v. 2026</time></div>
+      </div>
+    </div>
+    <nav class="toc">
+      <a href="./index.html">&larr; Retour au support</a>
+      <a href="#license">Licence</a>
+      <a href="#accounts">Comptes</a>
+      <a href="#use">Utilisation acceptable</a>
+      <a href="#pro">Abonnements et Pro</a>
+      <a href="#ai">Fonctionnalit&eacute;s IA</a>
+      <a href="#cloud">Donn&eacute;es cloud</a>
+      <a href="#analytics">Analyse</a>
+      <a href="#ownership">Propri&eacute;t&eacute;</a>
+      <a href="#warranty">Avertissements</a>
+      <a href="#liability">Limitation de responsabilit&eacute;</a>
+      <a href="#termination">R&eacute;siliation</a>
+      <a href="#general">Dispositions g&eacute;n&eacute;rales</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="intro" class="card">
+    <p>Les pr&eacute;sentes conditions d'utilisation / contrat de licence utilisateur final (collectivement, les « Conditions ») constituent un accord juridique entre vous et le fournisseur de l'application (« nous ») r&eacute;gissant votre utilisation de l'application iOS SquirrelVault Tracker (l'« Application »). En installant ou en utilisant l'Application, vous acceptez les pr&eacute;sentes Conditions.</p>
+  </section>
+
+  <section id="license" class="card">
+    <h2>Licence</h2>
+    <p>Nous vous accordons une licence limit&eacute;e, non exclusive, non transf&eacute;rable et r&eacute;vocable pour utiliser l'Application sur des appareils de marque Apple que vous poss&eacute;dez ou contr&ocirc;lez, conform&eacute;ment aux conditions et r&egrave;gles d'utilisation de l'App Store.</p>
+  </section>
+
+  <section id="accounts" class="card">
+    <h2>Comptes et acc&egrave;s</h2>
+    <p>La connexion peut &ecirc;tre requise pour acc&eacute;der &agrave; certaines ou &agrave; toutes les fonctionnalit&eacute;s de l'Application (par exemple, Google, Apple ou Facebook). Vous &ecirc;tes responsable de la s&eacute;curit&eacute; de votre appareil et de votre compte. Vous devez &ecirc;tre l&eacute;galement autoris&eacute; &agrave; utiliser l'Application dans votre pays.</p>
+  </section>
+
+  <section id="use" class="card">
+    <h2>Utilisation acceptable</h2>
+    <ul>
+      <li>Ne pas utiliser l'Application de mani&egrave;re abusive ni interf&eacute;rer avec son fonctionnement.</li>
+      <li>Ne pas tenter de d&eacute;compiler, d&eacute;sassembler ou contourner les fonctionnalit&eacute;s de s&eacute;curit&eacute;, sauf dans les cas autoris&eacute;s par la loi.</li>
+      <li>Ne pas t&eacute;l&eacute;verser de contenu illicite ou portant atteinte aux droits d'autrui.</li>
+    </ul>
+  </section>
+
+  <section id="pro" class="card">
+    <h2>Abonnements et Pro</h2>
+    <p>L'Application peut proposer des abonnements payants optionnels (par exemple, « Pro ») qui d&eacute;bloquent des fonctionnalit&eacute;s suppl&eacute;mentaires ou des limites plus &eacute;lev&eacute;es. Les offres disponibles, les tarifs et les avantages sont affich&eacute;s dans l'Application au moment de l'achat.</p>
+
+    <h3>Facturation et renouvellement</h3>
+    <ul>
+      <li>Les abonnements sont factur&eacute;s via votre identifiant Apple par l'interm&eacute;diaire de l'App Store.</li>
+      <li>Les abonnements se renouvellent automatiquement, sauf si vous les annulez au moins 24 heures avant la fin de la p&eacute;riode en cours.</li>
+      <li>Votre identifiant Apple sera d&eacute;bit&eacute; pour le renouvellement dans les 24 heures pr&eacute;c&eacute;dant la fin de la p&eacute;riode en cours.</li>
+      <li>Vous pouvez g&eacute;rer ou annuler votre abonnement dans les r&eacute;glages de votre compte App Store apr&egrave;s l'achat.</li>
+    </ul>
+
+    <h3>Remboursements</h3>
+    <p>Les paiements et les remboursements sont g&eacute;r&eacute;s par Apple conform&eacute;ment aux politiques de l'App Store. Nous ne traitons pas les paiements directement.</p>
+
+    <h3>Limites et modifications</h3>
+    <p>Nous pouvons appliquer des limites d'utilisation raisonnables pour prot&eacute;ger le service (par exemple, des limites mensuelles pour les scans IA). Les limites peuvent varier selon l'offre et &eacute;voluer dans le temps. Toute modification importante sera communiqu&eacute;e dans l'Application ou sur la page de support.</p>
+  </section>
+
+  <section id="ai" class="card">
+    <h2>Fonctionnalit&eacute;s IA</h2>
+    <p>L'Application peut inclure des fonctionnalit&eacute;s bas&eacute;es sur l'IA (par exemple, scan IA / remplissage automatique). Les r&eacute;sultats de l'IA peuvent &ecirc;tre inexacts ou incomplets, et il vous appartient de v&eacute;rifier les informations avant de vous y fier.</p>
+    <p>Vous vous engagez &agrave; ne pas utiliser les fonctionnalit&eacute;s IA &agrave; des fins illicites, ni &agrave; tenter d'abuser, d'extraire ou de surcharger le service.</p>
+  </section>
+
+  <section id="cloud" class="card">
+    <h2>Donn&eacute;es cloud</h2>
+    <p>Lorsque vous &ecirc;tes connect&eacute;, l'Application peut stocker certaines donn&eacute;es dans le cloud pour faire fonctionner les fonctionnalit&eacute;s li&eacute;es au compte, telles que les articles d'inventaire que vous cr&eacute;ez, les notes d'articles et les cat&eacute;gories/groupes. L'Application ne t&eacute;l&eacute;verse pas vos photos, sauf mention explicite dans l'Application.</p>
+    <p>Nous pouvons restreindre l'acc&egrave;s aux fonctionnalit&eacute;s cloud si cela est n&eacute;cessaire pour des raisons de s&eacute;curit&eacute;, de maintenance ou pour pr&eacute;venir les abus.</p>
+  </section>
+
+  <section id="analytics" class="card">
+    <h2>Analyse et rapports de plantages</h2>
+    <p>L'Application utilise Firebase Crashlytics pour collecter des rapports de plantage et des donn&eacute;es d'erreurs non fatales. Ces donn&eacute;es sont utilis&eacute;es pour identifier et corriger les bogues, am&eacute;liorer la stabilit&eacute; et optimiser l'exp&eacute;rience utilisateur. Les donn&eacute;es de plantage peuvent inclure des informations sur l'appareil, l'&eacute;tat de l'application et des d&eacute;tails techniques sur les erreurs. Pour plus d'informations, consultez notre <a href="./privacy-fr.html">Politique de confidentialit&eacute;</a>.</p>
+    <p>En utilisant l'Application, vous reconnaissez que des donn&eacute;es de plantage et d'erreurs peuvent &ecirc;tre collect&eacute;es automatiquement pour maintenir et am&eacute;liorer le service.</p>
+  </section>
+
+  <section id="ownership" class="card">
+    <h2>Propri&eacute;t&eacute; et contenu</h2>
+    <p>L'Application et son contenu sont notre propri&eacute;t&eacute; ou celle de nos conc&eacute;dants et sont prot&eacute;g&eacute;s par les lois sur la propri&eacute;t&eacute; intellectuelle. Vous conservez la propri&eacute;t&eacute; des donn&eacute;es que vous cr&eacute;ez dans l'Application.</p>
+  </section>
+
+  <section id="warranty" class="card">
+    <h2>Avertissements</h2>
+    <p>L'Application est fournie « en l'&eacute;tat », sans garantie d'aucune sorte. Nous ne garantissons pas que l'Application fonctionnera de mani&egrave;re ininterrompue, sans erreur, ni que les d&eacute;fauts seront corrig&eacute;s.</p>
+  </section>
+
+  <section id="liability" class="card">
+    <h2>Limitation de responsabilit&eacute;</h2>
+    <p>Dans les limites maximales autoris&eacute;es par la loi, nous ne serons pas responsables des dommages indirects, accessoires, sp&eacute;ciaux, cons&eacute;cutifs, exemplaires ou punitifs, ni de toute perte d'utilisation, de donn&eacute;es ou de b&eacute;n&eacute;fices, d&eacute;coulant de ou li&eacute;s &agrave; l'Application.</p>
+    <p>Lorsque la responsabilit&eacute; ne peut &ecirc;tre exclue, notre responsabilit&eacute; globale au titre des pr&eacute;sentes Conditions sera limit&eacute;e au plus &eacute;lev&eacute; des montants suivants : (a) le montant que vous avez pay&eacute; (le cas &eacute;ch&eacute;ant) pour acheter l'Application, ou (b) les frais que vous nous avez vers&eacute;s pour les achats int&eacute;gr&eacute;s ou les abonnements au cours des douze (12) mois pr&eacute;c&eacute;dant l'&eacute;v&eacute;nement donnant lieu &agrave; la r&eacute;clamation. Si vous n'avez effectu&eacute; aucun paiement de ce type, ce plafond est de z&eacute;ro (0), &agrave; l'exception des remboursements obligatoires requis par la loi applicable.</p>
+    <p>Votre seul et unique recours en cas de probl&egrave;me avec l'Application est de cesser de l'utiliser et, le cas &eacute;ch&eacute;ant, de demander un remboursement aupr&egrave;s du point de vente conform&eacute;ment aux politiques du magasin.</p>
+  </section>
+
+  <section id="termination" class="card">
+    <h2>R&eacute;siliation</h2>
+    <p>Vous pouvez cesser d'utiliser l'Application &agrave; tout moment. Nous pouvons suspendre ou r&eacute;silier votre acc&egrave;s si vous enfreignez les pr&eacute;sentes Conditions.</p>
+    <p>Vous pouvez supprimer votre compte dans l'Application (si disponible). Si vous supprimez votre compte, nous supprimerons ou anonymiserons les donn&eacute;es cloud associ&eacute;es dans la mesure requise et techniquement possible. Les donn&eacute;es locales stock&eacute;es sur votre appareil peuvent &ecirc;tre effac&eacute;es dans l'Application (si disponible) ou en d&eacute;sinstallant l'Application.</p>
+  </section>
+
+  <section id="general" class="card">
+    <h2>Dispositions g&eacute;n&eacute;rales</h2>
+    <p>Les pr&eacute;sentes Conditions sont r&eacute;gies par le droit portugais. Vos droits imp&eacute;ratifs en mati&egrave;re de protection des consommateurs en vertu de la l&eacute;gislation de votre pays de r&eacute;sidence ne sont pas affect&eacute;s. Si une disposition est jug&eacute;e inapplicable, les dispositions restantes demeurent en vigueur. Nous pouvons mettre &agrave; jour les pr&eacute;sentes Conditions ; les modifications importantes seront signal&eacute;es dans l'Application ou sur la page de support.</p>
+    <p>Rien dans les pr&eacute;sentes Conditions n'exclut ni ne limite la responsabilit&eacute; dans les cas o&ugrave; une telle exclusion ou limitation n'est pas autoris&eacute;e par la loi.</p>
+  </section>
+
+  <section id="contact" class="card">
+    <h2>Contact</h2>
+    <p>E-mail : <a href="mailto:squirrelvault.tracker@gmail.com">squirrelvault.tracker@gmail.com</a></p>
+  </section>
+
+  <footer>
+    <span class="pill">&copy; <span id="y"></span> SquirrelVault Tracker</span>
+    <span class="pill"><a href="./privacy-fr.html">Confidentialit&eacute;</a></span>
+    <span class="pill">🌐 <a href="./terms.html">EN</a> · <a href="./terms-de.html">DE</a> · <a href="./terms-es.html">ES</a> · <strong>FR</strong> · <a href="./terms-it.html">IT</a> · <a href="./terms-nl.html">NL</a> · <a href="./terms-pl.html">PL</a> · <a href="./terms-pt.html">PT</a> · <a href="./terms-uk.html">UK</a></span>
+  </footer>
+</main>
+<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>

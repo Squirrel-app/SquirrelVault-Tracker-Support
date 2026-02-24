@@ -88,7 +88,7 @@
       <div class="logo"><img src="squirrelvault-icon.png" alt="SquirrelVault Tracker logo"></div>
       <div>
         <h1>Privacy Policy</h1>
-        <div class="sub">Updated <time datetime="2026-02-18">18 Feb 2026</time></div>
+        <div class="sub">Updated <time datetime="2026-02-23">23 Feb 2026</time></div>
       </div>
     </div>
     <nav class="toc">
@@ -130,8 +130,16 @@
     <h3>Device and technical information</h3>
     <p>We may store basic technical metadata linked to your account (e.g., device family/model and iOS version) to help with security, debugging, and reliable operation of the app.</p>
 
-    <h3>Crash logs</h3>
-    <p>If enabled on your device, Apple may provide anonymous crash reports to help us fix bugs. These reports are handled by Apple and may be shared with us; they do not include your inventory content.</p>
+    <h3>Crash and error reports</h3>
+    <p>We use Firebase Crashlytics (provided by Google) to collect crash reports and non-fatal error data. This helps us identify and fix issues in the App. The following data may be collected automatically when the App encounters an error or crash:</p>
+    <ul>
+      <li>Crash stack traces and error messages (technical details about what went wrong).</li>
+      <li>Device model, operating system version, and available memory.</li>
+      <li>Application state at the time of the crash (e.g., current screen).</li>
+      <li>Your account identifier (to help us investigate issues reported by specific users).</li>
+      <li>Breadcrumb logs — a limited sequence of app events leading up to the crash.</li>
+    </ul>
+    <p>This data is used solely to improve the App's stability and is not used for advertising, tracking, or profiling. Crash data is processed by Google under its Firebase terms. You can learn more at <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase Privacy</a>.</p>
   </section>
 
   <section id="use" class="card">
@@ -150,7 +158,7 @@
     <h2>Sharing</h2>
     <p>We do not share personal data with third-party advertisers or data brokers. Service providers only process data on our behalf as needed to operate the App.</p>
     <ul>
-      <li>Google Firebase — authentication (Firebase Auth), cloud database storage (Firestore), and backend processing (Cloud Functions) required to operate account and cloud features.</li>
+      <li>Google Firebase — authentication (Firebase Auth), cloud database storage (Firestore), backend processing (Cloud Functions), and crash/error reporting (Crashlytics) required to operate account and cloud features and improve app stability.</li>
       <li>OpenAI — processes OCR text to generate item autofill suggestions when you use the AI scan feature.</li>
       <li>Apple — Sign in with Apple; anonymous crash reports (if you opted in on your device).</li>
       <li>Meta (Facebook) — authentication (Facebook Login).</li>
@@ -208,6 +216,7 @@
   <footer>
     <span class="pill">© <span id="y"></span> SquirrelVault Tracker</span>
     <span class="pill"><a href="./terms.html">Terms</a></span>
+    <span class="pill">🌐 <strong>EN</strong> · <a href="./privacy-de.html">DE</a> · <a href="./privacy-es.html">ES</a> · <a href="./privacy-fr.html">FR</a> · <a href="./privacy-it.html">IT</a> · <a href="./privacy-nl.html">NL</a> · <a href="./privacy-pl.html">PL</a> · <a href="./privacy-pt.html">PT</a> · <a href="./privacy-uk.html">UK</a></span>
   </footer>
 </main>
 <script>document.getElementById('y').textContent = new Date().getFullYear();</script>

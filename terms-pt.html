@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Termos de Utilização / EULA — SquirrelVault Tracker</title>
+<meta name="description" content="Termos de Utilização / Contrato de Licença de Utilizador Final do SquirrelVault Tracker." />
+<link rel="icon" type="image/png" href="./squirrelvault-icon.png" />
+<link rel="apple-touch-icon" href="./squirrelvault-icon.png" />
+<meta property="og:title" content="Termos / EULA — SquirrelVault Tracker" />
+<meta property="og:description" content="A sua licença de utilização do SquirrelVault Tracker e as condições aplicáveis." />
+<meta property="og:image" content="https://squirrel-app.github.io/SquirrelVault-Tracker-Support/squirrelvault-icon.png" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<style>
+
+  :root {
+    --bg: #FFF7EF;
+    --fg: #2B2B2B;
+    --muted: #6B6B6B;
+    --card: #FFFFFF;
+    --border: #F2E6DA;
+    --accent: #FFA74A;
+    --accent-strong: #FF8C1F;
+    --link: var(--accent);
+    --shadow: 0 6px 24px rgba(255,140,31,.15);
+    --radius: 18px;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #19130E;
+      --fg: #EFE9E3;
+      --muted: #B7ADA6;
+      --card: #231A13;
+      --border: #3B2C20;
+      --accent: #FF9E3A;
+      --accent-strong: #FFB25E;
+      --link: var(--accent);
+      --shadow: 0 8px 28px rgba(255,158,58,.18);
+    }
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; font: 16px/1.65 system-ui,-apple-system,Segoe UI,Inter,Roboto,Arial,sans-serif; background: var(--bg); color: var(--fg); }
+  .wrap { max-width: 960px; margin: 0 auto; padding: 40px 20px 80px; }
+  header { margin-bottom: 24px; }
+  .brand { display: flex; align-items: center; gap: 12px; margin-bottom: 10px; }
+  .logo {
+    width: 40px; height: 40px; border-radius: 12px;
+    background: linear-gradient(135deg, var(--accent), var(--accent-strong));
+    box-shadow: var(--shadow);
+    display: flex; align-items: center; justify-content: center;
+    color: white; font-weight: 800; font-size: 18px; letter-spacing: .5px;
+    overflow: hidden;
+  }
+  .logo img { width: 100%; height: 100%; border-radius: 12px; }
+  h1 { font-size: 1.9rem; margin: 0; }
+  .sub { color: var(--muted); font-size: .95rem; margin-top: 6px; }
+  nav.toc a { display: inline-block; margin: 4px 12px 4px 0; color: var(--link); text-decoration: none; padding:6px 10px; border:1px solid var(--border); border-radius:999px; }
+  nav.toc a:hover { text-decoration: none; background: rgba(0,0,0,.03); }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    box-shadow: var(--shadow);
+    padding: 22px;
+    margin: 18px 0;
+  }
+  h2 { font-size: 1.25rem; margin: 26px 0 10px; }
+  h3 { font-size: 1.05rem; margin: 22px 0 10px; }
+  a { color: var(--link); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  ul { padding-left: 20px; }
+  footer { margin-top: 36px; color: var(--muted); font-size: .9rem; display:flex; gap:12px; flex-wrap:wrap; align-items:center; }
+  .pill { border:1px solid var(--border); border-radius:999px; padding:6px 10px; }
+  :target { outline: 2px solid var(--accent); outline-offset: 6px; border-radius: 14px; }
+
+</style>
+</head>
+<body>
+<main class="wrap">
+  <header>
+    <div class="brand">
+      <div class="logo"><img src="squirrelvault-icon.png" alt="SquirrelVault Tracker logo"></div>
+      <div>
+        <h1>Termos de Utilização / EULA</h1>
+        <div class="sub">Atualizados a <time datetime="2026-02-23">23 fev. 2026</time></div>
+      </div>
+    </div>
+    <nav class="toc">
+      <a href="./index.html">&larr; Voltar ao Suporte</a>
+      <a href="#license">Licença</a>
+      <a href="#accounts">Contas</a>
+      <a href="#use">Utilização aceitável</a>
+      <a href="#pro">Subscrições e Pro</a>
+      <a href="#ai">Funcionalidades IA</a>
+      <a href="#cloud">Dados na nuvem</a>
+      <a href="#analytics">Análise e falhas</a>
+      <a href="#ownership">Propriedade</a>
+      <a href="#warranty">Exclusões</a>
+      <a href="#liability">Responsabilidade</a>
+      <a href="#termination">Rescisão</a>
+      <a href="#general">Disposições gerais</a>
+      <a href="#contact">Contacto</a>
+    </nav>
+  </header>
+
+  <section id="intro" class="card">
+    <p>Estes Termos de Utilização / Contrato de Licença de Utilizador Final (coletivamente, "Termos") constituem um acordo legal entre o utilizador e o fornecedor da aplicação ("nós", "nosso") que rege a utilização da aplicação iOS SquirrelVault Tracker ("Aplicação"). Ao instalar ou utilizar a Aplicação, o utilizador aceita estes Termos.</p>
+  </section>
+
+  <section id="license" class="card">
+    <h2>Licença</h2>
+    <p>Concedemos ao utilizador uma licença limitada, não exclusiva, intransmissível e revogável para utilizar a Aplicação em dispositivos da marca Apple que possua ou controle, conforme permitido pelos Termos e Regras de Utilização da App Store.</p>
+  </section>
+
+  <section id="accounts" class="card">
+    <h2>Contas e acesso</h2>
+    <p>Pode ser necessário iniciar sessão para aceder a algumas ou todas as funcionalidades da Aplicação (por exemplo, Google, Apple ou Facebook). O utilizador é responsável por manter a segurança do seu dispositivo e da sua conta. O utilizador deve estar legalmente autorizado a utilizar a Aplicação na sua localização.</p>
+  </section>
+
+  <section id="use" class="card">
+    <h2>Utilização aceitável</h2>
+    <ul>
+      <li>Não utilize indevidamente a Aplicação nem interfira com o seu funcionamento.</li>
+      <li>Não tente fazer engenharia reversa, descompilar ou contornar funcionalidades de segurança, exceto quando permitido por lei.</li>
+      <li>Não carregue conteúdo ilegal ou conteúdo que viole os direitos de terceiros.</li>
+    </ul>
+  </section>
+
+  <section id="pro" class="card">
+    <h2>Subscrições e Pro</h2>
+    <p>A Aplicação pode oferecer subscrições pagas opcionais (por exemplo, "Pro") que desbloqueiam funcionalidades adicionais ou limites superiores. Os planos disponíveis, preços e benefícios são apresentados na Aplicação no momento da compra.</p>
+
+    <h3>Faturação e renovação</h3>
+    <ul>
+      <li>As subscrições são faturadas através da sua conta Apple ID via App Store.</li>
+      <li>As subscrições renovam-se automaticamente, salvo se cancelar pelo menos 24 horas antes do final do período em curso.</li>
+      <li>A sua conta Apple ID será cobrada pela renovação até 24 horas antes do final do período em curso.</li>
+      <li>Pode gerir ou cancelar a sua subscrição nas definições da sua conta na App Store após a compra.</li>
+    </ul>
+
+    <h3>Reembolsos</h3>
+    <p>Os pagamentos e reembolsos são geridos pela Apple ao abrigo das políticas da App Store. Não processamos pagamentos diretamente.</p>
+
+    <h3>Limites e alterações</h3>
+    <p>Podemos aplicar limites de utilização razoáveis para proteger o serviço (por exemplo, limites mensais para digitalizações por IA). Os limites podem variar consoante o plano e podem ser alterados ao longo do tempo. Quaisquer alterações substanciais serão comunicadas na Aplicação ou na página de Suporte.</p>
+  </section>
+
+  <section id="ai" class="card">
+    <h2>Funcionalidades IA</h2>
+    <p>A Aplicação pode incluir funcionalidades com tecnologia de IA (por exemplo, digitalização/preenchimento automático por IA). Os resultados da IA podem ser imprecisos ou incompletos, e o utilizador é responsável por verificar as informações antes de as utilizar.</p>
+    <p>O utilizador compromete-se a não utilizar as funcionalidades de IA para fins ilegais nem a tentar abusar, extrair dados ou sobrecarregar o serviço.</p>
+  </section>
+
+  <section id="cloud" class="card">
+    <h2>Dados na nuvem</h2>
+    <p>Quando tem sessão iniciada, a Aplicação pode armazenar determinados dados na nuvem para operar funcionalidades baseadas em conta, tais como itens de inventário que cria, notas de itens e categorias/grupos. A Aplicação não carrega as suas fotografias, salvo indicação explícita na Aplicação.</p>
+    <p>Podemos restringir o acesso a funcionalidades na nuvem se necessário por razões de segurança, manutenção ou para prevenir abusos.</p>
+  </section>
+
+  <section id="analytics" class="card">
+    <h2>Análise e relatórios de falhas</h2>
+    <p>A Aplicação utiliza o Firebase Crashlytics para recolher relatórios de falhas e dados de erros não fatais. Estes dados são utilizados para identificar e corrigir erros, melhorar a estabilidade e aprimorar a experiência do utilizador. Os dados de falhas podem incluir informações do dispositivo, estado da aplicação e detalhes técnicos de erros. Para mais informações, consulte a nossa <a href="./privacy-pt.html">Política de Privacidade</a>.</p>
+    <p>Ao utilizar a Aplicação, o utilizador reconhece que os dados de falhas e erros podem ser recolhidos automaticamente para manter e melhorar o serviço.</p>
+  </section>
+
+  <section id="ownership" class="card">
+    <h2>Propriedade e conteúdo</h2>
+    <p>A Aplicação e os seus conteúdos são propriedade nossa ou dos nossos licenciantes e estão protegidos por leis de propriedade intelectual. O utilizador mantém a propriedade dos dados que cria na Aplicação.</p>
+  </section>
+
+  <section id="warranty" class="card">
+    <h2>Exclusões de garantia</h2>
+    <p>A Aplicação é fornecida "tal como está", sem garantias de qualquer tipo. Não garantimos que a Aplicação funcionará de forma ininterrupta, isenta de erros ou que os defeitos serão corrigidos.</p>
+  </section>
+
+  <section id="liability" class="card">
+    <h2>Limitação de responsabilidade</h2>
+    <p>Na máxima extensão permitida por lei, não seremos responsáveis por quaisquer danos indiretos, incidentais, especiais, consequenciais, exemplares ou punitivos, nem por qualquer perda de utilização, dados ou lucros, decorrentes de ou relacionados com a Aplicação.</p>
+    <p>Quando a responsabilidade não puder ser excluída, a nossa responsabilidade agregada ao abrigo destes Termos será limitada ao maior dos seguintes valores: (a) o montante que pagou (se aplicável) para adquirir a Aplicação, ou (b) as taxas que nos pagou por compras ou subscrições na aplicação durante os doze (12) meses anteriores ao evento que deu origem à reclamação. Se não efetuou tais pagamentos, este limite é zero (0), exceto para quaisquer reembolsos obrigatórios exigidos pela lei aplicável.</p>
+    <p>O seu único e exclusivo recurso para qualquer problema com a Aplicação é deixar de utilizar a Aplicação e, quando aplicável, solicitar um reembolso junto do ponto de compra, de acordo com as políticas da loja.</p>
+  </section>
+
+  <section id="termination" class="card">
+    <h2>Rescisão</h2>
+    <p>O utilizador pode deixar de utilizar a Aplicação a qualquer momento. Podemos suspender ou cessar o acesso se o utilizador violar estes Termos.</p>
+    <p>O utilizador pode eliminar a sua conta na Aplicação (se disponível). Se eliminar a sua conta, removeremos ou anonimizaremos os dados na nuvem associados na medida do exigido e tecnicamente viável. Os dados locais armazenados no seu dispositivo podem ser limpos na Aplicação (se disponível) ou removidos ao desinstalar a Aplicação.</p>
+  </section>
+
+  <section id="general" class="card">
+    <h2>Disposições gerais</h2>
+    <p>Estes Termos são regidos pela lei portuguesa. Os seus direitos obrigatórios de proteção do consumidor ao abrigo da lei do seu país de residência permanecem inalterados. Se alguma disposição for considerada inexequível, as restantes disposições mantêm-se em vigor. Podemos atualizar estes Termos; as alterações substanciais serão destacadas na Aplicação ou na página de Suporte.</p>
+    <p>Nada nestes Termos exclui ou limita a responsabilidade nos casos em que tal exclusão ou limitação não é permitida por lei.</p>
+  </section>
+
+  <section id="contact" class="card">
+    <h2>Contacto</h2>
+    <p>E-mail: <a href="mailto:squirrelvault.tracker@gmail.com">squirrelvault.tracker@gmail.com</a></p>
+  </section>
+
+  <footer>
+    <span class="pill">&copy; <span id="y"></span> SquirrelVault Tracker</span>
+    <span class="pill"><a href="./privacy-pt.html">Privacidade</a></span>
+    <span class="pill">🌐 <a href="./terms.html">EN</a> · <a href="./terms-de.html">DE</a> · <a href="./terms-es.html">ES</a> · <a href="./terms-fr.html">FR</a> · <a href="./terms-it.html">IT</a> · <a href="./terms-nl.html">NL</a> · <a href="./terms-pl.html">PL</a> · <strong>PT</strong> · <a href="./terms-uk.html">UK</a></span>
+  </footer>
+</main>
+<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Privacybeleid — SquirrelVault Tracker</title>
+<meta name="description" content="Privacybeleid voor SquirrelVault Tracker." />
+<link rel="icon" type="image/png" href="./squirrelvault-icon.png" />
+<link rel="apple-touch-icon" href="./squirrelvault-icon.png" />
+<meta property="og:title" content="Privacybeleid — SquirrelVault Tracker" />
+<meta property="og:description" content="Hoe wij met uw gegevens omgaan: accountinformatie, cloudopslag voor artikelen/notities, AI-scan OCR-verwerking, geen advertenties, geen verkoop van gegevens." />
+<meta property="og:image" content="https://squirrel-app.github.io/SquirrelVault-Tracker-Support/squirrelvault-icon.png" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<style>
+
+  :root {
+    --bg: #FFF7EF;
+    --fg: #2B2B2B;
+    --muted: #6B6B6B;
+    --card: #FFFFFF;
+    --border: #F2E6DA;
+    --accent: #FFA74A;
+    --accent-strong: #FF8C1F;
+    --link: var(--accent);
+    --shadow: 0 6px 24px rgba(255,140,31,.15);
+    --radius: 18px;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #19130E;
+      --fg: #EFE9E3;
+      --muted: #B7ADA6;
+      --card: #231A13;
+      --border: #3B2C20;
+      --accent: #FF9E3A;
+      --accent-strong: #FFB25E;
+      --link: var(--accent);
+      --shadow: 0 8px 28px rgba(255,158,58,.18);
+    }
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; font: 16px/1.65 system-ui,-apple-system,Segoe UI,Inter,Roboto,Arial,sans-serif; background: var(--bg); color: var(--fg); }
+  .wrap { max-width: 960px; margin: 0 auto; padding: 40px 20px 80px; }
+  header { margin-bottom: 24px; }
+  .brand { display: flex; align-items: center; gap: 12px; margin-bottom: 10px; }
+  .logo {
+    width: 40px; height: 40px; border-radius: 12px;
+    background: linear-gradient(135deg, var(--accent), var(--accent-strong));
+    box-shadow: var(--shadow);
+    display: flex; align-items: center; justify-content: center;
+    color: white; font-weight: 800; font-size: 18px; letter-spacing: .5px;
+    overflow: hidden;
+  }
+  .logo img { width: 100%; height: 100%; border-radius: 12px; }
+  h1 { font-size: 1.9rem; margin: 0; }
+  .sub { color: var(--muted); font-size: .95rem; margin-top: 6px; }
+  nav.toc a { display: inline-block; margin: 4px 12px 4px 0; color: var(--link); text-decoration: none; padding:6px 10px; border:1px solid var(--border); border-radius:999px; }
+  nav.toc a:hover { text-decoration: none; background: rgba(0,0,0,.03); }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 22px;
+    margin: 18px 0;
+  }
+  h2 { font-size: 1.25rem; margin: 26px 0 10px; }
+  h3 { font-size: 1.05rem; margin: 22px 0 10px; }
+  a { color: var(--link); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  ul { padding-left: 20px; }
+  details summary { cursor: pointer; font-weight: 700; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; }
+  .btn { display:inline-block; padding:10px 14px; border-radius:12px; border:1px solid var(--border); text-decoration:none; background: var(--card); }
+  .btn:hover { background: rgba(0,0,0,.03); }
+  footer { margin-top: 36px; color: var(--muted); font-size: .9rem; display:flex; gap:12px; flex-wrap:wrap; align-items:center; }
+  .pill { border:1px solid var(--border); border-radius:999px; padding:6px 10px; }
+  :target { outline: 2px solid var(--accent); outline-offset: 6px; border-radius: 14px; }
+
+</style>
+</head>
+<body>
+<main class="wrap">
+  <header>
+    <div class="brand">
+      <div class="logo"><img src="squirrelvault-icon.png" alt="SquirrelVault Tracker logo"></div>
+      <div>
+        <h1>Privacybeleid</h1>
+        <div class="sub">Bijgewerkt op <time datetime="2026-02-23">23 feb. 2026</time></div>
+      </div>
+    </div>
+    <nav class="toc">
+      <a href="./index.html">&larr; Terug naar ondersteuning</a>
+      <a href="#summary">Samenvatting</a>
+      <a href="#data">Gegevens die we verzamelen</a>
+      <a href="#use">Hoe we gegevens gebruiken</a>
+      <a href="#sharing">Delen</a>
+      <a href="#rights">Uw rechten</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="summary" class="card">
+    <h2>Samenvatting</h2>
+    <ul>
+      <li>Wij verzamelen minimale accountgegevens van uw aanmeldprovider (Google, Apple of Facebook): e-mailadres, weergavenaam, profielfoto (indien beschikbaar) en een technisch account-ID.</li>
+      <li>Uw inventarisgegevens (artikelen) en notities, evenals categorie&euml;n/groepen, kunnen in de cloud (Firebase Firestore) worden opgeslagen ter ondersteuning van accountgebonden functies.</li>
+      <li>Als u AI Scan gebruikt, verwerken wij herkende tekst (OCR) om automatische invulsuggesties te genereren. De app uploadt uw foto's niet als onderdeel van AI Scan.</li>
+      <li>Geen advertenties en geen verkoop van gegevens. Wij delen geen persoonsgegevens met externe marketeers.</li>
+    </ul>
+  </section>
+
+  <section id="data" class="card">
+    <h2>Gegevens die we verzamelen</h2>
+
+    <h3>Accountgegevens</h3>
+    <p>Wanneer u zich aanmeldt met Google, Apple of Facebook, ontvangen wij uw e-mailadres, weergavenaam, profielfoto-URL (indien beschikbaar) en een technisch account-ID. Deze gegevens worden uitsluitend gebruikt om u te authenticeren en de toegang tot de app te beveiligen.</p>
+
+    <h3>App-gegevens (cloud)</h3>
+    <p>Wanneer u bent aangemeld, slaan wij app-gegevens op in de cloud (Firebase Firestore), zoals artikelen die u aanmaakt, artikelnotities, categorie&euml;n/groepen en gerelateerde metadata (bijv. aanmaak- en bijwerktijdstippen). Dit is nodig voor de werking van accountgebonden functies.</p>
+
+    <h3>App-gegevens (lokaal)</h3>
+    <p>Sommige app-gegevens worden ook lokaal op uw apparaat opgeslagen voor prestaties en offline gebruik. Als u zich afmeldt, de app verwijdert of de wisfuncties in de app gebruikt, kunnen lokale gegevens worden verwijderd, afhankelijk van de uitgevoerde actie.</p>
+
+    <h3>AI-scangegevens</h3>
+    <p>Als u de AI-scanfunctie gebruikt, verwerken wij herkende tekst (OCR) van de productfoto om automatische invulsuggesties te genereren. De app uploadt uw foto's niet als onderdeel van AI Scan.</p>
+
+    <h3>Apparaat- en technische informatie</h3>
+    <p>Wij kunnen basale technische metadata gekoppeld aan uw account opslaan (bijv. apparaatfamilie/-model en iOS-versie) om te helpen bij beveiliging, foutopsporing en een betrouwbare werking van de app.</p>
+
+    <h3>Crash- en foutrapporten</h3>
+    <p>Wij gebruiken Firebase Crashlytics (geleverd door Google) om crashrapporten en niet-fatale foutgegevens te verzamelen. Dit helpt ons om problemen in de app te identificeren en op te lossen. De volgende gegevens kunnen automatisch worden verzameld wanneer de app een fout of crash ondervindt:</p>
+    <ul>
+      <li>Crash-stacktraces en foutmeldingen (technische details over wat er misging).</li>
+      <li>Apparaatmodel, versie van het besturingssysteem en beschikbaar geheugen.</li>
+      <li>Applicatiestatus op het moment van de crash (bijv. het huidige scherm).</li>
+      <li>Uw account-ID (om ons te helpen bij het onderzoeken van problemen die door specifieke gebruikers worden gemeld).</li>
+      <li>Breadcrumb-logboeken &mdash; een beperkte reeks app-gebeurtenissen voorafgaand aan de crash.</li>
+    </ul>
+    <p>Deze gegevens worden uitsluitend gebruikt om de stabiliteit van de app te verbeteren en worden niet gebruikt voor advertenties, tracking of profilering. Crashgegevens worden verwerkt door Google onder de Firebase-voorwaarden. Meer informatie vindt u op <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase Privacy</a>.</p>
+  </section>
+
+  <section id="use" class="card">
+    <h2>Hoe we gegevens gebruiken</h2>
+    <ul>
+      <li>Uw account authenticeren en sessies beveiligen.</li>
+      <li>Uw inventaris en notities opslaan en weergeven die aan uw account zijn gekoppeld.</li>
+      <li>Meldingen verzenden waarvoor u zich hebt aangemeld (bijv. vervalherinneringen).</li>
+      <li>AI-scanaanvragen verwerken om automatische invulsuggesties voor artikelen te genereren (wanneer u ervoor kiest deze functie te gebruiken).</li>
+      <li>De betrouwbaarheid en prestaties van de app verbeteren.</li>
+    </ul>
+    <p>Wij verkopen uw gegevens niet. Wij lezen uw e-mail of contacten niet.</p>
+  </section>
+
+  <section id="sharing" class="card">
+    <h2>Delen</h2>
+    <p>Wij delen geen persoonsgegevens met externe adverteerders of datamakelaars. Dienstverleners verwerken gegevens uitsluitend namens ons, voor zover nodig voor de werking van de app.</p>
+    <ul>
+      <li>Google Firebase &mdash; authenticatie (Firebase Auth), clouddatabaseopslag (Firestore), backend-verwerking (Cloud Functions) en crash-/foutrapportage (Crashlytics), noodzakelijk voor de werking van account- en cloudfuncties en het verbeteren van de app-stabiliteit.</li>
+      <li>OpenAI &mdash; verwerkt OCR-tekst om automatische invulsuggesties voor artikelen te genereren wanneer u de AI-scanfunctie gebruikt.</li>
+      <li>Apple &mdash; Inloggen met Apple; anonieme crashrapporten (indien u hiervoor hebt gekozen op uw apparaat).</li>
+      <li>Meta (Facebook) &mdash; authenticatie (Facebook Login).</li>
+    </ul>
+    <p>Wij kunnen informatie openbaar maken indien wettelijk vereist of op grond van een gerechtelijk bevel, of om onze rechten, veiligheid of eigendommen te beschermen. Wij kunnen geanonimiseerde, geaggregeerde gegevens gebruiken voor analyses en productverbetering die u niet identificeren.</p>
+  </section>
+
+  <section id="retention" class="card">
+    <h2>Bewaring</h2>
+    <p>Accountgegevens en in de cloud opgeslagen app-gegevens (zoals artikelen, notities en categorie&euml;n/groepen) worden bewaard zolang uw account actief is. U kunt verzoeken om verwijdering van uw account en de bijbehorende cloudgegevens via de optie "Account verwijderen" in de app (indien beschikbaar) of door contact met ons op te nemen.</p>
+    <p>Lokale app-gegevens op uw apparaat blijven bewaard totdat u deze verwijdert, de wisfuncties in de app gebruikt, zich afmeldt of de app verwijdert.</p>
+  </section>
+
+  <section id="rights" class="card">
+    <h2>Uw rechten</h2>
+    <p>Afhankelijk van uw regio (EU/EER/VK/Canada/VS) hebt u mogelijk het recht om uw gegevens in te zien, te corrigeren, te verwijderen of te exporteren, en om toestemming in te trekken waar van toepassing. Neem contact met ons op om deze rechten uit te oefenen. U hebt ook het recht een klacht in te dienen bij de Portugese gegevensbeschermingsautoriteit (CNPD).</p>
+  </section>
+
+  <section id="children" class="card">
+    <h2>Kinderen</h2>
+    <p>De app is niet bedoeld voor kinderen jonger dan 13 jaar (of de minimumleeftijd die in uw land vereist is). Wij verzamelen niet bewust gegevens van kinderen.</p>
+  </section>
+
+  <section id="changes" class="card">
+    <h2>Wijzigingen in dit beleid</h2>
+    <p>Wij kunnen dit beleid bijwerken naarmate de app zich ontwikkelt. Wezenlijke wijzigingen worden op deze pagina vermeld.</p>
+  </section>
+
+  <section id="legal" class="card">
+    <h2>Verwerkingsverantwoordelijke</h2>
+    <p>De app wordt ontwikkeld en beheerd door een onafhankelijke ontwikkelaar gevestigd in Portugal. Contact: <a href="mailto:squirrelvault.tracker@gmail.com">squirrelvault.tracker@gmail.com</a>.</p>
+    <p>Wij treden op als verwerkingsverantwoordelijke voor uw gegevens. E-mail is voldoende om contact met ons op te nemen; een postadres is hiervoor niet vereist.</p>
+  </section>
+
+  <section id="medical" class="card">
+    <h2>Medische disclaimer</h2>
+    <p>De app kan artikelen weergeven of u in staat stellen artikelen bij te houden zoals voeding, supplementen of medicijnen. De app is geen medisch hulpmiddel en biedt geen medisch advies, diagnose of behandeling. Raadpleeg altijd een gekwalificeerde zorgverlener. Het gebruik van de app is op eigen risico.</p>
+  </section>
+
+  <section id="cookies" class="card">
+    <h2>Cookies</h2>
+    <p>Deze ondersteuningssite wordt gehost op GitHub Pages. Wij gebruiken hier geen cookies of trackers. Als wij in de toekomst analyses toevoegen, zullen wij dit beleid bijwerken.</p>
+  </section>
+
+  <section id="liability-note" class="card">
+    <h2>Aansprakelijkheid</h2>
+    <p>Dit privacybeleid wordt verstrekt voor transparantie. Het schept geen garanties. De app wordt geleverd "zoals deze is". Aansprakelijkheid is beperkt zoals beschreven in de Gebruiksvoorwaarden. Uw enige verhaalsmogelijkheid bij problemen is te stoppen met het gebruik van de app en, indien van toepassing, een restitutie aan te vragen via de winkel waar u de aankoop hebt gedaan, conform het beleid van die winkel.</p>
+  </section>
+
+  <section id="contact" class="card">
+    <h2>Contact</h2>
+    <p>E-mail: <a href="mailto:squirrelvault.tracker@gmail.com">squirrelvault.tracker@gmail.com</a></p>
+  </section>
+
+  <footer>
+    <span class="pill">&copy; <span id="y"></span> SquirrelVault Tracker</span>
+    <span class="pill"><a href="./terms-nl.html">Voorwaarden</a></span>
+    <span class="pill">🌐 <a href="./privacy.html">EN</a> · <a href="./privacy-de.html">DE</a> · <a href="./privacy-es.html">ES</a> · <a href="./privacy-fr.html">FR</a> · <a href="./privacy-it.html">IT</a> · <strong>NL</strong> · <a href="./privacy-pl.html">PL</a> · <a href="./privacy-pt.html">PT</a> · <a href="./privacy-uk.html">UK</a></span>
+  </footer>
+</main>
+<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Informativa sulla privacy — SquirrelVault Tracker</title>
+<meta name="description" content="Informativa sulla privacy di SquirrelVault Tracker." />
+<link rel="icon" type="image/png" href="./squirrelvault-icon.png" />
+<link rel="apple-touch-icon" href="./squirrelvault-icon.png" />
+<meta property="og:title" content="Informativa sulla privacy — SquirrelVault Tracker" />
+<meta property="og:description" content="Come gestiamo i vostri dati: informazioni sull'account, archiviazione cloud per articoli/note, elaborazione OCR tramite scansione IA, nessuna pubblicità, nessuna vendita di dati." />
+<meta property="og:image" content="https://squirrel-app.github.io/SquirrelVault-Tracker-Support/squirrelvault-icon.png" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<style>
+
+  :root {
+    --bg: #FFF7EF;
+    --fg: #2B2B2B;
+    --muted: #6B6B6B;
+    --card: #FFFFFF;
+    --border: #F2E6DA;
+    --accent: #FFA74A;
+    --accent-strong: #FF8C1F;
+    --link: var(--accent);
+    --shadow: 0 6px 24px rgba(255,140,31,.15);
+    --radius: 18px;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #19130E;
+      --fg: #EFE9E3;
+      --muted: #B7ADA6;
+      --card: #231A13;
+      --border: #3B2C20;
+      --accent: #FF9E3A;
+      --accent-strong: #FFB25E;
+      --link: var(--accent);
+      --shadow: 0 8px 28px rgba(255,158,58,.18);
+    }
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; font: 16px/1.65 system-ui,-apple-system,Segoe UI,Inter,Roboto,Arial,sans-serif; background: var(--bg); color: var(--fg); }
+  .wrap { max-width: 960px; margin: 0 auto; padding: 40px 20px 80px; }
+  header { margin-bottom: 24px; }
+  .brand { display: flex; align-items: center; gap: 12px; margin-bottom: 10px; }
+  .logo {
+    width: 40px; height: 40px; border-radius: 12px;
+    background: linear-gradient(135deg, var(--accent), var(--accent-strong));
+    box-shadow: var(--shadow);
+    display: flex; align-items: center; justify-content: center;
+    color: white; font-weight: 800; font-size: 18px; letter-spacing: .5px;
+    overflow: hidden;
+  }
+  .logo img { width: 100%; height: 100%; border-radius: 12px; }
+  h1 { font-size: 1.9rem; margin: 0; }
+  .sub { color: var(--muted); font-size: .95rem; margin-top: 6px; }
+  nav.toc a { display: inline-block; margin: 4px 12px 4px 0; color: var(--link); text-decoration: none; padding:6px 10px; border:1px solid var(--border); border-radius:999px; }
+  nav.toc a:hover { text-decoration: none; background: rgba(0,0,0,.03); }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 22px;
+    margin: 18px 0;
+  }
+  h2 { font-size: 1.25rem; margin: 26px 0 10px; }
+  h3 { font-size: 1.05rem; margin: 22px 0 10px; }
+  a { color: var(--link); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  ul { padding-left: 20px; }
+  details summary { cursor: pointer; font-weight: 700; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; }
+  .btn { display:inline-block; padding:10px 14px; border-radius:12px; border:1px solid var(--border); text-decoration:none; background: var(--card); }
+  .btn:hover { background: rgba(0,0,0,.03); }
+  footer { margin-top: 36px; color: var(--muted); font-size: .9rem; display:flex; gap:12px; flex-wrap:wrap; align-items:center; }
+  .pill { border:1px solid var(--border); border-radius:999px; padding:6px 10px; }
+  :target { outline: 2px solid var(--accent); outline-offset: 6px; border-radius: 14px; }
+
+</style>
+</head>
+<body>
+<main class="wrap">
+  <header>
+    <div class="brand">
+      <div class="logo"><img src="squirrelvault-icon.png" alt="Logo di SquirrelVault Tracker"></div>
+      <div>
+        <h1>Informativa sulla privacy</h1>
+        <div class="sub">Aggiornata il <time datetime="2026-02-23">23 feb. 2026</time></div>
+      </div>
+    </div>
+    <nav class="toc">
+      <a href="./index.html">&larr; Torna al Supporto</a>
+      <a href="#summary">Riepilogo</a>
+      <a href="#data">Dati che raccogliamo</a>
+      <a href="#use">Come utilizziamo i dati</a>
+      <a href="#sharing">Condivisione</a>
+      <a href="#rights">I vostri diritti</a>
+      <a href="#contact">Contatto</a>
+    </nav>
+  </header>
+
+  <section id="summary" class="card">
+    <h2>Riepilogo</h2>
+    <ul>
+      <li>Raccogliamo le informazioni minime sull'account dal vostro provider di accesso (Google, Apple o Facebook): e-mail, nome visualizzato, avatar (se presente) e un identificativo tecnico dell'account.</li>
+      <li>I vostri dati di inventario (articoli) e note, nonch&eacute; categorie/gruppi, possono essere archiviati nel cloud (Firebase Firestore) per supportare le funzionalit&agrave; basate sull'account.</li>
+      <li>Se utilizzate la Scansione IA, elaboriamo il testo riconosciuto (OCR) per generare suggerimenti di compilazione automatica. L'app non carica le vostre foto nell'ambito della scansione IA.</li>
+      <li>Nessuna pubblicit&agrave; e nessuna vendita di dati. Non condividiamo dati personali con operatori di marketing di terze parti.</li>
+    </ul>
+  </section>
+
+  <section id="data" class="card">
+    <h2>Dati che raccogliamo</h2>
+
+    <h3>Informazioni sull'account</h3>
+    <p>Quando effettuate l'accesso con Google, Apple o Facebook, riceviamo la vostra e-mail, il nome visualizzato, l'URL dell'avatar (se disponibile) e un identificativo tecnico dell'account. Queste informazioni vengono utilizzate esclusivamente per autenticarvi e proteggere l'accesso all'app.</p>
+
+    <h3>Dati dell'app (cloud)</h3>
+    <p>Quando avete effettuato l'accesso, archiviamo i dati dell'app nel cloud (Firebase Firestore), come gli articoli creati, le note degli articoli, le categorie/i gruppi e i metadati correlati (ad es. data di creazione e aggiornamento). Ci&ograve; consente il funzionamento delle funzionalit&agrave; basate sull'account.</p>
+
+    <h3>Dati dell'app (locale)</h3>
+    <p>Alcuni dati dell'app vengono inoltre archiviati localmente sul vostro dispositivo per garantire prestazioni ottimali e l'utilizzo offline. Se effettuate il logout, disinstallate l'app o utilizzate le opzioni di cancellazione in-app, i dati locali potrebbero essere rimossi a seconda dell'azione eseguita.</p>
+
+    <h3>Dati scansione IA</h3>
+    <p>Se utilizzate la funzione di scansione IA, elaboriamo il testo riconosciuto (OCR) dalla foto del prodotto per generare suggerimenti di compilazione automatica. L'app non carica le vostre foto nell'ambito della scansione IA.</p>
+
+    <h3>Informazioni sul dispositivo e dati tecnici</h3>
+    <p>Possiamo archiviare metadati tecnici di base associati al vostro account (ad es. famiglia/modello del dispositivo e versione di iOS) per garantire sicurezza, debug e funzionamento affidabile dell'app.</p>
+
+    <h3>Report di crash e errori</h3>
+    <p>Utilizziamo Firebase Crashlytics (fornito da Google) per raccogliere report di crash e dati sugli errori non fatali. Ci&ograve; ci aiuta a identificare e risolvere i problemi nell'App. I seguenti dati possono essere raccolti automaticamente quando l'App riscontra un errore o un crash:</p>
+    <ul>
+      <li>Stack trace dei crash e messaggi di errore (dettagli tecnici su cosa &egrave; andato storto).</li>
+      <li>Modello del dispositivo, versione del sistema operativo e memoria disponibile.</li>
+      <li>Stato dell'applicazione al momento del crash (ad es. schermata corrente).</li>
+      <li>Il vostro identificativo account (per aiutarci a indagare su problemi segnalati da utenti specifici).</li>
+      <li>Log breadcrumb &mdash; una sequenza limitata di eventi dell'app che precedono il crash.</li>
+    </ul>
+    <p>Questi dati vengono utilizzati esclusivamente per migliorare la stabilit&agrave; dell'App e non vengono impiegati per pubblicit&agrave;, tracciamento o profilazione. I dati di crash vengono elaborati da Google secondo i termini di Firebase. Per ulteriori informazioni, consultate <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase Privacy</a>.</p>
+  </section>
+
+  <section id="use" class="card">
+    <h2>Come utilizziamo i dati</h2>
+    <ul>
+      <li>Autenticare il vostro account e mantenere le sessioni sicure.</li>
+      <li>Archiviare e visualizzare il vostro inventario e le note associate al vostro account.</li>
+      <li>Inviare notifiche per le quali avete dato il consenso (ad es. promemoria di scadenza).</li>
+      <li>Elaborare le richieste di scansione IA per generare suggerimenti di compilazione automatica degli articoli (quando scegliete di utilizzare questa funzionalit&agrave;).</li>
+      <li>Migliorare l'affidabilit&agrave; e le prestazioni dell'app.</li>
+    </ul>
+    <p>Non vendiamo i vostri dati. Non leggiamo le vostre e-mail o i vostri contatti.</p>
+  </section>
+
+  <section id="sharing" class="card">
+    <h2>Condivisione</h2>
+    <p>Non condividiamo dati personali con inserzionisti o intermediari di dati di terze parti. I fornitori di servizi elaborano i dati esclusivamente per nostro conto, nella misura necessaria al funzionamento dell'App.</p>
+    <ul>
+      <li>Google Firebase &mdash; autenticazione (Firebase Auth), archiviazione database cloud (Firestore), elaborazione backend (Cloud Functions) e reportistica crash/errori (Crashlytics), necessari per il funzionamento delle funzionalit&agrave; account e cloud e per migliorare la stabilit&agrave; dell'app.</li>
+      <li>OpenAI &mdash; elabora il testo OCR per generare suggerimenti di compilazione automatica quando utilizzate la funzione di scansione IA.</li>
+      <li>Apple &mdash; Accedi con Apple; report di crash anonimi (se avete dato il consenso sul vostro dispositivo).</li>
+      <li>Meta (Facebook) &mdash; autenticazione (Facebook Login).</li>
+    </ul>
+    <p>Potremmo divulgare informazioni se richiesto dalla legge o da un procedimento giudiziario, o per tutelare i nostri diritti, la sicurezza o la propriet&agrave;. Potremmo utilizzare dati anonimizzati e aggregati per analisi e miglioramento del prodotto, che non consentono la vostra identificazione.</p>
+  </section>
+
+  <section id="retention" class="card">
+    <h2>Conservazione</h2>
+    <p>Le informazioni sull'account e i dati dell'app archiviati nel cloud (come articoli, note e categorie/gruppi) vengono conservati finch&eacute; il vostro account &egrave; attivo. Potete richiedere la cancellazione del vostro account e dei dati cloud associati utilizzando l'opzione di eliminazione account nell'app (se disponibile) oppure contattandoci.</p>
+    <p>I dati locali dell'app archiviati sul vostro dispositivo rimangono fino a quando non li eliminate, utilizzate le opzioni di cancellazione in-app, effettuate il logout o disinstallate l'App.</p>
+  </section>
+
+  <section id="rights" class="card">
+    <h2>I vostri diritti</h2>
+    <p>A seconda della vostra regione (UE/SEE/Regno Unito/Canada/USA), potreste avere il diritto di accedere, rettificare, cancellare o esportare i vostri dati e di revocare il consenso ove applicabile. Per esercitare questi diritti, contattateci. Avete inoltre il diritto di presentare un reclamo presso l'autorit&agrave; portoghese per la protezione dei dati (CNPD).</p>
+  </section>
+
+  <section id="children" class="card">
+    <h2>Minori</h2>
+    <p>L'app non &egrave; destinata a minori di 13 anni (o dell'et&agrave; minima richiesta nel vostro paese). Non raccogliamo consapevolmente dati da minori.</p>
+  </section>
+
+  <section id="changes" class="card">
+    <h2>Modifiche alla presente informativa</h2>
+    <p>Potremmo aggiornare la presente informativa con l'evoluzione dell'app. Le modifiche sostanziali saranno evidenziate su questa pagina.</p>
+  </section>
+
+  <section id="legal" class="card">
+    <h2>Titolare del trattamento</h2>
+    <p>L'App &egrave; sviluppata e gestita da uno sviluppatore indipendente con sede in Portogallo. Contatto: <a href="mailto:squirrelvault.tracker@gmail.com">squirrelvault.tracker@gmail.com</a>.</p>
+    <p>Agiamo in qualit&agrave; di titolare del trattamento dei vostri dati. L'e-mail &egrave; sufficiente per contattarci; un indirizzo postale non &egrave; richiesto a tale scopo.</p>
+  </section>
+
+  <section id="medical" class="card">
+    <h2>Avviso medico</h2>
+    <p>L'App pu&ograve; visualizzare o consentire il monitoraggio di articoli come alimenti, integratori o medicinali. L'App non &egrave; un dispositivo medico e non fornisce consulenza medica, diagnosi o trattamento. Consultate sempre un professionista sanitario qualificato. L'uso dell'App &egrave; a vostro rischio e pericolo.</p>
+  </section>
+
+  <section id="cookies" class="card">
+    <h2>Cookie</h2>
+    <p>Questo sito di supporto &egrave; ospitato su GitHub Pages. Non utilizziamo cookie o tracker. Se in futuro aggiungeremo strumenti di analisi, aggiorneremo la presente Informativa.</p>
+  </section>
+
+  <section id="liability-note" class="card">
+    <h2>Esclusione di responsabilit&agrave;</h2>
+    <p>La presente Informativa sulla privacy &egrave; fornita a fini di trasparenza. Non crea garanzie. L'App &egrave; fornita &laquo;cos&igrave; com'&egrave;&raquo;. La responsabilit&agrave; &egrave; limitata come descritto nelle Condizioni d'uso. Il vostro unico rimedio in caso di problemi &egrave; interrompere l'uso dell'App e, se applicabile, richiedere un rimborso tramite il negozio di acquisto in conformit&agrave; con le relative politiche.</p>
+  </section>
+
+  <section id="contact" class="card">
+    <h2>Contatto</h2>
+    <p>E-mail: <a href="mailto:squirrelvault.tracker@gmail.com">squirrelvault.tracker@gmail.com</a></p>
+  </section>
+
+  <footer>
+    <span class="pill">&copy; <span id="y"></span> SquirrelVault Tracker</span>
+    <span class="pill"><a href="./terms-it.html">Condizioni</a></span>
+    <span class="pill">🌐 <a href="./privacy.html">EN</a> · <a href="./privacy-de.html">DE</a> · <a href="./privacy-es.html">ES</a> · <a href="./privacy-fr.html">FR</a> · <strong>IT</strong> · <a href="./privacy-nl.html">NL</a> · <a href="./privacy-pl.html">PL</a> · <a href="./privacy-pt.html">PT</a> · <a href="./privacy-uk.html">UK</a></span>
+  </footer>
+</main>
+<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
