@@ -93,7 +93,7 @@
       <div class="logo"><img src="squirrelvault-icon.png" alt="SquirrelVault Tracker logo"></div>
       <div>
         <h1>Política de Privacidade</h1>
-        <div class="sub">Atualizada a <time datetime="2026-02-23">23 fev. 2026</time></div>
+        <div class="sub">Atualizada a <time datetime="2026-02-24">24 fev. 2026</time></div>
       </div>
     </div>
     <nav class="toc">
@@ -119,114 +119,115 @@
   </header>
 
   <section id="summary" class="card">
-    <h2>Resumo</h2>
+    <h2>Summary</h2>
     <ul>
-      <li>Recolhemos as informações mínimas da conta a partir do seu fornecedor de início de sessão (Google, Apple ou Facebook): e-mail, nome de apresentação, avatar (se aplicável) e um identificador técnico de conta.</li>
-      <li>Os seus dados de inventário (itens) e notas, bem como categorias/grupos, podem ser armazenados na nuvem (Firebase Firestore) para suportar funcionalidades baseadas em conta.</li>
-      <li>Se utilizar a funcionalidade AI Scan, processamos o texto reconhecido (OCR) para gerar sugestões de preenchimento automático. A aplicação não carrega as suas fotografias como parte da digitalização por IA.</li>
-      <li>Sem anúncios e sem venda de dados. Não partilhamos dados pessoais com profissionais de marketing de terceiros.</li>
+      <li>We collect the minimum account info from your sign-in provider (Google, Apple, or Facebook): email, display name, avatar (if any), and a technical account ID.</li>
+      <li>Your inventory data (items) and notes, as well as categories/groups, may be stored in the cloud (Firebase Firestore) to support account-based features.</li>
+      <li>If you use AI Scan, we process recognized text (OCR) to generate autofill suggestions. The app does not upload your photos as part of AI scan.</li>
+      <li>We currently do not serve ads and do not sell personal data to third-party marketers.</li>
     </ul>
   </section>
 
   <section id="data" class="card">
-    <h2>Dados que recolhemos</h2>
+    <h2>Data We Collect</h2>
 
-    <h3>Informações da conta</h3>
-    <p>Quando inicia sessão com Google, Apple ou Facebook, recebemos o seu e-mail, nome de apresentação, URL do avatar (se disponível) e um identificador técnico de conta. Estes dados são utilizados apenas para autenticá-lo e proteger o acesso à aplicação.</p>
+    <h3>Account information</h3>
+    <p>When you sign in with Google, Apple, or Facebook, we receive your email, display name, avatar URL (if available), and a technical account ID. This is used only to authenticate you and secure access to the app.</p>
 
-    <h3>Dados da aplicação (nuvem)</h3>
-    <p>Quando tem sessão iniciada, armazenamos dados da aplicação na nuvem (Firebase Firestore), como os itens que cria, notas dos itens, categorias/grupos e metadados associados (por exemplo, datas de criação e atualização). Isto permite o funcionamento das funcionalidades baseadas em conta.</p>
+    <h3>App data (cloud)</h3>
+    <p>When you are signed in, we store app data in the cloud (Firebase Firestore), such as items you create, item notes, categories/groups, and related metadata (e.g., creation and update timestamps). This helps operate account-based features.</p>
 
-    <h3>Dados da aplicação (local)</h3>
-    <p>Alguns dados da aplicação também são armazenados localmente no seu dispositivo para desempenho e utilização offline. Se terminar sessão, desinstalar a aplicação ou utilizar as opções de limpeza na aplicação, os dados locais podem ser removidos consoante a ação realizada.</p>
+    <h3>App data (local)</h3>
+    <p>Some app data is also stored locally on your device for performance and offline use. If you sign out, uninstall the app, or use in-app clear options, local data may be removed depending on the action.</p>
 
-    <h3>Dados de digitalização IA</h3>
-    <p>Se utilizar a funcionalidade de digitalização por IA, processamos o texto reconhecido (OCR) a partir da fotografia do produto para gerar sugestões de preenchimento automático. A aplicação não carrega as suas fotografias como parte da digitalização por IA.</p>
+    <h3>AI scan data</h3>
+    <p>If you use the AI scan feature, we process recognized text (OCR) from the product photo to generate autofill suggestions. The app does not upload your photos as part of AI scan.</p>
 
-    <h3>Informações do dispositivo</h3>
-    <p>Podemos armazenar metadados técnicos básicos associados à sua conta (por exemplo, família/modelo do dispositivo e versão do iOS) para ajudar na segurança, depuração e funcionamento fiável da aplicação.</p>
+    <h3>Device and technical information</h3>
+    <p>We may store basic technical metadata linked to your account (e.g., device family/model and iOS version) to help with security, debugging, and reliable operation of the app.</p>
 
-    <h3>Relatórios de falhas e erros</h3>
-    <p>Utilizamos o Firebase Crashlytics (fornecido pela Google) para recolher relatórios de falhas e dados de erros não fatais. Isto ajuda-nos a identificar e corrigir problemas na aplicação. Os seguintes dados podem ser recolhidos automaticamente quando a aplicação encontra um erro ou falha:</p>
+    <h3>Crash and error reports</h3>
+    <p>We use Firebase Crashlytics (provided by Google) to collect crash reports and non-fatal error data. This helps us identify and fix issues in the App. The following data may be collected automatically when the App encounters an error or crash:</p>
     <ul>
-      <li>Rastreamentos de pilha de falhas e mensagens de erro (detalhes técnicos sobre o que correu mal).</li>
-      <li>Modelo do dispositivo, versão do sistema operativo e memória disponível.</li>
-      <li>Estado da aplicação no momento da falha (por exemplo, ecrã atual).</li>
-      <li>O seu identificador de conta (para nos ajudar a investigar problemas reportados por utilizadores específicos).</li>
-      <li>Registos de breadcrumb — uma sequência limitada de eventos da aplicação que antecederam a falha.</li>
+      <li>Crash stack traces and error messages (technical details about what went wrong).</li>
+      <li>Device model, operating system version, and available memory.</li>
+      <li>Application state at the time of the crash (e.g., current screen).</li>
+      <li>Your account identifier (to help us investigate issues reported by specific users).</li>
+      <li>Breadcrumb logs — a limited sequence of app events leading up to the crash.</li>
     </ul>
-    <p>Estes dados são utilizados exclusivamente para melhorar a estabilidade da aplicação e não são usados para publicidade, rastreamento ou criação de perfis. Os dados de falhas são processados pela Google ao abrigo dos seus termos do Firebase. Pode obter mais informações em <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase Privacy</a>.</p>
+    <p>This data is used solely to improve the App's stability and is not used for advertising, tracking, or profiling. Crash data is processed by Google under its Firebase terms. You can learn more at <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase Privacy</a>.</p>
   </section>
 
   <section id="use" class="card">
-    <h2>Como utilizamos os dados</h2>
+    <h2>How We Use Data</h2>
     <ul>
-      <li>Autenticar a sua conta e manter as sessões seguras.</li>
-      <li>Armazenar e apresentar o seu inventário e notas associados à sua conta.</li>
-      <li>Enviar notificações que tenha ativado (por exemplo, lembretes de validade).</li>
-      <li>Processar pedidos de digitalização por IA para gerar sugestões de preenchimento automático de itens (quando optar por utilizar esta funcionalidade).</li>
-      <li>Melhorar a fiabilidade e o desempenho da aplicação.</li>
+      <li>Authenticate your account and keep sessions secure.</li>
+      <li>Store and display your inventory and notes associated with your account.</li>
+      <li>Send notifications you opt in to (e.g., expiry reminders).</li>
+      <li>Process AI scan requests to generate item autofill suggestions (when you choose to use this feature).</li>
+      <li>Improve the app’s reliability and performance.</li>
     </ul>
-    <p>Não vendemos os seus dados. Não acedemos ao seu e-mail ou contactos.</p>
+    <p>We currently do not sell your personal data. We do not access your email or contacts.</p>
   </section>
 
   <section id="sharing" class="card">
-    <h2>Partilha</h2>
-    <p>Não partilhamos dados pessoais com anunciantes de terceiros ou intermediários de dados. Os prestadores de serviços apenas processam dados em nosso nome, conforme necessário para operar a aplicação.</p>
+    <h2>Sharing</h2>
+    <p>We do not currently share personal data with third-party advertisers or data brokers. Service providers process data on our behalf as needed to operate the App. We may share anonymized or aggregated data that cannot reasonably be used to identify you.</p>
     <ul>
-      <li>Google Firebase — autenticação (Firebase Auth), armazenamento na nuvem (Firestore), processamento backend (Cloud Functions) e relatórios de falhas/erros (Crashlytics) necessários para operar as funcionalidades de conta e nuvem e melhorar a estabilidade da aplicação.</li>
-      <li>OpenAI — processa texto OCR para gerar sugestões de preenchimento automático de itens quando utiliza a funcionalidade de digitalização por IA.</li>
-      <li>Apple — Iniciar sessão com Apple; relatórios de falhas anónimos (se ativou esta opção no seu dispositivo).</li>
-      <li>Meta (Facebook) — autenticação (Facebook Login).</li>
+      <li>Google Firebase — authentication (Firebase Auth), cloud database storage (Firestore), backend processing (Cloud Functions), and crash/error reporting (Crashlytics) required to operate account and cloud features and improve app stability.</li>
+      <li>OpenAI — processes OCR text to generate item autofill suggestions when you use the AI scan feature.</li>
+      <li>Apple — Sign in with Apple; anonymous crash reports (if you opted in on your device).</li>
+      <li>Meta (Facebook) — authentication (Facebook Login).</li>
     </ul>
-    <p>Podemos divulgar informações se exigido por lei ou processo legal, ou para proteger os nossos direitos, segurança ou propriedade. Podemos utilizar dados anonimizados e agregados para análises e melhoria do produto que não o identificam.</p>
+    <p>We may disclose information if required by law or legal process, or to protect our rights, safety, or property. We may use anonymized, aggregated data for analytics and product improvement that does not identify you.</p>
   </section>
 
   <section id="retention" class="card">
-    <h2>Retenção</h2>
-    <p>As informações da conta e os dados da aplicação armazenados na nuvem (como itens, notas e categorias/grupos) são mantidos enquanto a sua conta estiver ativa. Pode solicitar a eliminação da sua conta e dos dados na nuvem associados através da opção de eliminação de conta na aplicação (se disponível) ou contactando-nos.</p>
-    <p>Os dados locais da aplicação armazenados no seu dispositivo permanecem até que os elimine, utilize as opções de limpeza na aplicação, termine sessão ou desinstale a aplicação.</p>
+    <h2>Retention</h2>
+    <p>We retain your data for as long as your account is active or as needed to provide you with services, comply with legal obligations, resolve disputes, and enforce our agreements. We determine the appropriate retention period based on the nature of the data and the purposes for which it is processed.</p>
+    <p>After account deletion, we may retain certain data in anonymized or aggregated form, or as required by law, for a reasonable period. Local app data stored on your device is your responsibility to manage.</p>
   </section>
 
   <section id="rights" class="card">
-    <h2>Os seus direitos</h2>
-    <p>Dependendo da sua região (UE/EEE/Reino Unido/Canadá/EUA), pode ter o direito de aceder, retificar, eliminar ou exportar os seus dados, e de retirar o consentimento quando aplicável. Para exercer estes direitos, contacte-nos. Tem também o direito de apresentar uma reclamação junto da Comissão Nacional de Proteção de Dados (CNPD).</p>
+    <h2>Your Rights</h2>
+    <p>Where required by applicable law, you may have certain rights regarding your personal data, such as the right to request access to or deletion of your data. To make any such request, contact us at the email below. We will respond to valid requests within the timeframes required by applicable law.</p>
+    <p>We reserve the right to verify your identity before processing any request and may decline requests that are unreasonable, repetitive, or not required by law. We may retain certain data as necessary for legitimate business purposes or as required by law even after a deletion request.</p>
   </section>
 
   <section id="children" class="card">
-    <h2>Menores</h2>
-    <p>A aplicação não se destina a crianças com menos de 13 anos (ou a idade mínima exigida no seu país). Não recolhemos intencionalmente dados de crianças.</p>
+    <h2>Children</h2>
+    <p>The app is not directed to children under 13 (or the minimum age required in your country). We do not knowingly collect data from children.</p>
   </section>
 
   <section id="changes" class="card">
-    <h2>Alterações a esta Política</h2>
-    <p>Podemos atualizar esta política à medida que a aplicação evolui. As alterações substanciais serão destacadas nesta página.</p>
+    <h2>Changes to this Policy</h2>
+    <p>We reserve the right to modify this Privacy Policy at any time. Changes become effective upon posting to this page. Your continued use of the App after any modification constitutes your acceptance of the updated Privacy Policy. We are not obligated to notify you individually of changes. It is your responsibility to review this Policy periodically.</p>
   </section>
 
   <section id="legal" class="card">
-    <h2>Responsável pelo tratamento</h2>
-    <p>A aplicação é desenvolvida e operada por um programador independente sediado em Portugal. Contacto: <a href="mailto:squirrelvault.tracker@gmail.com">squirrelvault.tracker@gmail.com</a>.</p>
-    <p>Atuamos como responsável pelo tratamento dos seus dados. O e-mail é suficiente para nos contactar; não é necessário um endereço postal para este efeito.</p>
+    <h2>Controller</h2>
+    <p>The App is developed and operated by an independent developer based in Portugal. For data-related inquiries, contact: <a href="mailto:squirrelvault.tracker@gmail.com">squirrelvault.tracker@gmail.com</a>.</p>
   </section>
 
   <section id="medical" class="card">
-    <h2>Aviso médico</h2>
-    <p>A aplicação pode apresentar ou permitir o rastreamento de itens como alimentos, suplementos ou medicamentos. A aplicação não é um dispositivo médico e não fornece aconselhamento médico, diagnóstico ou tratamento. Consulte sempre um profissional de saúde qualificado. A utilização da aplicação é da sua inteira responsabilidade.</p>
+    <h2>Medical Disclaimer</h2>
+    <p>The App may display or let you track items such as food, supplements, or medicines. The App is not a medical device and does not provide medical advice, diagnosis, or treatment. Always consult a qualified healthcare professional. Use of the App is at your own risk.</p>
   </section>
 
   <section id="cookies" class="card">
     <h2>Cookies</h2>
-    <p>Este site de suporte está alojado no GitHub Pages. Não utilizamos cookies nem rastreadores neste site. Se adicionarmos análises no futuro, atualizaremos esta Política.</p>
+    <p>This support site is hosted on GitHub Pages. We do not use cookies or trackers here. If we add analytics in the future, we will update this Policy.</p>
   </section>
 
   <section id="liability-note" class="card">
-    <h2>Limitação de responsabilidade</h2>
-    <p>Esta Política de Privacidade é fornecida por uma questão de transparência. Não cria garantias. A aplicação é fornecida "tal como está". A responsabilidade é limitada conforme descrito nos Termos de Utilização. O seu único recurso em caso de problemas é deixar de utilizar a aplicação e, se aplicável, solicitar um reembolso através da loja de compra, de acordo com as respetivas políticas.</p>
+    <h2>Disclaimer &amp; Liability</h2>
+    <p>This Privacy Policy is provided for informational purposes and does not create any warranties, obligations, or rights beyond what is required by applicable law. The App is provided "AS IS" without any guarantee regarding the security, accuracy, or completeness of data processing. Our total liability related to privacy matters is limited as described in our <a href="./terms.html">Terms of Use</a>.</p>
+    <p>We implement commercially reasonable security measures but cannot guarantee absolute security of your data. You acknowledge that no method of electronic transmission or storage is 100% secure.</p>
   </section>
 
   <section id="contact" class="card">
-    <h2>Contacto</h2>
-    <p>E-mail: <a href="mailto:squirrelvault.tracker@gmail.com">squirrelvault.tracker@gmail.com</a></p>
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:squirrelvault.tracker@gmail.com">squirrelvault.tracker@gmail.com</a></p>
   </section>
 
   <footer>
