@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>SquirrelVault Tracker — Pomoc</title>
+<meta name="description" content="Oficjalna strona pomocy SquirrelVault Tracker: O aplikacji, Szybki start, FAQ, Kontakt, Prywatność i Regulamin." />
+<link rel="icon" type="image/png" href="./squirrelvault-icon.png" />
+<link rel="apple-touch-icon" href="./squirrelvault-icon.png" />
+<meta property="og:title" content="SquirrelVault Tracker — Pomoc" />
+<meta property="og:description" content="Szybki tracker inwentarza i dat ważności. Pomoc, FAQ, Prywatność i Regulamin." />
+<meta property="og:image" content="https://squirrel-app.github.io/SquirrelVault-Tracker-Support/squirrelvault-icon.png" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<style>
+
+  :root {
+    --bg: #FFF7EF;
+    --fg: #2B2B2B;
+    --muted: #6B6B6B;
+    --card: #FFFFFF;
+    --border: #F2E6DA;
+    --accent: #FFA74A;
+    --accent-strong: #FF8C1F;
+    --link: var(--accent);
+    --shadow: 0 6px 24px rgba(255,140,31,.15);
+    --radius: 18px;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #19130E;
+      --fg: #EFE9E3;
+      --muted: #B7ADA6;
+      --card: #231A13;
+      --border: #3B2C20;
+      --accent: #FF9E3A;
+      --accent-strong: #FFB25E;
+      --link: var(--accent);
+      --shadow: 0 8px 28px rgba(255,158,58,.18);
+    }
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; font: 16px/1.65 system-ui,-apple-system,Segoe UI,Inter,Roboto,Arial,sans-serif; background: var(--bg); color: var(--fg); }
+  .wrap { max-width: 960px; margin: 0 auto; padding: 40px 20px 80px; }
+  header { margin-bottom: 24px; }
+  .brand { display: flex; align-items: center; gap: 12px; margin-bottom: 10px; }
+  .logo {
+    width: 40px; height: 40px; border-radius: 12px;
+    background: linear-gradient(135deg, var(--accent), var(--accent-strong));
+    box-shadow: var(--shadow);
+    display: flex; align-items: center; justify-content: center;
+    color: white; font-weight: 800; font-size: 18px; letter-spacing: .5px;
+    overflow: hidden;
+  }
+  .logo img { width: 100%; height: 100%; border-radius: 12px; }
+  h1 { font-size: 1.9rem; margin: 0; }
+  .sub { color: var(--muted); font-size: .95rem; margin-top: 6px; }
+  nav.toc a { display: inline-block; margin: 4px 12px 4px 0; color: var(--link); text-decoration: none; padding:6px 10px; border:1px solid var(--border); border-radius:999px; }
+  nav.toc a:hover { text-decoration: none; background: rgba(0,0,0,.03); }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 22px;
+    margin: 18px 0;
+  }
+  h2 { font-size: 1.25rem; margin: 26px 0 10px; }
+  h3 { font-size: 1.05rem; margin: 22px 0 10px; }
+  a { color: var(--link); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  ul { padding-left: 20px; }
+  details summary { cursor: pointer; font-weight: 700; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; }
+  .btn { display:inline-block; padding:10px 14px; border-radius:12px; border:1px solid var(--border); text-decoration:none; background: var(--card); }
+  .btn:hover { background: rgba(0,0,0,.03); }
+  footer { margin-top: 36px; color: var(--muted); font-size: .9rem; display:flex; gap:12px; flex-wrap:wrap; align-items:center; }
+  .pill { border:1px solid var(--border); border-radius:999px; padding:6px 10px; }
+  :target { outline: 2px solid var(--accent); outline-offset: 6px; border-radius: 14px; }
+
+  .lang-bar { display: flex; gap: 6px; flex-wrap: wrap; align-items: center; margin-top: 8px; font-size: .85rem; }
+  .lang-bar a, .lang-bar strong { padding: 3px 8px; border: 1px solid var(--border); border-radius: 999px; color: var(--link); text-decoration: none; }
+  .lang-bar strong { background: var(--accent); color: #fff; border-color: var(--accent); }
+  .lang-bar a:hover { background: rgba(0,0,0,.03); text-decoration: none; }
+
+</style>
+</head>
+<body>
+<main class="wrap">
+  <header>
+    <div class="brand">
+      <div class="logo"><img src="squirrelvault-icon.png" alt="SquirrelVault Tracker logo"></div>
+      <div>
+        <h1>SquirrelVault Tracker — Pomoc</h1>
+        <div class="sub">Jesteśmy tu, aby pomóc. Zaktualizowano <time datetime="2026-02-24">24 lut 2026</time></div>
+      </div>
+    </div>
+    <nav class="toc" aria-label="Sekcje">
+      <a href="#about">O aplikacji</a>
+      <a href="#quickstart">Szybki start</a>
+      <a href="#faqs">FAQ</a>
+      <a href="#contact">Kontakt</a>
+      <a href="#policies">Regulaminy</a>
+    </nav>
+    <div class="lang-bar">
+      <a href="./index.html">EN</a>
+      <a href="./index-de.html">DE</a>
+      <a href="./index-es.html">ES</a>
+      <a href="./index-fr.html">FR</a>
+      <a href="./index-it.html">IT</a>
+      <a href="./index-nl.html">NL</a>
+      <strong>PL</strong>
+      <a href="./index-pt.html">PT</a>
+      <a href="./index-uk.html">UK</a>
+    </div>
+  </header>
+
+  <section id="about" class="card">
+    <h2>O aplikacji</h2>
+    <p><strong>SquirrelVault Tracker</strong> to szybki, minimalistyczny tracker inwentarza i dat ważności. Pomaga kontrolować
+      <strong>produkty spożywcze</strong>, a w szczególności <strong>leki i witaminy</strong> — czyli rzeczy, których daty ważności łatwo przeoczyć.</p>
+    <ul>
+      <li><strong>Inteligentne przypomnienia</strong> przed upływem daty ważności</li>
+      <li><strong>Szybkie dodawanie</strong> z notatkami i skanem kodów kreskowych</li>
+      <li><strong>Skan AI (opcjonalny)</strong> — pomaga automatycznie uzupełnić dane produktu</li>
+      <li><strong>Synchronizacja</strong> — zaloguj się, aby zachować dane na wielu urządzeniach</li>
+      <li><strong>Eksport</strong> listy jako pojedynczy plik PDF</li>
+      <li><strong>Prywatność w projekcie</strong> — staramy się zbierać tylko dane niezbędne do działania aplikacji</li>
+    </ul>
+    <p><strong>Logowanie może być wymagane</strong> w celu zapewnienia bezpiecznego dostępu i funkcji chmurowych. Niektóre zaawansowane funkcje mogą wymagać subskrypcji. Szczegóły w <a href="./terms-pl.html">Regulaminie</a> i <a href="./privacy-pl.html">Polityce prywatności</a>.</p>
+  </section>
+
+  <section id="quickstart" class="card">
+    <h2>Szybki start</h2>
+    <ul>
+      <li><strong>Zaloguj się:</strong> użyj opcji logowania wyświetlonej przy pierwszym uruchomieniu.</li>
+      <li><strong>Dodaj produkt:</strong> Ekran główny → „+" → nazwa, data ważności (lub <em>Skanuj</em>).</li>
+      <li><strong>Usuń:</strong> przesuń element w lewo → <em>Usuń</em>.</li>
+      <li><strong>Eksport (PDF):</strong> Profil → <em>Udostępnij (PDF)</em> → Zapisz lub Udostępnij.</li>
+      <li><strong>Powiadomienia:</strong> Profil → <em>Powiadomienia</em> (w razie potrzeby włącz w Ustawieniach iOS).</li>
+      <li><strong>Wyczyść dane:</strong> Profil → <em>Wyczyść cały magazyn</em> (nieodwracalne).</li>
+    </ul>
+  </section>
+
+  <section id="faqs" class="card">
+    <h2>FAQ</h2>
+
+    <details open>
+      <summary>Czy aplikacja jest darmowa? Czy są subskrypcje?</summary>
+      <p>Aplikacja może oferować opcjonalne subskrypcje (na przykład „Pro"), które odblokowują dodatkowe funkcje lub wyższe limity. Dostępność i ceny są wyświetlane w aplikacji w momencie zakupu.</p>
+    </details>
+
+    <details>
+      <summary>Czy potrzebuję konta? Dlaczego logowanie?</summary>
+      <p>Logowanie pomaga zabezpieczyć dostęp i umożliwia korzystanie z funkcji chmurowych. Otrzymujemy jedynie podstawowe informacje profilowe od dostawcy (e-mail, wyświetlaną nazwę, awatar jeśli jest, oraz techniczny identyfikator konta) w celach uwierzytelnienia.</p>
+    </details>
+
+    <details>
+      <summary>Czy mój inwentarz jest przesyłany na serwery?</summary>
+      <p>Gdy funkcje chmurowe są włączone, Twoje produkty i notatki mogą być przechowywane w chmurze, aby można je było powiązać z Twoim kontem. Zdjęcia nie są przesyłane, chyba że wyraźnie zaznaczono to w aplikacji. Szczegóły w <a href="./privacy-pl.html">Polityce prywatności</a>.</p>
+    </details>
+
+    <details>
+      <summary>Czym jest skan AI i jakie dane są wysyłane?</summary>
+      <p>Skan AI pomaga automatycznie uzupełnić dane produktu na podstawie tekstu rozpoznanego z opakowania (OCR). Jeśli zdecydujesz się na skan AI, rozpoznany tekst może zostać przesłany do przetworzenia. Wyniki AI mogą być niedokładne — proszę weryfikować ważne informacje (szczególnie dotyczące leków). Mogą obowiązywać limity w zależności od Twojego planu.</p>
+    </details>
+
+    <details>
+      <summary>Czy stracę dane po usunięciu aplikacji lub zmianie telefonu?</summary>
+      <p>Lokalne dane aplikacji mogą zostać utracone po jej odinstalowaniu. Jeśli funkcje chmurowe są włączone, dane powiązane z kontem można przywrócić po ponownym zalogowaniu. Dostępność zależy od aktualnej wersji aplikacji i ustawień funkcji.</p>
+    </details>
+
+    <details>
+      <summary>Czy aplikacja zbiera dane o awariach lub analitykę?</summary>
+      <p>Aplikacja korzysta z Firebase Crashlytics do zbierania raportów o awariach i błędach niekrytycznych. Pomaga nam to znajdować i naprawiać błędy. Dane o awariach mogą obejmować informacje o urządzeniu, stan aplikacji i szczegóły techniczne błędu — nie są wykorzystywane do reklam ani śledzenia. Pełne informacje w <a href="./privacy-pl.html">Polityce prywatności</a>.</p>
+    </details>
+
+    <details>
+      <summary>Jak mogę poprosić o usunięcie konta?</summary>
+      <p>Wyślij e-mail na adres <a href="mailto:squirrelvault.tracker@gmail.com">squirrelvault.tracker@gmail.com</a> z adresu użytego do logowania z prośbą o usunięcie konta. Po potwierdzeniu usuniemy dane powiązane z Twoim kontem w chmurze, jeśli dotyczy. Dane lokalne na Twoim urządzeniu pozostają pod Twoją kontrolą — usuń je w aplikacji lub odinstaluj aplikację.</p>
+    </details>
+  </section>
+
+  <section id="contact" class="card">
+    <h2>Kontakt</h2>
+    <p>E-mail: <a href="mailto:squirrelvault.tracker@gmail.com">squirrelvault.tracker@gmail.com</a></p>
+    <p>Prosimy o podanie modelu urządzenia, wersji iOS, wersji aplikacji oraz (jeśli to możliwe) krótkiego nagrania ekranu.</p>
+  </section>
+
+  <section id="policies" class="card">
+    <h2>Regulaminy</h2>
+    <p>
+      <a class="btn" href="./privacy-pl.html">Polityka prywatności</a>
+      &nbsp;&nbsp;
+      <a class="btn" href="./terms-pl.html">Regulamin / EULA</a>
+    </p>
+  </section>
+
+  <footer>
+    <span class="pill">© <span id="y"></span> SquirrelVault Tracker</span>
+    <span class="pill"><a href="#contact">Kontakt</a></span>
+    <span class="pill"><a href="#policies">Regulaminy</a></span>
+  </footer>
+</main>
+<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>

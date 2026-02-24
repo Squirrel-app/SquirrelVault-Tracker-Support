@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>SquirrelVault Tracker — Ondersteuning</title>
+<meta name="description" content="Officiële ondersteuning voor SquirrelVault Tracker: Over, Snelstart, Veelgestelde vragen, Contact, Privacy en Voorwaarden." />
+<link rel="icon" type="image/png" href="./squirrelvault-icon.png" />
+<link rel="apple-touch-icon" href="./squirrelvault-icon.png" />
+<meta property="og:title" content="SquirrelVault Tracker — Ondersteuning" />
+<meta property="og:description" content="Snelle voorraad- en houdbaarheidstracker. Help, Veelgestelde vragen, Privacy en Voorwaarden." />
+<meta property="og:image" content="https://squirrel-app.github.io/SquirrelVault-Tracker-Support/squirrelvault-icon.png" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<style>
+
+  :root {
+    --bg: #FFF7EF;
+    --fg: #2B2B2B;
+    --muted: #6B6B6B;
+    --card: #FFFFFF;
+    --border: #F2E6DA;
+    --accent: #FFA74A;
+    --accent-strong: #FF8C1F;
+    --link: var(--accent);
+    --shadow: 0 6px 24px rgba(255,140,31,.15);
+    --radius: 18px;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #19130E;
+      --fg: #EFE9E3;
+      --muted: #B7ADA6;
+      --card: #231A13;
+      --border: #3B2C20;
+      --accent: #FF9E3A;
+      --accent-strong: #FFB25E;
+      --link: var(--accent);
+      --shadow: 0 8px 28px rgba(255,158,58,.18);
+    }
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; font: 16px/1.65 system-ui,-apple-system,Segoe UI,Inter,Roboto,Arial,sans-serif; background: var(--bg); color: var(--fg); }
+  .wrap { max-width: 960px; margin: 0 auto; padding: 40px 20px 80px; }
+  header { margin-bottom: 24px; }
+  .brand { display: flex; align-items: center; gap: 12px; margin-bottom: 10px; }
+  .logo {
+    width: 40px; height: 40px; border-radius: 12px;
+    background: linear-gradient(135deg, var(--accent), var(--accent-strong));
+    box-shadow: var(--shadow);
+    display: flex; align-items: center; justify-content: center;
+    color: white; font-weight: 800; font-size: 18px; letter-spacing: .5px;
+    overflow: hidden;
+  }
+  .logo img { width: 100%; height: 100%; border-radius: 12px; }
+  h1 { font-size: 1.9rem; margin: 0; }
+  .sub { color: var(--muted); font-size: .95rem; margin-top: 6px; }
+  nav.toc a { display: inline-block; margin: 4px 12px 4px 0; color: var(--link); text-decoration: none; padding:6px 10px; border:1px solid var(--border); border-radius:999px; }
+  nav.toc a:hover { text-decoration: none; background: rgba(0,0,0,.03); }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 22px;
+    margin: 18px 0;
+  }
+  h2 { font-size: 1.25rem; margin: 26px 0 10px; }
+  h3 { font-size: 1.05rem; margin: 22px 0 10px; }
+  a { color: var(--link); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  ul { padding-left: 20px; }
+  details summary { cursor: pointer; font-weight: 700; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; }
+  .btn { display:inline-block; padding:10px 14px; border-radius:12px; border:1px solid var(--border); text-decoration:none; background: var(--card); }
+  .btn:hover { background: rgba(0,0,0,.03); }
+  footer { margin-top: 36px; color: var(--muted); font-size: .9rem; display:flex; gap:12px; flex-wrap:wrap; align-items:center; }
+  .pill { border:1px solid var(--border); border-radius:999px; padding:6px 10px; }
+  :target { outline: 2px solid var(--accent); outline-offset: 6px; border-radius: 14px; }
+
+  .lang-bar { display: flex; gap: 6px; flex-wrap: wrap; align-items: center; margin-top: 8px; font-size: .85rem; }
+  .lang-bar a, .lang-bar strong { padding: 3px 8px; border: 1px solid var(--border); border-radius: 999px; color: var(--link); text-decoration: none; }
+  .lang-bar strong { background: var(--accent); color: #fff; border-color: var(--accent); }
+  .lang-bar a:hover { background: rgba(0,0,0,.03); text-decoration: none; }
+
+</style>
+</head>
+<body>
+<main class="wrap">
+  <header>
+    <div class="brand">
+      <div class="logo"><img src="squirrelvault-icon.png" alt="SquirrelVault Tracker logo"></div>
+      <div>
+        <h1>SquirrelVault Tracker — Ondersteuning</h1>
+        <div class="sub">Wij staan klaar om te helpen. Bijgewerkt op <time datetime="2026-02-24">24 feb 2026</time></div>
+      </div>
+    </div>
+    <nav class="toc" aria-label="Secties">
+      <a href="#about">Over</a>
+      <a href="#quickstart">Snelstart</a>
+      <a href="#faqs">Veelgestelde vragen</a>
+      <a href="#contact">Contact</a>
+      <a href="#policies">Beleid</a>
+    </nav>
+    <div class="lang-bar">
+      <a href="./index.html">EN</a>
+      <a href="./index-de.html">DE</a>
+      <a href="./index-es.html">ES</a>
+      <a href="./index-fr.html">FR</a>
+      <a href="./index-it.html">IT</a>
+      <strong>NL</strong>
+      <a href="./index-pl.html">PL</a>
+      <a href="./index-pt.html">PT</a>
+      <a href="./index-uk.html">UK</a>
+    </div>
+  </header>
+
+  <section id="about" class="card">
+    <h2>Over</h2>
+    <p><strong>SquirrelVault Tracker</strong> is een snelle, minimalistische voorraad- en houdbaarheidstracker. De app helpt u grip te houden op
+      <strong>voorraadproducten</strong> en vooral <strong>medicijnen &amp; vitamines</strong> — artikelen waarvan de houdbaarheidsdatum gemakkelijk over het hoofd wordt gezien.</p>
+    <ul>
+      <li><strong>Slimme herinneringen</strong> voordat artikelen verlopen</li>
+      <li><strong>Snel vastleggen</strong> met notities en barcodescan</li>
+      <li><strong>AI-scan (optioneel)</strong> om artikelgegevens automatisch in te vullen</li>
+      <li><strong>Cloudsynchronisatie</strong> — log in om uw artikelen op al uw apparaten te bewaren</li>
+      <li><strong>Exporteren</strong> van uw lijst als één PDF-bestand</li>
+      <li><strong>Privacy by design</strong> — wij streven ernaar alleen gegevens te verzamelen die nodig zijn om de app te laten werken</li>
+    </ul>
+    <p><strong>Inloggen kan vereist zijn</strong> voor beveiligde toegang en cloudfuncties. Sommige geavanceerde functies vereisen mogelijk een abonnement. Zie de <a href="./terms-nl.html">Voorwaarden</a> en het <a href="./privacy-nl.html">Privacybeleid</a> voor meer informatie.</p>
+  </section>
+
+  <section id="quickstart" class="card">
+    <h2>Snelstart</h2>
+    <ul>
+      <li><strong>Inloggen:</strong> gebruik de inlogoptie die bij de eerste keer opstarten wordt getoond.</li>
+      <li><strong>Artikel toevoegen:</strong> Startscherm → "+" → naam, houdbaarheidsdatum (of <em>Scannen</em>).</li>
+      <li><strong>Verwijderen:</strong> veeg naar links op een artikel → <em>Verwijderen</em>.</li>
+      <li><strong>Exporteren (PDF):</strong> Profiel → <em>Delen (PDF)</em> → Opslaan of Delen.</li>
+      <li><strong>Meldingen:</strong> Profiel → <em>Meldingen</em> (schakel in via iOS-instellingen indien nodig).</li>
+      <li><strong>Gegevens wissen:</strong> Profiel → <em>Alle opslag wissen</em> (permanent).</li>
+    </ul>
+  </section>
+
+  <section id="faqs" class="card">
+    <h2>Veelgestelde vragen</h2>
+
+    <details open>
+      <summary>Is de app gratis? Zijn er abonnementen?</summary>
+      <p>De app kan optionele abonnementen aanbieden (bijvoorbeeld "Pro") die extra functies of hogere limieten ontgrendelen. Beschikbaarheid en prijzen worden in de app getoond op het moment van aankoop.</p>
+    </details>
+
+    <details>
+      <summary>Heb ik een account nodig? Waarom inloggen?</summary>
+      <p>Inloggen helpt de toegang te beveiligen en maakt cloudfuncties mogelijk. Wij ontvangen alleen basisprofielgegevens van de aanbieder (e-mailadres, weergavenaam, eventueel avatar en een technisch account-ID) voor authenticatie.</p>
+    </details>
+
+    <details>
+      <summary>Wordt mijn voorraad naar servers geüpload?</summary>
+      <p>Wanneer cloudfuncties zijn ingeschakeld, kunnen uw voorraadartikelen en notities in de cloud worden opgeslagen zodat ze aan uw account kunnen worden gekoppeld. Foto's worden niet geüpload tenzij dit uitdrukkelijk in de app wordt vermeld. Zie het <a href="./privacy-nl.html">Privacybeleid</a> voor meer informatie.</p>
+    </details>
+
+    <details>
+      <summary>Wat is AI-scan en welke gegevens worden verzonden?</summary>
+      <p>AI-scan kan helpen bij het automatisch invullen van artikelgegevens op basis van tekst die van de verpakking is herkend (OCR). Als u ervoor kiest AI-scan te gebruiken, kan herkende tekst worden verzonden voor verwerking. AI-resultaten kunnen onnauwkeurig zijn; controleer belangrijke gegevens altijd (vooral bij medicijnen). Afhankelijk van uw abonnement kunnen limieten van toepassing zijn.</p>
+    </details>
+
+    <details>
+      <summary>Verlies ik mijn gegevens als ik de app verwijder of van telefoon wissel?</summary>
+      <p>Lokale appgegevens kunnen verloren gaan als u de app verwijdert. Als cloudfuncties zijn ingeschakeld, kunnen uw aan het account gekoppelde gegevens worden hersteld nadat u opnieuw inlogt. Beschikbaarheid is afhankelijk van uw huidige appversie en functie-instellingen.</p>
+    </details>
+
+    <details>
+      <summary>Verzamelt de app crash- of analysegegevens?</summary>
+      <p>De app gebruikt Firebase Crashlytics om crashrapporten en niet-fatale foutgegevens te verzamelen. Dit helpt ons bij het opsporen en oplossen van bugs. Crashgegevens kunnen apparaatinformatie, appstatus en technische foutdetails bevatten — deze worden niet gebruikt voor advertenties of tracking. Zie ons <a href="./privacy-nl.html">Privacybeleid</a> voor alle details.</p>
+    </details>
+
+    <details>
+      <summary>Hoe vraag ik accountverwijdering aan?</summary>
+      <p>Stuur een e-mail naar <a href="mailto:squirrelvault.tracker@gmail.com">squirrelvault.tracker@gmail.com</a> vanaf het adres waarmee u bent ingelogd en vraag om accountverwijdering. Na bevestiging verwijderen wij uw aan het account gekoppelde cloudgegevens waar van toepassing. Lokale gegevens op uw apparaat blijven onder uw beheer; verwijder deze in de app of verwijder de app.</p>
+    </details>
+  </section>
+
+  <section id="contact" class="card">
+    <h2>Contact</h2>
+    <p>E-mail: <a href="mailto:squirrelvault.tracker@gmail.com">squirrelvault.tracker@gmail.com</a></p>
+    <p>Vermeld alstublieft uw apparaatmodel, iOS-versie, appversie en (indien mogelijk) een korte schermopname.</p>
+  </section>
+
+  <section id="policies" class="card">
+    <h2>Beleid</h2>
+    <p>
+      <a class="btn" href="./privacy-nl.html">Privacybeleid</a>
+      &nbsp;&nbsp;
+      <a class="btn" href="./terms-nl.html">Gebruiksvoorwaarden / EULA</a>
+    </p>
+  </section>
+
+  <footer>
+    <span class="pill">© <span id="y"></span> SquirrelVault Tracker</span>
+    <span class="pill"><a href="#contact">Contact</a></span>
+    <span class="pill"><a href="#policies">Beleid</a></span>
+  </footer>
+</main>
+<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
