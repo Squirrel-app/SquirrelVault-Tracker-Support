@@ -75,6 +75,11 @@
   .pill { border:1px solid var(--border); border-radius:999px; padding:6px 10px; }
   :target { outline: 2px solid var(--accent); outline-offset: 6px; border-radius: 14px; }
 
+  .lang-bar { display: flex; gap: 6px; flex-wrap: wrap; align-items: center; margin-top: 8px; font-size: .85rem; }
+  .lang-bar a, .lang-bar strong { padding: 3px 8px; border: 1px solid var(--border); border-radius: 999px; color: var(--link); text-decoration: none; }
+  .lang-bar strong { background: var(--accent); color: #fff; border-color: var(--accent); }
+  .lang-bar a:hover { background: rgba(0,0,0,.03); text-decoration: none; }
+
 </style>
 </head>
 <body>
@@ -103,6 +108,17 @@
       <a href="#general">Postanowienia ogólne</a>
       <a href="#contact">Kontakt</a>
     </nav>
+    <div class="lang-bar">
+      <a href="./terms.html">EN</a>
+      <a href="./terms-de.html">DE</a>
+      <a href="./terms-es.html">ES</a>
+      <a href="./terms-fr.html">FR</a>
+      <a href="./terms-it.html">IT</a>
+      <a href="./terms-nl.html">NL</a>
+      <strong>PL</strong>
+      <a href="./terms-pt.html">PT</a>
+      <a href="./terms-uk.html">UK</a>
+    </div>
   </header>
 
   <section id="intro" class="card">
@@ -201,9 +217,7 @@
 
   <footer>
     <span class="pill">&copy; <span id="y"></span> SquirrelVault Tracker</span>
-    <span class="pill"><a href="./privacy-pl.html">Polityka prywatności</a></span>
-    <span class="pill">🌐 <a href="./terms.html">EN</a> · <a href="./terms-de.html">DE</a> · <a href="./terms-es.html">ES</a> · <a href="./terms-fr.html">FR</a> · <a href="./terms-it.html">IT</a> · <a href="./terms-nl.html">NL</a> · <strong>PL</strong> · <a href="./terms-pt.html">PT</a> · <a href="./terms-uk.html">UK</a></span>
-  </footer>
+    <span class="pill"><a href="./privacy-pl.html">Polityka prywatności</a></span>  </footer>
 </main>
 <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
 </body>

@@ -79,6 +79,11 @@
   .pill { border:1px solid var(--border); border-radius:999px; padding:6px 10px; }
   :target { outline: 2px solid var(--accent); outline-offset: 6px; border-radius: 14px; }
 
+  .lang-bar { display: flex; gap: 6px; flex-wrap: wrap; align-items: center; margin-top: 8px; font-size: .85rem; }
+  .lang-bar a, .lang-bar strong { padding: 3px 8px; border: 1px solid var(--border); border-radius: 999px; color: var(--link); text-decoration: none; }
+  .lang-bar strong { background: var(--accent); color: #fff; border-color: var(--accent); }
+  .lang-bar a:hover { background: rgba(0,0,0,.03); text-decoration: none; }
+
 </style>
 </head>
 <body>
@@ -88,7 +93,7 @@
       <div class="logo"><img src="squirrelvault-icon.png" alt="SquirrelVault Tracker logo"></div>
       <div>
         <h1>SquirrelVault Tracker — Support</h1>
-        <div class="sub">We’re here to help. Updated <time datetime="2026-02-18">18 Feb 2026</time></div>
+        <div class="sub">We're here to help. Updated <time datetime="2026-02-24">24 Feb 2026</time></div>
       </div>
     </div>
     <nav class="toc" aria-label="Sections">
@@ -98,6 +103,17 @@
       <a href="#contact">Contact</a>
       <a href="#policies">Policies</a>
     </nav>
+    <div class="lang-bar">
+      <strong>EN</strong>
+      <a href="./index.html">DE</a>
+      <a href="./index.html">ES</a>
+      <a href="./index.html">FR</a>
+      <a href="./index.html">IT</a>
+      <a href="./index.html">NL</a>
+      <a href="./index.html">PL</a>
+      <a href="./index.html">PT</a>
+      <a href="./index.html">UK</a>
+    </div>
   </header>
 
   <section id="about" class="card">
@@ -108,8 +124,9 @@
       <li><strong>Smart reminders</strong> before items expire</li>
       <li><strong>Fast capture</strong> with notes and barcode scan</li>
       <li><strong>AI scan (optional)</strong> to help autofill item details</li>
+      <li><strong>Cloud sync</strong> — sign in to keep your items across devices</li>
       <li><strong>Export</strong> your list as a single PDF</li>
-      <li><strong>Privacy by design</strong> — we aim to collect only what’s needed to run the app</li>
+      <li><strong>Privacy by design</strong> — we aim to collect only what's needed to run the app</li>
     </ul>
     <p><strong>Sign-in may be required</strong> for secure access and cloud features. Some advanced features may require a subscription. See <a href="./terms.html">Terms</a> and <a href="./privacy.html">Privacy Policy</a> for details.</p>
   </section>
@@ -152,6 +169,11 @@
     <details>
       <summary>Will I lose data if I delete the app or switch phones?</summary>
       <p>Local app data may be lost if you uninstall the app. If cloud features are enabled, your account-linked data can be restored after you sign in again. Availability depends on your current app version and feature settings.</p>
+    </details>
+
+    <details>
+      <summary>Does the app collect crash or analytics data?</summary>
+      <p>The app uses Firebase Crashlytics to collect crash reports and non-fatal error data. This helps us find and fix bugs. Crash data may include device info, app state, and technical error details — it is not used for advertising or tracking. For full details, see our <a href="./privacy.html">Privacy Policy</a>.</p>
     </details>
 
     <details>
