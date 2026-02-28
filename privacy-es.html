@@ -93,7 +93,7 @@
       <div class="logo"><img src="squirrelvault-icon.png" alt="SquirrelVault Tracker logo"></div>
       <div>
         <h1>Política de privacidad</h1>
-        <div class="sub">Actualizado el <time datetime="2026-02-24">24 feb. 2026</time></div>
+        <div class="sub">Actualizado el <time datetime="2026-02-28">28 feb. 2026</time></div>
       </div>
     </div>
     <nav class="toc">
@@ -102,6 +102,7 @@
       <a href="#data">Datos que recopilamos</a>
       <a href="#use">Cómo usamos los datos</a>
       <a href="#sharing">Uso compartido</a>
+      <a href="#third-party-data">Datos de terceros</a>
       <a href="#rights">Sus derechos</a>
       <a href="#contact">Contacto</a>
     </nav>
@@ -176,10 +177,19 @@
     <ul>
       <li>Google Firebase — authentication (Firebase Auth), cloud database storage (Firestore), backend processing (Cloud Functions), and crash/error reporting (Crashlytics) required to operate account and cloud features and improve app stability.</li>
       <li>OpenAI — processes OCR text to generate item autofill suggestions when you use the AI scan feature.</li>
+      <li>Open Food Facts — community food product database queried when you scan barcodes to retrieve product information (name, brand, category, etc.). Only the barcode is sent; no personal data is shared.</li>
       <li>Apple — Sign in with Apple; anonymous crash reports (if you opted in on your device).</li>
       <li>Meta (Facebook) — authentication (Facebook Login).</li>
     </ul>
     <p>We may disclose information if required by law or legal process, or to protect our rights, safety, or property. We may use anonymized, aggregated data for analytics and product improvement that does not identify you.</p>
+  </section>
+
+  <section id="third-party-data" class="card">
+    <h2>Third-Party Data Sources</h2>
+    <h3>Open Food Facts</h3>
+    <p>When you scan a product barcode, the App may query the <a href="https://openfoodfacts.org" target="_blank" rel="noopener">Open Food Facts</a> (OFF) database to retrieve product information such as name, brand, category, quantity, and nutritional data. Open Food Facts is a free, open, collaborative food products database licensed under the <a href="https://opendatacommons.org/licenses/odbl/1-0/" target="_blank" rel="noopener">Open Database License (ODbL)</a>.</p>
+    <p>When querying Open Food Facts, we send only the product barcode and a technical User-Agent header identifying the App. No personal data (such as your name, email, or account information) is transmitted to Open Food Facts.</p>
+    <p>Product data retrieved from Open Food Facts is stored locally on your device and, if you are signed in, in your cloud account as part of your inventory items. This data is used solely to populate item details for your convenience.</p>
   </section>
 
   <section id="retention" class="card">
