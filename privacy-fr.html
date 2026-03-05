@@ -120,123 +120,123 @@
   </header>
 
   <section id="summary" class="card">
-    <h2>Summary</h2>
+    <h2>Résumé</h2>
     <ul>
-      <li>We collect the minimum account info from your sign-in provider (Google or Apple): email, display name, avatar (if any), and a technical account ID.</li>
-      <li>Your inventory data (items) and notes, as well as categories/groups, may be stored in the cloud (Firebase Firestore) to support account-based features.</li>
-      <li>If you use AI Scan, we process recognized text (OCR) to generate autofill suggestions. The app does not upload your photos as part of AI scan.</li>
-      <li>We currently do not serve ads and do not sell personal data to third-party marketers.</li>
+      <li>Nous collectons le minimum d’informations de compte auprès de votre fournisseur de connexion (Google ou Apple) : adresse e-mail, nom d’affichage, avatar (le cas échéant) et un identifiant de compte technique.</li>
+      <li>Vos données d’inventaire (articles) et notes, ainsi que les catégories/groupes, peuvent être stockées dans le cloud (Firebase Firestore) afin de prendre en charge les fonctionnalités liées au compte.</li>
+      <li>Si vous utilisez le scan IA, nous traitons le texte reconnu (OCR) pour générer des suggestions de remplissage automatique. L’application ne téléverse pas vos photos dans le cadre du scan IA.</li>
+      <li>Nous n’affichons actuellement aucune publicité et ne vendons pas de données personnelles à des annonceurs tiers.</li>
     </ul>
   </section>
 
   <section id="data" class="card">
-    <h2>Data We Collect</h2>
+    <h2>Données que nous collectons</h2>
 
-    <h3>Account information</h3>
-    <p>When you sign in with Google or Apple, we receive your email, display name, avatar URL (if available), and a technical account ID. This is used only to authenticate you and secure access to the app.</p>
+    <h3>Informations du compte</h3>
+    <p>Lorsque vous vous connectez avec Google ou Apple, nous recevons votre adresse e-mail, votre nom d’affichage, l’URL de votre avatar (si disponible) et un identifiant de compte technique. Ces informations sont utilisées uniquement pour vous authentifier et sécuriser l’accès à l’application.</p>
 
-    <h3>App data (cloud)</h3>
-    <p>When you are signed in, we store app data in the cloud (Firebase Firestore), such as items you create, item notes, categories/groups, and related metadata (e.g., creation and update timestamps). This helps operate account-based features.</p>
+    <h3>Données de l’application (cloud)</h3>
+    <p>Lorsque vous êtes connecté, nous stockons les données de l’application dans le cloud (Firebase Firestore), telles que les articles que vous créez, les notes d’articles, les catégories/groupes et les métadonnées associées (p. ex. horodatages de création et de mise à jour). Cela permet le fonctionnement des fonctionnalités liées au compte.</p>
 
-    <h3>App data (local)</h3>
-    <p>Some app data is also stored locally on your device for performance and offline use. If you sign out, uninstall the app, or use in-app clear options, local data may be removed depending on the action.</p>
+    <h3>Données de l’application (local)</h3>
+    <p>Certaines données de l’application sont également stockées localement sur votre appareil pour les performances et l’utilisation hors ligne. Si vous vous déconnectez, désinstallez l’application ou utilisez les options de suppression intégrées, les données locales peuvent être supprimées selon l’action effectuée.</p>
 
-    <h3>AI scan data</h3>
-    <p>If you use the AI scan feature, we process recognized text (OCR) from the product photo to generate autofill suggestions. The app does not upload your photos as part of AI scan.</p>
+    <h3>Données du scan IA</h3>
+    <p>Si vous utilisez la fonction de scan IA, nous traitons le texte reconnu (OCR) à partir de la photo du produit pour générer des suggestions de remplissage automatique. L’application ne téléverse pas vos photos dans le cadre du scan IA.</p>
 
-    <h3>Device and technical information</h3>
-    <p>We may store basic technical metadata linked to your account (e.g., device family/model and iOS version) to help with security, debugging, and reliable operation of the app.</p>
+    <h3>Informations sur l’appareil et données techniques</h3>
+    <p>Nous pouvons stocker des métadonnées techniques de base liées à votre compte (p. ex. famille/modèle d’appareil et version d’iOS) pour contribuer à la sécurité, au débogage et au fonctionnement fiable de l’application.</p>
 
-    <h3>Crash and error reports</h3>
-    <p>We use Firebase Crashlytics (provided by Google) to collect crash reports and non-fatal error data. This helps us identify and fix issues in the App. The following data may be collected automatically when the App encounters an error or crash:</p>
+    <h3>Rapports de plantage et d’erreurs</h3>
+    <p>Nous utilisons Firebase Crashlytics (fourni par Google) pour collecter des rapports de plantage et des données d’erreurs non fatales. Cela nous aide à identifier et corriger les problèmes dans l’application. Les données suivantes peuvent être collectées automatiquement lorsque l’application rencontre une erreur ou un plantage :</p>
     <ul>
-      <li>Crash stack traces and error messages (technical details about what went wrong).</li>
-      <li>Device model, operating system version, and available memory.</li>
-      <li>Application state at the time of the crash (e.g., current screen).</li>
-      <li>Your account identifier (to help us investigate issues reported by specific users).</li>
-      <li>Breadcrumb logs — a limited sequence of app events leading up to the crash.</li>
+      <li>Traces de pile de plantage et messages d’erreur (détails techniques sur ce qui s’est mal passé).</li>
+      <li>Modèle de l’appareil, version du système d’exploitation et mémoire disponible.</li>
+      <li>État de l’application au moment du plantage (p. ex. écran actuel).</li>
+      <li>Votre identifiant de compte (pour nous aider à enquêter sur les problèmes signalés par des utilisateurs spécifiques).</li>
+      <li>Journaux de breadcrumb — une séquence limitée d’événements de l’application précédant le plantage.</li>
     </ul>
-    <p>This data is used solely to improve the App's stability and is not used for advertising, tracking, or profiling. Crash data is processed by Google under its Firebase terms. You can learn more at <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase Privacy</a>.</p>
+    <p>Ces données sont utilisées exclusivement pour améliorer la stabilité de l’application et ne sont pas utilisées à des fins de publicité, de suivi ou de profilage. Les données de plantage sont traitées par Google selon ses conditions Firebase. Pour en savoir plus, consultez <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase Privacy</a>.</p>
   </section>
 
   <section id="use" class="card">
-    <h2>How We Use Data</h2>
+    <h2>Comment nous utilisons les données</h2>
     <ul>
-      <li>Authenticate your account and keep sessions secure.</li>
-      <li>Store and display your inventory and notes associated with your account.</li>
-      <li>Send notifications you opt in to (e.g., expiry reminders).</li>
-      <li>Process AI scan requests to generate item autofill suggestions (when you choose to use this feature).</li>
-      <li>Improve the app’s reliability and performance.</li>
+      <li>Authentifier votre compte et maintenir la sécurité des sessions.</li>
+      <li>Stocker et afficher votre inventaire et vos notes associés à votre compte.</li>
+      <li>Envoyer des notifications auxquelles vous vous êtes abonné (p. ex. rappels d’expiration).</li>
+      <li>Traiter les demandes de scan IA pour générer des suggestions de remplissage automatique d’articles (lorsque vous choisissez d’utiliser cette fonctionnalité).</li>
+      <li>Améliorer la fiabilité et les performances de l’application.</li>
     </ul>
-    <p>We currently do not sell your personal data. We do not access your email or contacts.</p>
+    <p>Nous ne vendons actuellement pas vos données personnelles. Nous n’accédons pas à votre messagerie ni à vos contacts.</p>
   </section>
 
   <section id="sharing" class="card">
-    <h2>Sharing</h2>
-    <p>We do not currently share personal data with third-party advertisers or data brokers. Service providers process data on our behalf as needed to operate the App. We may share anonymized or aggregated data that cannot reasonably be used to identify you.</p>
+    <h2>Partage</h2>
+    <p>Nous ne partageons actuellement pas de données personnelles avec des annonceurs tiers ou des courtiers en données. Les prestataires de services traitent les données en notre nom dans la mesure nécessaire au fonctionnement de l’application. Nous pouvons partager des données anonymisées ou agrégées qui ne peuvent raisonnablement pas être utilisées pour vous identifier.</p>
     <ul>
-      <li>Google Firebase — authentication (Firebase Auth), cloud database storage (Firestore), backend processing (Cloud Functions), and crash/error reporting (Crashlytics) required to operate account and cloud features and improve app stability.</li>
-      <li>OpenAI — processes OCR text to generate item autofill suggestions when you use the AI scan feature.</li>
-      <li>Open Food Facts — community food product database queried when you scan barcodes to retrieve product information (name, brand, category, etc.). Only the barcode is sent; no personal data is shared.</li>
-      <li>Apple — Sign in with Apple; anonymous crash reports (if you opted in on your device).</li>
+      <li>Google Firebase — authentification (Firebase Auth), stockage en base de données cloud (Firestore), traitement backend (Cloud Functions) et signalement de plantages/erreurs (Crashlytics), nécessaires au fonctionnement des fonctionnalités de compte et cloud et à l’amélioration de la stabilité de l’application.</li>
+      <li>OpenAI — traite le texte OCR pour générer des suggestions de remplissage automatique lorsque vous utilisez la fonction de scan IA.</li>
+      <li>Open Food Facts — base de données communautaire de produits alimentaires consultée lorsque vous scannez des codes-barres pour récupérer des informations sur le produit (nom, marque, catégorie, etc.). Seul le code-barres est envoyé ; aucune donnée personnelle n’est partagée.</li>
+      <li>Apple — Connexion avec Apple ; rapports de plantage anonymes (si vous avez activé cette option sur votre appareil).</li>
     </ul>
-    <p>We may disclose information if required by law or legal process, or to protect our rights, safety, or property. We may use anonymized, aggregated data for analytics and product improvement that does not identify you.</p>
+    <p>Nous pouvons divulguer des informations si la loi ou une procédure judiciaire l’exige, ou pour protéger nos droits, notre sécurité ou nos biens. Nous pouvons utiliser des données anonymisées et agrégées à des fins d’analyse et d’amélioration du produit qui ne vous identifient pas.</p>
   </section>
 
   <section id="third-party-data" class="card">
-    <h2>Third-Party Data Sources</h2>
+    <h2>Sources de données tierces</h2>
     <h3>Open Food Facts</h3>
-    <p>When you scan a product barcode, the App may query the <a href="https://openfoodfacts.org" target="_blank" rel="noopener">Open Food Facts</a> (OFF) database to retrieve product information such as name, brand, category, quantity, and nutritional data. Open Food Facts is a free, open, collaborative food products database licensed under the <a href="https://opendatacommons.org/licenses/odbl/1-0/" target="_blank" rel="noopener">Open Database License (ODbL)</a>.</p>
-    <p>When querying Open Food Facts, we send only the product barcode and a technical User-Agent header identifying the App. No personal data (such as your name, email, or account information) is transmitted to Open Food Facts.</p>
-    <p>Product data retrieved from Open Food Facts is stored locally on your device and, if you are signed in, in your cloud account as part of your inventory items. This data is used solely to populate item details for your convenience.</p>
+    <p>Lorsque vous scannez le code-barres d’un produit, l’application peut interroger la base de données <a href="https://openfoodfacts.org" target="_blank" rel="noopener">Open Food Facts</a> (OFF) pour récupérer des informations sur le produit telles que le nom, la marque, la catégorie, la quantité et les données nutritionnelles. Open Food Facts est une base de données de produits alimentaires gratuite, ouverte et collaborative, sous licence <a href="https://opendatacommons.org/licenses/odbl/1-0/" target="_blank" rel="noopener">Open Database License (ODbL)</a>.</p>
+    <p>Lors de l’interrogation d’Open Food Facts, nous envoyons uniquement le code-barres du produit et un en-tête technique User-Agent identifiant l’application. Aucune donnée personnelle (telle que votre nom, adresse e-mail ou informations de compte) n’est transmise à Open Food Facts.</p>
+    <p>Les données de produit récupérées depuis Open Food Facts sont stockées localement sur votre appareil et, si vous êtes connecté, dans votre compte cloud dans le cadre de vos articles d’inventaire. Ces données sont utilisées uniquement pour remplir les détails des articles pour votre commodité.</p>
   </section>
 
   <section id="retention" class="card">
-    <h2>Retention</h2>
-    <p>We retain your data for as long as your account is active or as needed to provide you with services, comply with legal obligations, resolve disputes, and enforce our agreements. We determine the appropriate retention period based on the nature of the data and the purposes for which it is processed.</p>
-    <p>After account deletion, we may retain certain data in anonymized or aggregated form, or as required by law, for a reasonable period. Local app data stored on your device is your responsibility to manage.</p>
+    <h2>Conservation</h2>
+    <p>Nous conservons vos données aussi longtemps que votre compte est actif ou selon les besoins pour vous fournir des services, respecter les obligations légales, résoudre les litiges et faire respecter nos accords. Nous déterminons la durée de conservation appropriée en fonction de la nature des données et des finalités pour lesquelles elles sont traitées.</p>
+    <p>Après la suppression du compte, nous pouvons conserver certaines données sous forme anonymisée ou agrégée, ou conformément aux exigences légales, pendant une durée raisonnable. Les données locales de l’application stockées sur votre appareil relèvent de votre responsabilité.</p>
   </section>
 
   <section id="rights" class="card">
-    <h2>Your Rights</h2>
-    <p>Where required by applicable law, you may have certain rights regarding your personal data, such as the right to request access to or deletion of your data. To make any such request, contact us at the email below. We will respond to valid requests within the timeframes required by applicable law.</p>
-    <p>We reserve the right to verify your identity before processing any request and may decline requests that are unreasonable, repetitive, or not required by law. We may retain certain data as necessary for legitimate business purposes or as required by law even after a deletion request.</p>
+    <h2>Vos droits</h2>
+    <p>Lorsque la législation applicable l’exige, vous pouvez disposer de certains droits concernant vos données personnelles, tels que le droit de demander l’accès à vos données ou leur suppression. Pour effectuer une telle demande, contactez-nous à l’adresse e-mail ci-dessous. Nous répondrons aux demandes valides dans les délais exigés par la législation applicable.</p>
+    <p>Nous nous réservons le droit de vérifier votre identité avant de traiter toute demande et pouvons refuser les demandes excessives, répétitives ou non exigées par la loi. Nous pouvons conserver certaines données nécessaires à des fins commerciales légitimes ou conformément à la loi, même après une demande de suppression.</p>
   </section>
 
   <section id="children" class="card">
-    <h2>Children</h2>
-    <p>The app is not directed to children under 13 (or the minimum age required in your country). We do not knowingly collect data from children.</p>
+    <h2>Mineurs</h2>
+    <p>L’application ne s’adresse pas aux enfants de moins de 13 ans (ou de l’âge minimum requis dans votre pays). Nous ne collectons pas sciemment de données auprès d’enfants.</p>
   </section>
 
   <section id="changes" class="card">
-    <h2>Changes to this Policy</h2>
-    <p>We reserve the right to modify this Privacy Policy at any time. Changes become effective upon posting to this page. Your continued use of the App after any modification constitutes your acceptance of the updated Privacy Policy. We are not obligated to notify you individually of changes. It is your responsibility to review this Policy periodically.</p>
+    <h2>Modifications de cette politique</h2>
+    <p>Nous nous réservons le droit de modifier cette Politique de confidentialité à tout moment. Les modifications prennent effet dès leur publication sur cette page. Votre utilisation continue de l’application après toute modification constitue votre acceptation de la Politique de confidentialité mise à jour. Nous ne sommes pas tenus de vous informer individuellement des modifications. Il est de votre responsabilité de consulter cette Politique périodiquement.</p>
   </section>
 
   <section id="legal" class="card">
-    <h2>Controller</h2>
-    <p>The App is developed and operated by an independent developer based in Portugal. For data-related inquiries, contact: <a href="mailto:squirrelvault.tracker@gmail.com">squirrelvault.tracker@gmail.com</a>.</p>
+    <h2>Responsable du traitement</h2>
+    <p>L’application est développée et exploitée par un développeur indépendant basé au Portugal. Pour les questions relatives aux données, contactez : <a href="mailto:squirrelvault.tracker@gmail.com">squirrelvault.tracker@gmail.com</a>.</p>
   </section>
 
   <section id="medical" class="card">
-    <h2>Medical Disclaimer</h2>
-    <p>The App may display or let you track items such as food, supplements, or medicines. The App is not a medical device and does not provide medical advice, diagnosis, or treatment. Always consult a qualified healthcare professional. Use of the App is at your own risk.</p>
+    <h2>Avis médical</h2>
+    <p>L’application peut afficher ou vous permettre de suivre des articles tels que des aliments, des compléments alimentaires ou des médicaments. L’application n’est pas un dispositif médical et ne fournit pas de conseils médicaux, de diagnostic ni de traitement. Consultez toujours un professionnel de santé qualifié. L’utilisation de l’application se fait à vos propres risques.</p>
   </section>
 
   <section id="cookies" class="card">
     <h2>Cookies</h2>
-    <p>This support site is hosted on GitHub Pages. We do not use cookies or trackers here. If we add analytics in the future, we will update this Policy.</p>
+    <p>Ce site d’assistance est hébergé sur GitHub Pages. Nous n’utilisons pas de cookies ni de traceurs ici. Si nous ajoutons des outils d’analyse à l’avenir, nous mettrons à jour cette Politique.</p>
   </section>
 
   <section id="liability-note" class="card">
-    <h2>Disclaimer &amp; Liability</h2>
-    <p>This Privacy Policy is provided for informational purposes and does not create any warranties, obligations, or rights beyond what is required by applicable law. The App is provided "AS IS" without any guarantee regarding the security, accuracy, or completeness of data processing. Our total liability related to privacy matters is limited as described in our <a href="./terms.html">Terms of Use</a>.</p>
-    <p>We implement commercially reasonable security measures but cannot guarantee absolute security of your data. You acknowledge that no method of electronic transmission or storage is 100% secure.</p>
+    <h2>Clause de non-responsabilité</h2>
+    <p>Cette Politique de confidentialité est fournie à titre informatif et ne crée aucune garantie, obligation ou droit au-delà de ce qui est exigé par la législation applicable. L’application est fournie « EN L’ÉTAT » sans aucune garantie concernant la sécurité, l’exactitude ou l’exhaustivité du traitement des données. Notre responsabilité totale liée aux questions de confidentialité est limitée comme décrit dans nos <a href="./terms-fr.html">Conditions d’utilisation</a>.</p>
+    <p>Nous mettons en œuvre des mesures de sécurité commercialement raisonnables, mais ne pouvons garantir la sécurité absolue de vos données. Vous reconnaissez qu’aucune méthode de transmission électronique ou de stockage n’est sécurisée à 100 %.</p>
   </section>
 
   <section id="contact" class="card">
     <h2>Contact</h2>
-    <p>Email: <a href="mailto:squirrelvault.tracker@gmail.com">squirrelvault.tracker@gmail.com</a></p>
+    <p>E-mail : <a href="mailto:squirrelvault.tracker@gmail.com">squirrelvault.tracker@gmail.com</a></p>
   </section>
 
   <footer>
