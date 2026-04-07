@@ -93,7 +93,7 @@
       <div class="logo"><img src="squirrelvault-icon.png" alt="SquirrelVault Tracker logo"></div>
       <div>
         <h1>Privacybeleid</h1>
-        <div class="sub">Bijgewerkt op <time datetime="2026-02-28">28 feb. 2026</time></div>
+        <div class="sub">Bijgewerkt op <time datetime="2026-04-06">6 apr. 2026</time></div>
       </div>
     </div>
     <nav class="toc">
@@ -125,6 +125,8 @@
       <li>Wij verzamelen de minimale accountgegevens van uw aanmeldprovider (Google of Apple): e-mailadres, weergavenaam, avatar (indien aanwezig) en een technische account-ID.</li>
       <li>Uw inventarisgegevens (artikelen) en notities, evenals categorieën/groepen, kunnen in de cloud (Firebase Firestore) worden opgeslagen ter ondersteuning van accountgebaseerde functies.</li>
       <li>Als u de AI-scan gebruikt, verwerken wij herkende tekst (OCR) om automatisch invulsuggesties te genereren. De app uploadt uw foto’s niet als onderdeel van de AI-scan.</li>
+      <li>U kunt optioneel foto’s aan uw inventarisartikelen toevoegen. Deze foto’s worden geüpload naar en opgeslagen in de cloud (Firebase Storage), gekoppeld aan uw account.</li>
+      <li>Wij gebruiken analyse- en crashrapportagediensten (geleverd door Google Firebase) om te begrijpen hoe de app wordt gebruikt en de stabiliteit te verbeteren. Deze gegevens worden niet gebruikt voor reclame.</li>
       <li>Wij tonen momenteel geen advertenties en verkopen geen persoonsgegevens aan externe marketeers.</li>
     </ul>
   </section>
@@ -144,6 +146,9 @@
     <h3>AI-scangegevens</h3>
     <p>Als u de AI-scanfunctie gebruikt, verwerken wij herkende tekst (OCR) van de productfoto om automatisch invulsuggesties te genereren. De app uploadt uw foto’s niet als onderdeel van de AI-scan.</p>
 
+    <h3>Artikelfoto’s</h3>
+    <p>U kunt optioneel foto’s aan uw inventarisartikelen toevoegen. Deze foto’s worden geüpload naar Firebase Storage en opgeslagen in de cloud, gekoppeld aan uw account. Foto’s worden uitsluitend gebruikt om artikelafbeeldingen binnen de App weer te geven. Wanneer u een artikel of uw account verwijdert, worden de bijbehorende foto’s uit de cloudopslag verwijderd.</p>
+
     <h3>Apparaat- en technische informatie</h3>
     <p>Wij kunnen basale technische metadata opslaan die aan uw account zijn gekoppeld (bijv. apparaatfamilie/-model en iOS-versie) om te helpen bij beveiliging, foutopsporing en betrouwbare werking van de app.</p>
 
@@ -157,6 +162,9 @@
       <li>Breadcrumb-logs — een beperkte reeks app-gebeurtenissen voorafgaand aan de crash.</li>
     </ul>
     <p>Deze gegevens worden uitsluitend gebruikt om de stabiliteit van de app te verbeteren en worden niet gebruikt voor reclame, tracking of profilering. Crashgegevens worden verwerkt door Google onder zijn Firebase-voorwaarden. Meer informatie vindt u op <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase Privacy</a>.</p>
+
+    <h3>Analysegegevens</h3>
+    <p>Wij gebruiken Firebase Analytics (geleverd door Google) om te begrijpen hoe de app wordt gebruikt — bijvoorbeeld welke functies populair zijn en waar gebruikers problemen ondervinden. Analysegegevens kunnen uw interne account-ID, algemene gebruiksgebeurtenissen (zoals bezochte schermen en gebruikte functies) en apparaatinformatie bevatten. Deze gegevens worden gebruikt om de app te verbeteren en worden niet gebruikt voor reclame of verkocht aan derden.</p>
   </section>
 
   <section id="use" class="card">
@@ -164,8 +172,10 @@
     <ul>
       <li>Uw account authenticeren en sessies beveiligen.</li>
       <li>Uw inventaris en notities die aan uw account zijn gekoppeld opslaan en weergeven.</li>
+      <li>Artikelfoto's die u aan uw inventarisartikelen toevoegt opslaan en weergeven.</li>
       <li>Meldingen verzenden waarop u zich hebt geabonneerd (bijv. vervalherinneringen).</li>
       <li>AI-scanaanvragen verwerken om automatisch invulsuggesties voor artikelen te genereren (wanneer u ervoor kiest deze functie te gebruiken).</li>
+      <li>Begrijpen hoe functies worden gebruikt en de app verbeteren op basis van geaggregeerde gebruikspatronen.</li>
       <li>De betrouwbaarheid en prestaties van de app verbeteren.</li>
     </ul>
     <p>Wij verkopen momenteel uw persoonsgegevens niet. Wij hebben geen toegang tot uw e-mail of contacten.</p>
@@ -175,7 +185,7 @@
     <h2>Delen</h2>
     <p>Wij delen momenteel geen persoonsgegevens met externe adverteerders of gegevensmakelaars. Dienstverleners verwerken gegevens namens ons voor zover nodig om de app te bedienen. Wij kunnen geanonimiseerde of geaggregeerde gegevens delen die redelijkerwijs niet kunnen worden gebruikt om u te identificeren.</p>
     <ul>
-      <li>Google Firebase — authenticatie (Firebase Auth), cloud-databaseopslag (Firestore), backend-verwerking (Cloud Functions) en crash-/foutrapportage (Crashlytics), noodzakelijk voor het functioneren van account- en cloudfuncties en het verbeteren van de app-stabiliteit.</li>
+      <li>Google Firebase — authenticatie (Firebase Auth), cloud-databaseopslag (Firestore), bestandsopslag voor artikelfoto's (Firebase Storage), backend-verwerking (Cloud Functions), crash-/foutrapportage (Crashlytics) en gebruiksanalyse (Firebase Analytics), noodzakelijk voor het functioneren van account- en cloudfuncties, het verbeteren van de app-stabiliteit en het begrijpen van gebruikspatronen.</li>
       <li>OpenAI — verwerkt OCR-tekst om automatisch invulsuggesties te genereren wanneer u de AI-scanfunctie gebruikt.</li>
       <li>Open Food Facts — community-database van voedingsproducten die wordt bevraagd wanneer u barcodes scant om productinformatie op te halen (naam, merk, categorie, enz.). Alleen de barcode wordt verzonden; er worden geen persoonsgegevens gedeeld.</li>
       <li>Apple — Inloggen met Apple; anonieme crashrapporten (als u hiervoor hebt gekozen op uw apparaat).</li>

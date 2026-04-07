@@ -93,7 +93,7 @@
       <div class="logo"><img src="squirrelvault-icon.png" alt="SquirrelVault Tracker logo"></div>
       <div>
         <h1>Polityka prywatności</h1>
-        <div class="sub">Zaktualizowano <time datetime="2026-02-28">28 lut. 2026</time></div>
+        <div class="sub">Zaktualizowano <time datetime="2026-04-06">6 kwi. 2026</time></div>
       </div>
     </div>
     <nav class="toc">
@@ -125,6 +125,8 @@
       <li>Zbieramy minimalne informacje o koncie od dostawcy logowania (Google lub Apple): adres e-mail, nazwa wyświetlana, awatar (jeśli istnieje) oraz techniczny identyfikator konta.</li>
       <li>Dane inwentarza (elementy) i notatki, a także kategorie/grupy, mogą być przechowywane w chmurze (Firebase Firestore) w celu obsługi funkcji opartych na koncie.</li>
       <li>Jeśli korzystasz ze skanowania AI, przetwarzamy rozpoznany tekst (OCR) w celu wygenerowania sugestii autouzupełniania. Aplikacja nie przesyła Twoich zdjęć w ramach skanowania AI.</li>
+      <li>Opcjonalnie możesz dołączyć zdjęcia do swoich elementów inwentarza. Zdjęcia te są przesyłane i przechowywane w chmurze (Firebase Storage), powiązane z Twoim kontem.</li>
+      <li>Korzystamy z usług analitycznych i raportowania awarii (dostarczanych przez Google Firebase), aby zrozumieć, jak Aplikacja jest używana, i poprawić jej stabilność. Dane te nie są wykorzystywane do celów reklamowych.</li>
       <li>Obecnie nie wyświetlamy reklam i nie sprzedajemy danych osobowych zewnętrznym reklamodawcom.</li>
     </ul>
   </section>
@@ -144,6 +146,9 @@
     <h3>Dane skanowania AI</h3>
     <p>Jeśli korzystasz z funkcji skanowania AI, przetwarzamy rozpoznany tekst (OCR) ze zdjęcia produktu w celu wygenerowania sugestii autouzupełniania. Aplikacja nie przesyła Twoich zdjęć w ramach skanowania AI.</p>
 
+    <h3>Zdjęcia elementów</h3>
+    <p>Opcjonalnie możesz dołączyć zdjęcia do swoich elementów inwentarza. Zdjęcia te są przesyłane do Firebase Storage i przechowywane w chmurze, powiązane z Twoim kontem. Zdjęcia służą wyłącznie do wyświetlania obrazów elementów w Aplikacji. Po usunięciu elementu lub konta powiązane zdjęcia są usuwane z magazynu chmurowego.</p>
+
     <h3>Informacje o urządzeniu i dane techniczne</h3>
     <p>Możemy przechowywać podstawowe metadane techniczne powiązane z Twoim kontem (np. rodzina/model urządzenia i wersja iOS) w celu zapewnienia bezpieczeństwa, debugowania i niezawodnego działania aplikacji.</p>
 
@@ -157,6 +162,9 @@
       <li>Dzienniki breadcrumb — ograniczona sekwencja zdarzeń aplikacji poprzedzających awarię.</li>
     </ul>
     <p>Dane te są wykorzystywane wyłącznie w celu poprawy stabilności aplikacji i nie są używane do celów reklamowych, śledzenia ani profilowania. Dane o awariach są przetwarzane przez Google zgodnie z warunkami Firebase. Więcej informacji znajdziesz na stronie <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase Privacy</a>.</p>
+
+    <h3>Dane analityczne</h3>
+    <p>Korzystamy z Firebase Analytics (dostarczanego przez Google), aby zrozumieć, jak Aplikacja jest używana — na przykład, które funkcje są popularne i gdzie użytkownicy napotykają problemy. Dane analityczne mogą obejmować Twój wewnętrzny identyfikator konta, ogólne zdarzenia użytkowania (takie jak odwiedzone ekrany i używane funkcje) oraz informacje o urządzeniu. Dane te są wykorzystywane do ulepszania Aplikacji i nie są wykorzystywane do celów reklamowych ani sprzedawane osobom trzecim.</p>
   </section>
 
   <section id="use" class="card">
@@ -164,8 +172,10 @@
     <ul>
       <li>Uwierzytelnianie Twojego konta i utrzymywanie bezpieczeństwa sesji.</li>
       <li>Przechowywanie i wyświetlanie Twojego inwentarza i notatek powiązanych z Twoim kontem.</li>
+      <li>Przechowywanie i wyświetlanie zdjęć elementów, które dołączasz do swoich elementów inwentarza.</li>
       <li>Wysyłanie powiadomień, na które wyraziłeś zgodę (np. przypomnienia o datach ważności).</li>
       <li>Przetwarzanie żądań skanowania AI w celu generowania sugestii autouzupełniania elementów (gdy zdecydujesz się korzystać z tej funkcji).</li>
+      <li>Zrozumienie, jak funkcje są wykorzystywane, i ulepszanie Aplikacji na podstawie zagregowanych wzorców użytkowania.</li>
       <li>Poprawa niezawodności i wydajności aplikacji.</li>
     </ul>
     <p>Obecnie nie sprzedajemy Twoich danych osobowych. Nie uzyskujemy dostępu do Twojego adresu e-mail ani kontaktów.</p>
@@ -175,7 +185,7 @@
     <h2>Udostępnianie</h2>
     <p>Obecnie nie udostępniamy danych osobowych zewnętrznym reklamodawcom ani brokerom danych. Dostawcy usług przetwarzają dane w naszym imieniu w zakresie niezbędnym do obsługi aplikacji. Możemy udostępniać zanonimizowane lub zagregowane dane, które nie mogą być racjonalnie wykorzystane do Twojej identyfikacji.</p>
     <ul>
-      <li>Google Firebase — uwierzytelnianie (Firebase Auth), przechowywanie w chmurowej bazie danych (Firestore), przetwarzanie backendowe (Cloud Functions) oraz raportowanie awarii/błędów (Crashlytics), niezbędne do obsługi funkcji konta i chmury oraz poprawy stabilności aplikacji.</li>
+      <li>Google Firebase — uwierzytelnianie (Firebase Auth), przechowywanie w chmurowej bazie danych (Firestore), przechowywanie plików dla zdjęć elementów (Firebase Storage), przetwarzanie backendowe (Cloud Functions), raportowanie awarii/błędów (Crashlytics), analiza użytkowania (Firebase Analytics), niezbędne do obsługi funkcji konta i chmury, poprawy stabilności aplikacji i zrozumienie wzorców użytkowania.</li>
       <li>OpenAI — przetwarza tekst OCR w celu generowania sugestii autouzupełniania, gdy korzystasz z funkcji skanowania AI.</li>
       <li>Open Food Facts — społecznościowa baza danych produktów spożywczych odpytywana podczas skanowania kodów kreskowych w celu pobrania informacji o produkcie (nazwa, marka, kategoria itp.). Wysyłany jest tylko kod kreskowy; żadne dane osobowe nie są udostępniane.</li>
       <li>Apple — Logowanie przez Apple; anonimowe raporty o awariach (jeśli włączyłeś tę opcję na swoim urządzeniu).</li>

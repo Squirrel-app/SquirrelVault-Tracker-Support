@@ -93,7 +93,7 @@
       <div class="logo"><img src="squirrelvault-icon.png" alt="Logo di SquirrelVault Tracker"></div>
       <div>
         <h1>Informativa sulla privacy</h1>
-        <div class="sub">Aggiornata il <time datetime="2026-02-28">28 feb. 2026</time></div>
+        <div class="sub">Aggiornata il <time datetime="2026-04-06">6 apr. 2026</time></div>
       </div>
     </div>
     <nav class="toc">
@@ -125,6 +125,8 @@
       <li>Raccogliamo le informazioni minime sull’account dal fornitore di accesso (Google o Apple): e-mail, nome visualizzato, avatar (se presente) e un ID account tecnico.</li>
       <li>I dati di inventario (articoli) e le note, nonché le categorie/gruppi, possono essere archiviati nel cloud (Firebase Firestore) per supportare le funzionalità basate sull’account.</li>
       <li>Se si utilizza la scansione IA, elaboriamo il testo riconosciuto (OCR) per generare suggerimenti di compilazione automatica. L’app non carica le foto come parte della scansione IA.</li>
+      <li>È possibile allegare facoltativamente delle foto ai propri articoli di inventario. Queste foto vengono caricate e archiviate nel cloud (Firebase Storage), collegate al proprio account.</li>
+      <li>Utilizziamo servizi di analisi e segnalazione errori (forniti da Google Firebase) per comprendere come viene utilizzata l'App e migliorarne la stabilità. Questi dati non vengono utilizzati per la pubblicità.</li>
       <li>Attualmente non pubblichiamo annunci pubblicitari e non vendiamo dati personali a operatori di marketing di terze parti.</li>
     </ul>
   </section>
@@ -144,6 +146,9 @@
     <h3>Dati della scansione IA</h3>
     <p>Se si utilizza la funzione di scansione IA, elaboriamo il testo riconosciuto (OCR) dalla foto del prodotto per generare suggerimenti di compilazione automatica. L’app non carica le foto come parte della scansione IA.</p>
 
+    <h3>Foto degli articoli</h3>
+    <p>È possibile allegare facoltativamente delle foto ai propri articoli di inventario. Queste foto vengono caricate su Firebase Storage e archiviate nel cloud, collegate al proprio account. Le foto vengono utilizzate esclusivamente per visualizzare le immagini degli articoli all’interno dell’App. Quando si elimina un articolo o il proprio account, le foto associate vengono rimosse dall’archiviazione cloud.</p>
+
     <h3>Informazioni sul dispositivo e dati tecnici</h3>
     <p>Possiamo archiviare metadati tecnici di base collegati all’account (ad es. famiglia/modello del dispositivo e versione di iOS) per contribuire alla sicurezza, al debug e al funzionamento affidabile dell’app.</p>
 
@@ -157,6 +162,9 @@
       <li>Log breadcrumb — una sequenza limitata di eventi dell’app che hanno preceduto l’arresto anomalo.</li>
     </ul>
     <p>Questi dati vengono utilizzati esclusivamente per migliorare la stabilità dell’app e non vengono utilizzati per pubblicità, tracciamento o profilazione. I dati sugli arresti anomali vengono elaborati da Google in base alle condizioni di Firebase. Per ulteriori informazioni, consultare <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase Privacy</a>.</p>
+
+    <h3>Dati analitici</h3>
+    <p>Utilizziamo Firebase Analytics (fornito da Google) per comprendere come viene utilizzata l’App — ad esempio, quali funzionalità sono popolari e dove gli utenti riscontrano problemi. I dati analitici possono includere il vostro identificatore account interno, eventi di utilizzo generali (come schermate visitate e funzionalità utilizzate) e informazioni sul dispositivo. Questi dati vengono utilizzati per migliorare l’App e non vengono utilizzati per la pubblicità né venduti a terzi.</p>
   </section>
 
   <section id="use" class="card">
@@ -164,8 +172,10 @@
     <ul>
       <li>Autenticare l’account e mantenere sicure le sessioni.</li>
       <li>Archiviare e visualizzare l’inventario e le note associate all’account.</li>
+      <li>Archiviare e visualizzare le foto degli articoli allegati ai propri articoli di inventario.</li>
       <li>Inviare le notifiche a cui ci si è iscritti (ad es. promemoria di scadenza).</li>
       <li>Elaborare le richieste di scansione IA per generare suggerimenti di compilazione automatica degli articoli (quando si sceglie di utilizzare questa funzione).</li>
+      <li>Comprendere come vengono utilizzate le funzionalità e migliorare l’App sulla base di modelli di utilizzo aggregati.</li>
       <li>Migliorare l’affidabilità e le prestazioni dell’app.</li>
     </ul>
     <p>Attualmente non vendiamo i dati personali. Non accediamo alla posta elettronica o ai contatti.</p>
@@ -175,7 +185,7 @@
     <h2>Condivisione</h2>
     <p>Attualmente non condividiamo dati personali con inserzionisti di terze parti o broker di dati. I fornitori di servizi elaborano i dati per nostro conto nella misura necessaria al funzionamento dell’app. Possiamo condividere dati anonimizzati o aggregati che non possono ragionevolmente essere utilizzati per identificare l’utente.</p>
     <ul>
-      <li>Google Firebase — autenticazione (Firebase Auth), archiviazione database cloud (Firestore), elaborazione backend (Cloud Functions) e segnalazione di arresti anomali/errori (Crashlytics), necessari per il funzionamento delle funzionalità dell’account e del cloud e per migliorare la stabilità dell’app.</li>
+      <li>Google Firebase — autenticazione (Firebase Auth), archiviazione database cloud (Firestore), archiviazione file per foto degli articoli (Firebase Storage), elaborazione backend (Cloud Functions), segnalazione di arresti anomali/errori (Crashlytics), analisi di utilizzo (Firebase Analytics), necessari per il funzionamento delle funzionalità dell’account e del cloud, per migliorare la stabilità dell’app e comprendere i modelli di utilizzo.</li>
       <li>OpenAI — elabora il testo OCR per generare suggerimenti di compilazione automatica quando si utilizza la funzione di scansione IA.</li>
       <li>Open Food Facts — database comunitario di prodotti alimentari consultato quando si scansionano i codici a barre per recuperare informazioni sul prodotto (nome, marca, categoria, ecc.). Viene inviato solo il codice a barre; nessun dato personale viene condiviso.</li>
       <li>Apple — Accedi con Apple; rapporti anonimi sugli arresti anomali (se si è attivata questa opzione sul dispositivo).</li>

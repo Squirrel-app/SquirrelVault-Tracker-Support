@@ -93,7 +93,7 @@
       <div class="logo"><img src="squirrelvault-icon.png" alt="SquirrelVault Tracker logo"></div>
       <div>
         <h1>Politique de confidentialit&eacute;</h1>
-        <div class="sub">Mise &agrave; jour le <time datetime="2026-02-28">28 f&eacute;v. 2026</time></div>
+        <div class="sub">Mise &agrave; jour le <time datetime="2026-04-06">6 avr. 2026</time></div>
       </div>
     </div>
     <nav class="toc">
@@ -125,6 +125,8 @@
       <li>Nous collectons le minimum d’informations de compte auprès de votre fournisseur de connexion (Google ou Apple) : adresse e-mail, nom d’affichage, avatar (le cas échéant) et un identifiant de compte technique.</li>
       <li>Vos données d’inventaire (articles) et notes, ainsi que les catégories/groupes, peuvent être stockées dans le cloud (Firebase Firestore) afin de prendre en charge les fonctionnalités liées au compte.</li>
       <li>Si vous utilisez le scan IA, nous traitons le texte reconnu (OCR) pour générer des suggestions de remplissage automatique. L’application ne téléverse pas vos photos dans le cadre du scan IA.</li>
+      <li>Vous pouvez éventuellement joindre des photos à vos articles d’inventaire. Ces photos sont téléversées et stockées dans le cloud (Firebase Storage), liées à votre compte.</li>
+      <li>Nous utilisons des services d’analyse et de rapports de plantage (fournis par Google Firebase) pour comprendre comment l’Application est utilisée et améliorer sa stabilité. Ces données ne sont pas utilisées à des fins publicitaires.</li>
       <li>Nous n’affichons actuellement aucune publicité et ne vendons pas de données personnelles à des annonceurs tiers.</li>
     </ul>
   </section>
@@ -144,6 +146,9 @@
     <h3>Données du scan IA</h3>
     <p>Si vous utilisez la fonction de scan IA, nous traitons le texte reconnu (OCR) à partir de la photo du produit pour générer des suggestions de remplissage automatique. L’application ne téléverse pas vos photos dans le cadre du scan IA.</p>
 
+    <h3>Photos d’articles</h3>
+    <p>Vous pouvez éventuellement joindre des photos à vos articles d’inventaire. Ces photos sont téléversées dans Firebase Storage et stockées dans le cloud, liées à votre compte. Les photos sont utilisées uniquement pour afficher les images des articles dans l’Application. Lorsque vous supprimez un article ou votre compte, les photos associées sont supprimées du stockage cloud.</p>
+
     <h3>Informations sur l’appareil et données techniques</h3>
     <p>Nous pouvons stocker des métadonnées techniques de base liées à votre compte (p. ex. famille/modèle d’appareil et version d’iOS) pour contribuer à la sécurité, au débogage et au fonctionnement fiable de l’application.</p>
 
@@ -157,6 +162,9 @@
       <li>Journaux de breadcrumb — une séquence limitée d’événements de l’application précédant le plantage.</li>
     </ul>
     <p>Ces données sont utilisées exclusivement pour améliorer la stabilité de l’application et ne sont pas utilisées à des fins de publicité, de suivi ou de profilage. Les données de plantage sont traitées par Google selon ses conditions Firebase. Pour en savoir plus, consultez <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase Privacy</a>.</p>
+
+    <h3>Données analytiques</h3>
+    <p>Nous utilisons Firebase Analytics (fourni par Google) pour comprendre comment l’Application est utilisée — par exemple, quelles fonctionnalités sont populaires et où les utilisateurs rencontrent des problèmes. Les données analytiques peuvent inclure votre identifiant de compte interne, des événements d’utilisation généraux (tels que les écrans visités et les fonctionnalités utilisées) et des informations sur l’appareil. Ces données sont utilisées pour améliorer l’Application et ne sont pas utilisées à des fins publicitaires ni vendues à des tiers.</p>
   </section>
 
   <section id="use" class="card">
@@ -164,8 +172,10 @@
     <ul>
       <li>Authentifier votre compte et maintenir la sécurité des sessions.</li>
       <li>Stocker et afficher votre inventaire et vos notes associés à votre compte.</li>
+      <li>Stocker et afficher les photos d'articles que vous joignez à vos articles d'inventaire.</li>
       <li>Envoyer des notifications auxquelles vous vous êtes abonné (p. ex. rappels d’expiration).</li>
       <li>Traiter les demandes de scan IA pour générer des suggestions de remplissage automatique d’articles (lorsque vous choisissez d’utiliser cette fonctionnalité).</li>
+      <li>Comprendre comment les fonctionnalités sont utilisées et améliorer l’Application sur la base de schémas d’utilisation agrégés.</li>
       <li>Améliorer la fiabilité et les performances de l’application.</li>
     </ul>
     <p>Nous ne vendons actuellement pas vos données personnelles. Nous n’accédons pas à votre messagerie ni à vos contacts.</p>
@@ -175,7 +185,7 @@
     <h2>Partage</h2>
     <p>Nous ne partageons actuellement pas de données personnelles avec des annonceurs tiers ou des courtiers en données. Les prestataires de services traitent les données en notre nom dans la mesure nécessaire au fonctionnement de l’application. Nous pouvons partager des données anonymisées ou agrégées qui ne peuvent raisonnablement pas être utilisées pour vous identifier.</p>
     <ul>
-      <li>Google Firebase — authentification (Firebase Auth), stockage en base de données cloud (Firestore), traitement backend (Cloud Functions) et signalement de plantages/erreurs (Crashlytics), nécessaires au fonctionnement des fonctionnalités de compte et cloud et à l’amélioration de la stabilité de l’application.</li>
+      <li>Google Firebase — authentification (Firebase Auth), stockage en base de données cloud (Firestore), stockage de fichiers pour les photos d’articles (Firebase Storage), traitement backend (Cloud Functions), signalement de plantages/erreurs (Crashlytics), analyse d’utilisation (Firebase Analytics), nécessaires au fonctionnement des fonctionnalités de compte et cloud, à l’amélioration de la stabilité de l’application et comprendre les schémas d’utilisation.</li>
       <li>OpenAI — traite le texte OCR pour générer des suggestions de remplissage automatique lorsque vous utilisez la fonction de scan IA.</li>
       <li>Open Food Facts — base de données communautaire de produits alimentaires consultée lorsque vous scannez des codes-barres pour récupérer des informations sur le produit (nom, marque, catégorie, etc.). Seul le code-barres est envoyé ; aucune donnée personnelle n’est partagée.</li>
       <li>Apple — Connexion avec Apple ; rapports de plantage anonymes (si vous avez activé cette option sur votre appareil).</li>

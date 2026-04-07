@@ -93,7 +93,7 @@
       <div class="logo"><img src="squirrelvault-icon.png" alt="SquirrelVault Tracker logo"></div>
       <div>
         <h1>Política de privacidad</h1>
-        <div class="sub">Actualizado el <time datetime="2026-02-28">28 feb. 2026</time></div>
+        <div class="sub">Actualizado el <time datetime="2026-04-06">6 abr. 2026</time></div>
       </div>
     </div>
     <nav class="toc">
@@ -125,6 +125,8 @@
       <li>Recopilamos la información mínima de cuenta de su proveedor de inicio de sesión (Google o Apple): correo electrónico, nombre para mostrar, avatar (si lo hay) y un identificador técnico de cuenta.</li>
       <li>Sus datos de inventario (artículos) y notas, así como categorías/grupos, pueden almacenarse en la nube (Firebase Firestore) para admitir funciones basadas en la cuenta.</li>
       <li>Si utiliza el escaneo IA, procesamos el texto reconocido (OCR) para generar sugerencias de autocompletado. La aplicación no sube sus fotos como parte del escaneo IA.</li>
+      <li>Opcionalmente puede adjuntar fotos a sus artículos de inventario. Estas fotos se suben y almacenan en la nube (Firebase Storage) vinculadas a su cuenta.</li>
+      <li>Utilizamos servicios de análisis e informes de fallos (proporcionados por Google Firebase) para comprender cómo se utiliza la App y mejorar su estabilidad. Estos datos no se utilizan con fines publicitarios.</li>
       <li>Actualmente no mostramos anuncios y no vendemos datos personales a comercializadores de terceros.</li>
     </ul>
   </section>
@@ -144,6 +146,9 @@
     <h3>Datos del escaneo IA</h3>
     <p>Si utiliza la función de escaneo IA, procesamos el texto reconocido (OCR) de la foto del producto para generar sugerencias de autocompletado. La aplicación no sube sus fotos como parte del escaneo IA.</p>
 
+    <h3>Fotos de artículos</h3>
+    <p>Opcionalmente puede adjuntar fotos a sus artículos de inventario. Estas fotos se suben a Firebase Storage y se almacenan en la nube vinculadas a su cuenta. Las fotos se utilizan exclusivamente para mostrar imágenes de artículos dentro de la aplicación. Cuando elimina un artículo o su cuenta, las fotos asociadas se eliminan del almacenamiento en la nube.</p>
+
     <h3>Información del dispositivo y técnica</h3>
     <p>Podemos almacenar metadatos técnicos básicos vinculados a su cuenta (p. ej., familia/modelo del dispositivo y versión de iOS) para ayudar con la seguridad, la depuración y el funcionamiento fiable de la aplicación.</p>
 
@@ -157,6 +162,9 @@
       <li>Registros de breadcrumb — una secuencia limitada de eventos de la aplicación previos al fallo.</li>
     </ul>
     <p>Estos datos se utilizan exclusivamente para mejorar la estabilidad de la aplicación y no se usan para publicidad, seguimiento o elaboración de perfiles. Los datos de fallos son procesados por Google según sus términos de Firebase. Puede obtener más información en <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase Privacy</a>.</p>
+
+    <h3>Datos analíticos</h3>
+    <p>Utilizamos Firebase Analytics (proporcionado por Google) para comprender cómo se utiliza la App — por ejemplo, qué funciones son populares y dónde los usuarios encuentran problemas. Los datos analíticos pueden incluir su identificador de cuenta interno, eventos generales de uso (como pantallas visitadas y funciones utilizadas) e información del dispositivo. Estos datos se utilizan para mejorar la App y no se utilizan con fines publicitarios ni se venden a terceros.</p>
   </section>
 
   <section id="use" class="card">
@@ -164,8 +172,10 @@
     <ul>
       <li>Autenticar su cuenta y mantener las sesiones seguras.</li>
       <li>Almacenar y mostrar su inventario y notas asociados a su cuenta.</li>
+      <li>Almacenar y mostrar las fotos de artículos que adjunta a sus artículos de inventario.</li>
       <li>Enviar notificaciones a las que se haya suscrito (p. ej., recordatorios de caducidad).</li>
       <li>Procesar solicitudes de escaneo IA para generar sugerencias de autocompletado de artículos (cuando elige usar esta función).</li>
+      <li>Comprender cómo se utilizan las funciones y mejorar la App basándose en patrones de uso agregados.</li>
       <li>Mejorar la fiabilidad y el rendimiento de la aplicación.</li>
     </ul>
     <p>Actualmente no vendemos sus datos personales. No accedemos a su correo electrónico ni a sus contactos.</p>
@@ -175,7 +185,7 @@
     <h2>Uso compartido</h2>
     <p>Actualmente no compartimos datos personales con anunciantes de terceros ni intermediarios de datos. Los proveedores de servicios procesan datos en nuestro nombre según sea necesario para operar la aplicación. Podemos compartir datos anonimizados o agregados que no puedan usarse razonablemente para identificarlo.</p>
     <ul>
-      <li>Google Firebase — autenticación (Firebase Auth), almacenamiento en base de datos en la nube (Firestore), procesamiento de backend (Cloud Functions) e informes de fallos/errores (Crashlytics), necesarios para operar las funciones de cuenta y nube y mejorar la estabilidad de la aplicación.</li>
+      <li>Google Firebase — autenticación (Firebase Auth), almacenamiento en base de datos en la nube (Firestore), almacenamiento de archivos para fotos de artículos (Firebase Storage), procesamiento de backend (Cloud Functions), informes de fallos/errores (Crashlytics), análisis de uso (Firebase Analytics), necesarios para operar las funciones de cuenta y nube, mejorar la estabilidad de la aplicación y comprender patrones de uso.</li>
       <li>OpenAI — procesa texto OCR para generar sugerencias de autocompletado de artículos cuando utiliza la función de escaneo IA.</li>
       <li>Open Food Facts — base de datos comunitaria de productos alimentarios consultada al escanear códigos de barras para obtener información del producto (nombre, marca, categoría, etc.). Solo se envía el código de barras; no se comparten datos personales.</li>
       <li>Apple — Iniciar sesión con Apple; informes de fallos anónimos (si lo activó en su dispositivo).</li>

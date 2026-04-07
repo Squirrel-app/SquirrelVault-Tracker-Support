@@ -93,7 +93,7 @@
       <div class="logo"><img src="squirrelvault-icon.png" alt="SquirrelVault Tracker logo"></div>
       <div>
         <h1>Política de Privacidade</h1>
-        <div class="sub">Atualizada a <time datetime="2026-02-28">28 fev. 2026</time></div>
+        <div class="sub">Atualizada a <time datetime="2026-04-06">6 abr. 2026</time></div>
       </div>
     </div>
     <nav class="toc">
@@ -125,6 +125,8 @@
       <li>Recolhemos as informações mínimas da conta do seu fornecedor de início de sessão (Google ou Apple): e-mail, nome de apresentação, avatar (se existir) e um identificador técnico de conta.</li>
       <li>Os seus dados de inventário (itens) e notas, bem como categorias/grupos, podem ser armazenados na nuvem (Firebase Firestore) para suportar funcionalidades baseadas na conta.</li>
       <li>Se utilizar a digitalização IA, processamos o texto reconhecido (OCR) para gerar sugestões de preenchimento automático. A aplicação não carrega as suas fotografias como parte da digitalização IA.</li>
+      <li>Pode opcionalmente anexar fotografias aos seus itens de inventário. Estas fotografias são carregadas e armazenadas na nuvem (Firebase Storage), associadas à sua conta.</li>
+      <li>Utilizamos serviços de análise e relatórios de falhas (fornecidos pelo Google Firebase) para compreender como a App é utilizada e melhorar a sua estabilidade. Estes dados não são utilizados para publicidade.</li>
       <li>Atualmente não exibimos anúncios e não vendemos dados pessoais a terceiros para fins de marketing.</li>
     </ul>
   </section>
@@ -144,6 +146,9 @@
     <h3>Dados da digitalização IA</h3>
     <p>Se utilizar a funcionalidade de digitalização IA, processamos o texto reconhecido (OCR) da fotografia do produto para gerar sugestões de preenchimento automático. A aplicação não carrega as suas fotografias como parte da digitalização IA.</p>
 
+    <h3>Fotografias de itens</h3>
+    <p>Pode opcionalmente anexar fotografias aos seus itens de inventário. Estas fotografias são carregadas para o Firebase Storage e armazenadas na nuvem, associadas à sua conta. As fotografias são utilizadas exclusivamente para apresentar imagens de itens na Aplicação. Quando elimina um item ou a sua conta, as fotografias associadas são removidas do armazenamento na nuvem.</p>
+
     <h3>Informações do dispositivo e técnicas</h3>
     <p>Podemos armazenar metadados técnicos básicos associados à sua conta (por exemplo, família/modelo do dispositivo e versão do iOS) para auxiliar na segurança, depuração e funcionamento fiável da aplicação.</p>
 
@@ -157,6 +162,9 @@
       <li>Registos de breadcrumb — uma sequência limitada de eventos da aplicação que precederam a falha.</li>
     </ul>
     <p>Estes dados são utilizados exclusivamente para melhorar a estabilidade da aplicação e não são usados para publicidade, rastreamento ou criação de perfis. Os dados de falhas são processados pela Google ao abrigo dos termos do Firebase. Pode saber mais em <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase Privacy</a>.</p>
+
+    <h3>Dados analíticos</h3>
+    <p>Utilizamos o Firebase Analytics (fornecido pela Google) para compreender como a App é utilizada — por exemplo, quais funcionalidades são populares e onde os utilizadores encontram problemas. Os dados analíticos podem incluir o seu identificador de conta interno, eventos gerais de utilização (como ecrãs visitados e funcionalidades utilizadas) e informações do dispositivo. Estes dados são utilizados para melhorar a App e não são utilizados para publicidade nem vendidos a terceiros.</p>
   </section>
 
   <section id="use" class="card">
@@ -164,8 +172,10 @@
     <ul>
       <li>Autenticar a sua conta e manter as sessões seguras.</li>
       <li>Armazenar e apresentar o seu inventário e notas associados à sua conta.</li>
+      <li>Armazenar e apresentar as fotografias de itens que anexa aos seus itens de inventário.</li>
       <li>Enviar notificações que tenha subscrito (por exemplo, lembretes de validade).</li>
       <li>Processar pedidos de digitalização IA para gerar sugestões de preenchimento automático de itens (quando opta por utilizar esta funcionalidade).</li>
+      <li>Compreender como as funcionalidades são utilizadas e melhorar a App com base em padrões de utilização agregados.</li>
       <li>Melhorar a fiabilidade e o desempenho da aplicação.</li>
     </ul>
     <p>Atualmente não vendemos os seus dados pessoais. Não acedemos ao seu e-mail nem aos seus contactos.</p>
@@ -175,7 +185,7 @@
     <h2>Partilha</h2>
     <p>Atualmente não partilhamos dados pessoais com anunciantes terceiros ou intermediários de dados. Os prestadores de serviços processam dados em nosso nome conforme necessário para operar a aplicação. Podemos partilhar dados anonimizados ou agregados que não possam ser razoavelmente utilizados para o identificar.</p>
     <ul>
-      <li>Google Firebase — autenticação (Firebase Auth), armazenamento em base de dados na nuvem (Firestore), processamento de backend (Cloud Functions) e relatórios de falhas/erros (Crashlytics), necessários para operar as funcionalidades de conta e nuvem e melhorar a estabilidade da aplicação.</li>
+      <li>Google Firebase — autenticação (Firebase Auth), armazenamento em base de dados na nuvem (Firestore), armazenamento de ficheiros para fotografias de itens (Firebase Storage), processamento de backend (Cloud Functions), relatórios de falhas/erros (Crashlytics), análise de utilização (Firebase Analytics), necessários para operar as funcionalidades de conta e nuvem, melhorar a estabilidade da aplicação e compreender padrões de utilização.</li>
       <li>OpenAI — processa texto OCR para gerar sugestões de preenchimento automático quando utiliza a funcionalidade de digitalização IA.</li>
       <li>Open Food Facts — base de dados comunitária de produtos alimentares consultada quando digitaliza códigos de barras para obter informações do produto (nome, marca, categoria, etc.). Apenas o código de barras é enviado; nenhum dado pessoal é partilhado.</li>
       <li>Apple — Início de sessão com a Apple; relatórios de falhas anónimos (se tiver optado por esta funcionalidade no seu dispositivo).</li>

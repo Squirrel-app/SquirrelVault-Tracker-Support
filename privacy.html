@@ -93,7 +93,7 @@
       <div class="logo"><img src="squirrelvault-icon.png" alt="SquirrelVault Tracker logo"></div>
       <div>
         <h1>Privacy Policy</h1>
-        <div class="sub">Updated <time datetime="2026-02-28">28 Feb 2026</time></div>
+        <div class="sub">Updated <time datetime="2026-04-06">6 Apr 2026</time></div>
       </div>
     </div>
     <nav class="toc">
@@ -125,6 +125,8 @@
       <li>We collect the minimum account info from your sign-in provider (Google or Apple): email, display name, avatar (if any), and a technical account ID.</li>
       <li>Your inventory data (items) and notes, as well as categories/groups, may be stored in the cloud (Firebase Firestore) to support account-based features.</li>
       <li>If you use AI Scan, we process recognized text (OCR) to generate autofill suggestions. The app does not upload your photos as part of AI scan.</li>
+      <li>You may optionally attach photos to your inventory items. These photos are uploaded to and stored in the cloud (Firebase Storage) linked to your account.</li>
+      <li>We use analytics and crash reporting services (provided by Google Firebase) to understand how the App is used and to improve its stability. This data is not used for advertising.</li>
       <li>We currently do not serve ads and do not sell personal data to third-party marketers.</li>
     </ul>
   </section>
@@ -144,6 +146,9 @@
     <h3>AI scan data</h3>
     <p>If you use the AI scan feature, we process recognized text (OCR) from the product photo to generate autofill suggestions. The app does not upload your photos as part of AI scan.</p>
 
+    <h3>Item photos</h3>
+    <p>You may optionally attach photos to your inventory items. These photos are uploaded to Firebase Storage and stored in the cloud linked to your account. Photos are used solely to display item images within the App. When you delete an item or your account, associated photos are removed from cloud storage.</p>
+
     <h3>Device and technical information</h3>
     <p>We may store basic technical metadata linked to your account (e.g., device family/model and iOS version) to help with security, debugging, and reliable operation of the app.</p>
 
@@ -157,6 +162,9 @@
       <li>Breadcrumb logs — a limited sequence of app events leading up to the crash.</li>
     </ul>
     <p>This data is used solely to improve the App's stability and is not used for advertising, tracking, or profiling. Crash data is processed by Google under its Firebase terms. You can learn more at <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase Privacy</a>.</p>
+
+    <h3>Analytics</h3>
+    <p>We use Firebase Analytics (provided by Google) to understand how the App is used — for example, which features are popular and where users encounter problems. Analytics data may include your internal account identifier, general usage events (such as screens visited and features used), and device information. This data is used to improve the App and is not used for advertising or sold to third parties.</p>
   </section>
 
   <section id="use" class="card">
@@ -164,8 +172,10 @@
     <ul>
       <li>Authenticate your account and keep sessions secure.</li>
       <li>Store and display your inventory and notes associated with your account.</li>
+      <li>Store and display item photos you attach to your inventory items.</li>
       <li>Send notifications you opt in to (e.g., expiry reminders).</li>
       <li>Process AI scan requests to generate item autofill suggestions (when you choose to use this feature).</li>
+      <li>Understand how features are used and improve the App based on aggregated usage patterns.</li>
       <li>Improve the app’s reliability and performance.</li>
     </ul>
     <p>We currently do not sell your personal data. We do not access your email or contacts.</p>
@@ -175,7 +185,7 @@
     <h2>Sharing</h2>
     <p>We do not currently share personal data with third-party advertisers or data brokers. Service providers process data on our behalf as needed to operate the App. We may share anonymized or aggregated data that cannot reasonably be used to identify you.</p>
     <ul>
-      <li>Google Firebase — authentication (Firebase Auth), cloud database storage (Firestore), backend processing (Cloud Functions), and crash/error reporting (Crashlytics) required to operate account and cloud features and improve app stability.</li>
+      <li>Google Firebase — authentication (Firebase Auth), cloud database storage (Firestore), file storage for item photos (Firebase Storage), backend processing (Cloud Functions), crash/error reporting (Crashlytics), and analytics (Firebase Analytics) required to operate account and cloud features, improve app stability, and understand usage patterns.</li>
       <li>OpenAI — processes OCR text to generate item autofill suggestions when you use the AI scan feature.</li>
       <li>Open Food Facts — community food product database queried when you scan barcodes to retrieve product information (name, brand, category, etc.). Only the barcode is sent; no personal data is shared.</li>
       <li>Apple — Sign in with Apple; anonymous crash reports (if you opted in on your device).</li>
