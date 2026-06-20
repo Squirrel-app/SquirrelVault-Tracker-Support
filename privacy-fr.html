@@ -165,6 +165,18 @@
 
     <h3>Données analytiques</h3>
     <p>Nous utilisons Firebase Analytics (fourni par Google) pour comprendre comment l’Application est utilisée — par exemple, quelles fonctionnalités sont populaires et où les utilisateurs rencontrent des problèmes. Les données analytiques peuvent inclure votre identifiant de compte interne, des événements d’utilisation généraux (tels que les écrans visités et les fonctionnalités utilisées) et des informations sur l’appareil. Ces données sont utilisées pour améliorer l’Application et ne sont pas utilisées à des fins publicitaires ni vendues à des tiers.</p>
+
+    <h3>Identifiant de session anonyme (mode invité)</h3>
+    <p>Lorsque vous choisissez &ldquo;Continuer sans compte&rdquo; sur l’écran de connexion, nous créons un identifiant anonyme temporaire et généré aléatoirement via notre fournisseur d’authentification (Google Firebase Authentication). Cet identifiant n’est pas associé à votre nom, votre adresse e-mail ou toute autre information personnelle. Nous l’utilisons pour&#160;:</p>
+    <ul>
+      <li>Vous permettre de sauvegarder et de gérer vos données d’inventaire localement sur votre appareil.</li>
+      <li>Enregistrer des statistiques d’utilisation agrégées et anonymes (nombre d’articles, de listes, de groupes, version de l’Application, langue de l’appareil, version du système d’exploitation) afin de comprendre comment les utilisateurs invités interagissent avec l’Application. Aucun nom d’article, photo ou autre contenu n’est envoyé à nos serveurs en mode invité.</li>
+      <li>Vous permettre de passer ultérieurement à un compte classique, en conservant les données enregistrées pendant la session invité.</li>
+    </ul>
+    <p>L’identifiant anonyme est automatiquement supprimé par notre serveur après 14 jours d’inactivité (ainsi que les compteurs agrégés décrits ci-dessous). Si vous vous connectez avec Apple ou Google pour convertir votre session invité en compte, l’identifiant anonyme est transformé en identifiant de compte&#160;; si vous choisissez à la place &ldquo;Supprimer les données invité&rdquo; lors de la connexion, les données côté invité sont supprimées de votre appareil et de nos serveurs.</p>
+
+    <h3>Statistiques de session agrégées</h3>
+    <p>Pour tous les utilisateurs (connectés et invités), l’Application écrit périodiquement un petit enregistrement &ldquo;heartbeat&rdquo; dans notre base de données, contenant uniquement des compteurs (articles, listes, groupes), votre version de l’Application, votre langue et la version de votre système d’exploitation. Cet enregistrement nous aide à comprendre quelles fonctionnalités sont utilisées et à prioriser les améliorations. Il ne contient que des compteurs &mdash; aucun contenu d’article, photo, nom ou autre donnée personnelle. L’enregistrement est supprimé lorsque vous supprimez votre compte, lorsque les données invité sont supprimées lors d’une mise à niveau de session, ou lorsqu’une session anonyme inactive est nettoyée après 14 jours.</p>
   </section>
 
   <section id="use" class="card">

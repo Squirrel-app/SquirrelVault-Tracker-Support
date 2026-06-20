@@ -165,6 +165,18 @@
 
     <h3>Analysegegevens</h3>
     <p>Wij gebruiken Firebase Analytics (geleverd door Google) om te begrijpen hoe de app wordt gebruikt — bijvoorbeeld welke functies populair zijn en waar gebruikers problemen ondervinden. Analysegegevens kunnen uw interne account-ID, algemene gebruiksgebeurtenissen (zoals bezochte schermen en gebruikte functies) en apparaatinformatie bevatten. Deze gegevens worden gebruikt om de app te verbeteren en worden niet gebruikt voor reclame of verkocht aan derden.</p>
+
+    <h3>Anonieme sessie-identificatie (gastmodus)</h3>
+    <p>Wanneer u op het aanmeldscherm &ldquo;Doorgaan zonder account&rdquo; kiest, maken wij via onze authenticatieprovider (Google Firebase Authentication) een tijdelijke, willekeurig gegenereerde anonieme identificatie aan. Deze identificatie is niet gekoppeld aan uw naam, e-mailadres of andere persoonlijke informatie. Wij gebruiken deze voor:</p>
+    <ul>
+      <li>U in staat stellen uw inventarisgegevens lokaal op uw apparaat op te slaan en te beheren.</li>
+      <li>Het vastleggen van anonieme, geaggregeerde gebruiksstatistieken (aantallen artikelen, lijsten, groepen, App-versie, apparaattaal, besturingssysteemversie) zodat wij kunnen begrijpen hoe gastgebruikers de App gebruiken. In de gastmodus worden geen artikelnamen, foto’s of andere inhoud naar onze servers verzonden.</li>
+      <li>U de mogelijkheid bieden later over te stappen naar een regulier account, waarbij de gegevens die u tijdens de gastsessie hebt opgeslagen behouden blijven.</li>
+    </ul>
+    <p>De anonieme identificatie wordt na 14 dagen inactiviteit automatisch door onze server verwijderd (samen met de hieronder beschreven geaggregeerde tellers). Als u zich aanmeldt met Apple of Google om uw gastsessie om te zetten naar een account, wordt de anonieme identificatie omgezet in uw accountidentificatie; als u in plaats daarvan tijdens het aanmelden &ldquo;Gastgegevens verwijderen&rdquo; kiest, worden de gastgegevens van uw apparaat en van onze servers verwijderd.</p>
+
+    <h3>Geaggregeerde sessiestatistieken</h3>
+    <p>Voor alle gebruikers (aangemeld en gast) schrijft de App periodiek een klein &ldquo;heartbeat&rdquo;-record naar onze database dat uitsluitend tellers bevat (artikelen, lijsten, groepen), uw App-versie, taalinstelling en besturingssysteemversie. Dit record helpt ons te begrijpen welke functies worden gebruikt en verbeteringen te prioriteren. Het bevat uitsluitend tellers &mdash; geen artikelinhoud, foto’s, namen of andere persoonsgegevens. Het record wordt verwijderd wanneer u uw account verwijdert, wanneer gastgegevens worden verwijderd bij een sessie-upgrade, of wanneer een inactieve anonieme sessie na 14 dagen wordt opgeruimd.</p>
   </section>
 
   <section id="use" class="card">

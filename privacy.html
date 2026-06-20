@@ -165,6 +165,18 @@
 
     <h3>Analytics</h3>
     <p>We use Firebase Analytics (provided by Google) to understand how the App is used — for example, which features are popular and where users encounter problems. Analytics data may include your internal account identifier, general usage events (such as screens visited and features used), and device information. This data is used to improve the App and is not used for advertising or sold to third parties.</p>
+
+    <h3>Anonymous session identifier (guest mode)</h3>
+    <p>When you choose &ldquo;Continue without account&rdquo; on the sign-in screen, we create a temporary, randomly generated anonymous identifier through our authentication provider (Google Firebase Authentication). This identifier is not linked to your name, email, or any other personal information. We use it to:</p>
+    <ul>
+      <li>Allow you to save and manage your inventory data locally on your device.</li>
+      <li>Record anonymous aggregate usage statistics (counts of items, lists, groups, app version, device language, OS version) so we can understand how guest users interact with the App. No item names, photos, or other content are sent to our servers while you are in guest mode.</li>
+      <li>Let you upgrade to a regular account later, preserving any data you saved during the guest session.</li>
+    </ul>
+    <p>The anonymous identifier is automatically deleted by our server after 14 days of inactivity (along with the aggregate counters described below). If you sign in with Apple or Google to upgrade your guest session, the anonymous identifier is converted into your account identifier; if you instead choose &ldquo;Discard guest data&rdquo; during sign-in, the guest-side data is removed from your device and from our servers.</p>
+
+    <h3>Aggregate session statistics</h3>
+    <p>For all users (signed-in and guest), the App periodically writes a small &ldquo;heartbeat&rdquo; record to our database containing only counts (items, lists, groups), your app version, locale, and operating system version. This record helps us understand which features are used and prioritize improvements. It contains only counts — no item content, photos, names, or other personal data. The record is removed when you delete your account, when guest data is discarded during sign-in upgrade, or when an inactive anonymous session is cleaned up after 14 days.</p>
   </section>
 
   <section id="use" class="card">
