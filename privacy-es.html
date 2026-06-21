@@ -166,17 +166,8 @@
     <h3>Datos analíticos</h3>
     <p>Utilizamos Firebase Analytics (proporcionado por Google) para comprender cómo se utiliza la App — por ejemplo, qué funciones son populares y dónde los usuarios encuentran problemas. Los datos analíticos pueden incluir su identificador de cuenta interno, eventos generales de uso (como pantallas visitadas y funciones utilizadas) e información del dispositivo. Estos datos se utilizan para mejorar la App y no se utilizan con fines publicitarios ni se venden a terceros.</p>
 
-    <h3>Identificador de sesión anónimo (modo invitado)</h3>
-    <p>Cuando eliges &ldquo;Continuar sin cuenta&rdquo; en la pantalla de inicio de sesión, creamos un identificador anónimo temporal y generado aleatoriamente a través de nuestro proveedor de autenticación (Google Firebase Authentication). Este identificador no está vinculado a tu nombre, correo electrónico ni a ninguna otra información personal. Lo utilizamos para:</p>
-    <ul>
-      <li>Permitirte guardar y gestionar tus datos de inventario localmente en tu dispositivo.</li>
-      <li>Registrar estadísticas de uso agregadas y anónimas (recuentos de artículos, listas, grupos, versión de la App, idioma del dispositivo, versión del sistema operativo) para entender cómo los usuarios invitados interactúan con la App. En modo invitado no se envían a nuestros servidores nombres de artículos, fotos ni ningún otro contenido.</li>
-      <li>Permitirte actualizar a una cuenta regular más adelante, conservando los datos guardados durante la sesión de invitado.</li>
-    </ul>
-    <p>El identificador anónimo es eliminado automáticamente por nuestro servidor tras 14 días de inactividad (junto con los contadores agregados descritos a continuación). Si inicias sesión con Apple o Google para actualizar tu sesión de invitado, el identificador anónimo se convierte en tu identificador de cuenta; si en cambio eliges &ldquo;Descartar datos de invitado&rdquo; durante el inicio de sesión, los datos del modo invitado se eliminan de tu dispositivo y de nuestros servidores.</p>
-
-    <h3>Estadísticas de sesión agregadas</h3>
-    <p>Para todos los usuarios (con sesión iniciada e invitados), la App escribe periódicamente un pequeño registro de &ldquo;heartbeat&rdquo; en nuestra base de datos que contiene únicamente recuentos (artículos, listas, grupos), tu versión de la App, idioma y versión del sistema operativo. Este registro nos ayuda a entender qué funciones se utilizan y a priorizar mejoras. Contiene solo recuentos &mdash; sin contenido de artículos, fotos, nombres ni ningún otro dato personal. El registro se elimina cuando borras tu cuenta, cuando los datos de invitado se descartan durante la actualización de sesión, o cuando una sesión anónima inactiva se limpia tras 14 días.</p>
+    <h3>Datos de uso anónimos</h3>
+    <p>Si utiliza la App sin una cuenta, creamos un identificador anónimo temporal a través de Google Firebase para guardar sus datos y registrar estadísticas de uso anónimas (como recuentos de artículos y listas, versión de la App e idioma del dispositivo). Estos datos no contienen nombres de artículos, fotos ni ningún otro contenido personal, y se eliminan cuando elimina su cuenta o sus datos de invitado, o tras un período de inactividad.</p>
   </section>
 
   <section id="use" class="card">

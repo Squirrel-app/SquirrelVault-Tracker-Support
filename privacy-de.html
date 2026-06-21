@@ -166,17 +166,8 @@
     <h3>Analysedaten</h3>
     <p>Wir verwenden Firebase Analytics (bereitgestellt von Google), um zu verstehen, wie die App genutzt wird — zum Beispiel welche Funktionen beliebt sind und wo Nutzer auf Probleme stoßen. Analysedaten können Ihre interne Kontokennung, allgemeine Nutzungsereignisse (wie besuchte Bildschirme und verwendete Funktionen) und Geräteinformationen umfassen. Diese Daten werden zur Verbesserung der App verwendet und werden nicht für Werbung genutzt oder an Dritte verkauft.</p>
 
-    <h3>Anonyme Sitzungskennung (Gastmodus)</h3>
-    <p>Wenn Sie auf dem Anmeldebildschirm &ldquo;Ohne Konto fortfahren&rdquo; wählen, erstellen wir über unseren Authentifizierungsanbieter (Google Firebase Authentication) eine temporäre, zufällig generierte anonyme Kennung. Diese Kennung ist nicht mit Ihrem Namen, Ihrer E-Mail-Adresse oder anderen personenbezogenen Daten verknüpft. Wir verwenden sie, um:</p>
-    <ul>
-      <li>Ihnen zu ermöglichen, Ihre Inventardaten lokal auf Ihrem Gerät zu speichern und zu verwalten.</li>
-      <li>Anonyme aggregierte Nutzungsstatistiken zu erfassen (Anzahl von Elementen, Listen, Gruppen, App-Version, Gerätesprache, Betriebssystemversion), damit wir verstehen können, wie Gastnutzer die App verwenden. Im Gastmodus werden keine Elementnamen, Fotos oder andere Inhalte an unsere Server übertragen.</li>
-      <li>Ihnen zu ermöglichen, später auf ein reguläres Konto umzusteigen, wobei die im Gastmodus gespeicherten Daten erhalten bleiben.</li>
-    </ul>
-    <p>Die anonyme Kennung wird nach 14 Tagen Inaktivität automatisch von unserem Server gelöscht (zusammen mit den unten beschriebenen aggregierten Zählwerten). Wenn Sie sich mit Apple oder Google anmelden, um Ihre Gastsitzung zu einem Konto zu konvertieren, wird die anonyme Kennung in Ihre Kontokennung umgewandelt. Wenn Sie stattdessen beim Anmelden &ldquo;Gastdaten verwerfen&rdquo; wählen, werden die Gastdaten von Ihrem Gerät und von unseren Servern entfernt.</p>
-
-    <h3>Aggregierte Sitzungsstatistiken</h3>
-    <p>Für alle Nutzer (angemeldet und Gäste) schreibt die App regelmäßig einen kleinen &ldquo;Heartbeat&rdquo;-Eintrag in unsere Datenbank, der ausschließlich Zählwerte enthält (Elemente, Listen, Gruppen), Ihre App-Version, Spracheinstellung und Betriebssystemversion. Dieser Eintrag hilft uns zu verstehen, welche Funktionen genutzt werden, und Verbesserungen zu priorisieren. Er enthält ausschließlich Zählwerte &mdash; keine Elementinhalte, Fotos, Namen oder andere personenbezogene Daten. Der Eintrag wird gelöscht, wenn Sie Ihr Konto löschen, wenn Gastdaten beim Upgrade verworfen werden oder wenn eine inaktive anonyme Sitzung nach 14 Tagen bereinigt wird.</p>
+    <h3>Anonyme Nutzungsdaten</h3>
+    <p>Wenn Sie die App ohne Konto verwenden, erstellen wir über Google Firebase eine temporäre anonyme Kennung, um Ihre Daten zu speichern und anonyme Nutzungsstatistiken zu erfassen (z. B. die Anzahl von Elementen und Listen, die App-Version und die Gerätesprache). Diese Daten enthalten keine Elementnamen, Fotos oder andere persönliche Inhalte und werden gelöscht, wenn Sie Ihr Konto oder Ihre Gastdaten löschen oder nach einer Zeit der Inaktivität.</p>
   </section>
 
   <section id="use" class="card">

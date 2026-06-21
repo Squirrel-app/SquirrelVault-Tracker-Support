@@ -166,17 +166,8 @@
     <h3>Dane analityczne</h3>
     <p>Korzystamy z Firebase Analytics (dostarczanego przez Google), aby zrozumieć, jak Aplikacja jest używana — na przykład, które funkcje są popularne i gdzie użytkownicy napotykają problemy. Dane analityczne mogą obejmować Twój wewnętrzny identyfikator konta, ogólne zdarzenia użytkowania (takie jak odwiedzone ekrany i używane funkcje) oraz informacje o urządzeniu. Dane te są wykorzystywane do ulepszania Aplikacji i nie są wykorzystywane do celów reklamowych ani sprzedawane osobom trzecim.</p>
 
-    <h3>Anonimowy identyfikator sesji (tryb gościa)</h3>
-    <p>Gdy na ekranie logowania wybierzesz &ldquo;Kontynuuj bez konta&rdquo;, tworzymy tymczasowy, losowo wygenerowany anonimowy identyfikator za pośrednictwem naszego dostawcy uwierzytelniania (Google Firebase Authentication). Identyfikator ten nie jest powiązany z Twoim imieniem i nazwiskiem, adresem e-mail ani żadnymi innymi danymi osobowymi. Używamy go, aby:</p>
-    <ul>
-      <li>Umożliwić Ci zapisywanie i zarządzanie danymi inwentarza lokalnie na Twoim urządzeniu.</li>
-      <li>Rejestrować anonimowe zagregowane statystyki użytkowania (liczby elementów, list, grup, wersja Aplikacji, język urządzenia, wersja systemu operacyjnego), aby rozumieć, jak użytkownicy-goście korzystają z Aplikacji. W trybie gościa do naszych serwerów nie są wysyłane żadne nazwy elementów, zdjęcia ani inne treści.</li>
-      <li>Umożliwić Ci późniejsze przejście na zwykłe konto z zachowaniem danych zapisanych podczas sesji gościa.</li>
-    </ul>
-    <p>Anonimowy identyfikator jest automatycznie usuwany przez nasz serwer po 14 dniach braku aktywności (wraz z zagregowanymi licznikami opisanymi poniżej). Jeśli zalogujesz się przez Apple lub Google, aby przekształcić sesję gościa w konto, anonimowy identyfikator zostaje przekształcony w identyfikator Twojego konta; jeśli zamiast tego podczas logowania wybierzesz &ldquo;Odrzuć dane gościa&rdquo;, dane po stronie gościa zostaną usunięte z Twojego urządzenia i z naszych serwerów.</p>
-
-    <h3>Zagregowane statystyki sesji</h3>
-    <p>Dla wszystkich użytkowników (zalogowanych i gości) Aplikacja okresowo zapisuje w naszej bazie danych mały rekord &ldquo;heartbeat&rdquo; zawierający wyłącznie liczniki (elementy, listy, grupy), wersję Aplikacji, ustawienia językowe i wersję systemu operacyjnego. Rekord ten pomaga nam zrozumieć, które funkcje są używane, i ustalać priorytety ulepszeń. Zawiera wyłącznie liczniki &mdash; żadnych treści elementów, zdjęć, nazw ani innych danych osobowych. Rekord jest usuwany po usunięciu konta, gdy dane gościa są odrzucane podczas uaktualniania sesji lub gdy nieaktywna anonimowa sesja jest czyszczona po 14 dniach.</p>
+    <h3>Anonimowe dane o użytkowaniu</h3>
+    <p>Jeśli korzystasz z Aplikacji bez konta, tworzymy tymczasowy anonimowy identyfikator za pośrednictwem Google Firebase, aby zapisywać Twoje dane i rejestrować anonimowe statystyki użytkowania (takie jak liczby elementów i list, wersja Aplikacji oraz język urządzenia). Dane te nie zawierają nazw elementów, zdjęć ani żadnych innych treści osobistych i są usuwane po usunięciu konta lub danych gościa albo po okresie braku aktywności.</p>
   </section>
 
   <section id="use" class="card">

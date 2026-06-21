@@ -166,17 +166,8 @@
     <h3>Dati analitici</h3>
     <p>Utilizziamo Firebase Analytics (fornito da Google) per comprendere come viene utilizzata l’App — ad esempio, quali funzionalità sono popolari e dove gli utenti riscontrano problemi. I dati analitici possono includere il vostro identificatore account interno, eventi di utilizzo generali (come schermate visitate e funzionalità utilizzate) e informazioni sul dispositivo. Questi dati vengono utilizzati per migliorare l’App e non vengono utilizzati per la pubblicità né venduti a terzi.</p>
 
-    <h3>Identificatore di sessione anonimo (modalità ospite)</h3>
-    <p>Quando scegliete &ldquo;Continua senza account&rdquo; nella schermata di accesso, creiamo un identificatore anonimo temporaneo e generato casualmente tramite il nostro fornitore di autenticazione (Google Firebase Authentication). Questo identificatore non è collegato al vostro nome, indirizzo e-mail o a qualsiasi altra informazione personale. Lo utilizziamo per:</p>
-    <ul>
-      <li>Consentirvi di salvare e gestire i dati del vostro inventario localmente sul vostro dispositivo.</li>
-      <li>Registrare statistiche di utilizzo aggregate e anonime (conteggi di articoli, liste, gruppi, versione dell’App, lingua del dispositivo, versione del sistema operativo) per capire come gli utenti ospiti interagiscono con l’App. In modalità ospite non vengono inviati ai nostri server nomi di articoli, foto o altri contenuti.</li>
-      <li>Consentirvi di passare in seguito a un account regolare, conservando i dati salvati durante la sessione ospite.</li>
-    </ul>
-    <p>L’identificatore anonimo viene eliminato automaticamente dal nostro server dopo 14 giorni di inattività (insieme ai contatori aggregati descritti di seguito). Se accedete con Apple o Google per convertire la vostra sessione ospite in account, l’identificatore anonimo viene trasformato nel vostro identificatore account; se invece scegliete &ldquo;Elimina dati ospite&rdquo; durante l’accesso, i dati lato ospite vengono rimossi dal vostro dispositivo e dai nostri server.</p>
-
-    <h3>Statistiche di sessione aggregate</h3>
-    <p>Per tutti gli utenti (con accesso effettuato e ospiti), l’App scrive periodicamente un piccolo record &ldquo;heartbeat&rdquo; nel nostro database contenente esclusivamente conteggi (articoli, liste, gruppi), la versione dell’App, la lingua e la versione del sistema operativo. Questo record ci aiuta a capire quali funzionalità vengono utilizzate e a stabilire le priorità dei miglioramenti. Contiene solo conteggi &mdash; nessun contenuto di articoli, foto, nomi o altri dati personali. Il record viene eliminato quando cancellate il vostro account, quando i dati ospite vengono eliminati durante l’aggiornamento della sessione, o quando una sessione anonima inattiva viene rimossa dopo 14 giorni.</p>
+    <h3>Dati di utilizzo anonimi</h3>
+    <p>Se utilizzate l’App senza un account, creiamo un identificatore anonimo temporaneo tramite Google Firebase per salvare i vostri dati e registrare statistiche di utilizzo anonime (come conteggi di articoli e liste, versione dell’App e lingua del dispositivo). Questi dati non contengono nomi di articoli, foto o altri contenuti personali e vengono eliminati quando cancellate il vostro account o i vostri dati ospite, oppure dopo un periodo di inattività.</p>
   </section>
 
   <section id="use" class="card">

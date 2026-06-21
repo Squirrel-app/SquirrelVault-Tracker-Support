@@ -166,17 +166,8 @@
     <h3>Dados analíticos</h3>
     <p>Utilizamos o Firebase Analytics (fornecido pela Google) para compreender como a App é utilizada — por exemplo, quais funcionalidades são populares e onde os utilizadores encontram problemas. Os dados analíticos podem incluir o seu identificador de conta interno, eventos gerais de utilização (como ecrãs visitados e funcionalidades utilizadas) e informações do dispositivo. Estes dados são utilizados para melhorar a App e não são utilizados para publicidade nem vendidos a terceiros.</p>
 
-    <h3>Identificador de sessão anónimo (modo de convidado)</h3>
-    <p>Quando escolhe &ldquo;Continuar sem conta&rdquo; no ecrã de início de sessão, criamos um identificador anónimo temporário e gerado aleatoriamente através do nosso fornecedor de autenticação (Google Firebase Authentication). Este identificador não está associado ao seu nome, endereço de e-mail ou a qualquer outra informação pessoal. Utilizamo-lo para:</p>
-    <ul>
-      <li>Permitir-lhe guardar e gerir os dados do seu inventário localmente no seu dispositivo.</li>
-      <li>Registar estatísticas de utilização agregadas e anónimas (contagens de itens, listas, grupos, versão da App, idioma do dispositivo, versão do sistema operativo) para compreender como os utilizadores convidados interagem com a App. Em modo de convidado, não são enviados para os nossos servidores nomes de itens, fotografias nem outro conteúdo.</li>
-      <li>Permitir-lhe passar posteriormente para uma conta regular, preservando os dados guardados durante a sessão de convidado.</li>
-    </ul>
-    <p>O identificador anónimo é automaticamente eliminado pelo nosso servidor após 14 dias de inatividade (juntamente com os contadores agregados descritos abaixo). Se iniciar sessão com Apple ou Google para converter a sua sessão de convidado numa conta, o identificador anónimo é convertido no seu identificador de conta; se, em vez disso, escolher &ldquo;Descartar dados de convidado&rdquo; durante o início de sessão, os dados do lado do convidado são removidos do seu dispositivo e dos nossos servidores.</p>
-
-    <h3>Estatísticas de sessão agregadas</h3>
-    <p>Para todos os utilizadores (com sessão iniciada e convidados), a App escreve periodicamente um pequeno registo de &ldquo;heartbeat&rdquo; na nossa base de dados, contendo apenas contagens (itens, listas, grupos), a sua versão da App, idioma e versão do sistema operativo. Este registo ajuda-nos a compreender quais as funcionalidades utilizadas e a priorizar melhorias. Contém apenas contagens &mdash; sem conteúdo de itens, fotografias, nomes ou outros dados pessoais. O registo é eliminado quando elimina a sua conta, quando os dados de convidado são descartados durante a atualização de sessão, ou quando uma sessão anónima inativa é limpa após 14 dias.</p>
+    <h3>Dados de utilização anónimos</h3>
+    <p>Se utilizar a App sem uma conta, criamos um identificador anónimo temporário através do Google Firebase para guardar os seus dados e registar estatísticas de utilização anónimas (como contagens de itens e listas, versão da App e idioma do dispositivo). Estes dados não contêm nomes de itens, fotografias nem qualquer outro conteúdo pessoal, e são eliminados quando elimina a sua conta ou os seus dados de convidado, ou após um período de inatividade.</p>
   </section>
 
   <section id="use" class="card">
